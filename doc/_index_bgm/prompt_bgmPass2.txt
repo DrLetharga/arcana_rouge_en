@@ -1,0 +1,9 @@
+As far as an initial analysis of all BGM, all files are done.  Attached is index_bgm20.csv which is my final working copy at this time.
+
+I have also attached s_bgm.zip.  This archive contains all the BGM##.ogg files that have been processed.  Use them for verification if needed.
+
+I'd like you to do a 2nd pass using index_bgm20.csv.  Verify the BGM is being used in the files and the lines indicated based on start line and end line.
+
+Also, determine more context after you check an entry to see if the tone and notes can be better defined or expanded upon.
+
+Do this 1 record at a time.  Stop once you reach a new BGM file.  Then, verify the results with me.

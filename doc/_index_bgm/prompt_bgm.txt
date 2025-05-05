@@ -1,0 +1,139 @@
+I am currently indexing all background music (BGM) used in a Japanese visual novel for my KiriKiri Z conversion and TTS/emotion tagging pipeline. This is part of a multi-phase asset indexing project (following completed background image tagging in `index_bg.csv`).
+
+In this project, BGM is triggered via macro calls like `[bgm005]`, which resolve to:
+
+```ks
+[macro name="bgm005"][bgm * storage="BGM05"][endmacro]
+```
+The `[bgm]` macro itself expands to:
+
+```ks
+[fadeinbgm storage="BGM05" loop=true time=100]
+```
+These macros are defined in `k_others\macro04_sound.ks`. All BGM file names follow the pattern `BGM01`, `BGM02`, etc., and all are assumed to loop unless otherwise noted.
+
+Note: The `[ANTEN]` macro is often used before a `[jump]` to a new `.ks` script. It stops all SE and BGM by default using `[fadeoutbgm]`, unless the macro is invoked with `bgmon`, e.g., `[ANTEN blk bgmon]`.  
+This must be evaluated to determine whether BGM carries forward across scripts.
+
+Additionally, `[fadeoutbgm]` may appear on its own in scripts to stop music.  
+It must be treated as a BGM stop event, just like `[bgmstop]` or `[ANTEN]` without `bgmon`.
+
+⚠️ **Never assume a scene, label, or block transition implies BGM has stopped. You must scan line-by-line until a valid stop condition is explicitly found.**
+
+If a `[sel##]` selection menu or `[jump storage="..."]` appears after a `[bgm###]` macro and no stop condition (`[fadeoutbgm]`, `[bgmstop]`, or `[ANTEN]` without `bgmon`) has occurred:
+
+- You must identify **every possible destination** of these `[jump]` calls.
+- This includes:
+    - Unconditional `[jump]` macros
+    - `[jump]` macros nested within `[if]`, `[elsif]`, or `[endif]` blocks
+    - Any jumps triggered by a `[sel##]` structure
+- For each destination:
+    - Add a new `index_bgm.csv` row
+    - Set `Start Line` at the label specified (e.g., *TOP, *AFTERSCENE) — you must confirm the label exists and begin tracking from that location.
+	- Determine the Start Line by scanning for the exact line number of the target label in the destination file. Do not assume it is at the top of the file.
+    - Scan the new file to find a valid stop (just like the original file)
+- Always resolve and verify jump target labels. Do not assume they default to `*TOP`.
+
+⚠️ If no stop is found, the BGM is assumed to continue further and must be tracked recursively.
+
+## 🎼 **Target Output**: `index_bgm.csv`
+Each entry in the CSV should contain:
+
+- **KS File**: e.g., arcana003.ks
+
+- **BGM File**: e.g., BGM05.ogg
+
+- **Start Line**: First .ks script line where the macro appears
+
+- **End Line**: Line where the BGM stops (if `[bgmstop]`, `[fadeoutbgm]`, `[ANTEN]` is invoked without `bgmon`, or new `[bgm###]` appears)  
+⚠️ **You must scan every line from the Start Line to the end of the file or until one of the following is found**:
+  - `[fadeoutbgm]`
+  - `[bgmstop]`
+  - `[ANTEN]` without `bgmon`
+  - another `[bgm###]` that references a different file
+  
+⚠️ Any stop condition that is commented out (e.g., `;[ANTEN blk]`) must be ignored. Commented lines do not affect BGM playback and cannot be used to terminate a BGM entry.
+
+Do **not** guess the end point based on perceived scene changes or empty lines.
+
+- **Looping**: True/False
+
+- **Duration (s)**: Optional — filled if known or measured
+
+- **Tone Tags**: e.g., {tone:tense}{tone:ritual}, based on scene mood
+
+- **Notes**: Emotional context, what kind of scene it scores, any dev comments or narration describing the atmosphere
+
+In some cases, `[bgm###]` is called with a `cond="tf.scene_mode == 1"` parameter.  
+This ensures the BGM plays when the scene is replayed (`tf.scene_mode == 1`) rather than only during the original playthrough (`0`).  
+For indexing purposes, this counts as **active BGM** and should be logged the same as unconditional calls.
+However, if this conditional `[bgm###]` call is preceded by a valid path that plays the same BGM without a stop condition, it does not need to be indexed again. These replay-mode reassertions are often redundant unless they initiate BGM independently.
+
+If needed, I will provide `.ogg` files, macro definitions, or script files for parsing.
+
+If provided BGM `.ogg` files, analyze them to determine duration, tone, looping behavior, and emotional fit.
+
+If provided `k_scenario.zip`, all scene `.ks` files will be in a folder, `k_scenario`, inside the archive. So, if you extract it, the path will be `..\k_scenario\k_scenario\*.ks`. These files will be encoded in UTF-8 without BOM unless otherwise noted.
+
+---
+
+## 🔁 **Standard BGM Entry Requirements (Always perform for each [bgm###] occurrence)**:
+1. Determine Start and Stop:
+
+- Locate the exact line where `[bgm###]` begins.
+
+- Scan forward *line-by-line* until a valid stop is encountered:
+    - `[fadeoutbgm]`
+    - `[bgmstop]`
+    - `[ANTEN]` without `bgmon`
+    - another `[bgm###]` referencing a different BGM file
+
+- Include the line number of the stop as `End Line`.
+
+- ⚠️ **Also log the exact line content that triggered the stop condition.** This confirms the match was valid.
+
+2. Extract Context Block:
+
+- Pull all `.ks` script lines from `Start Line` through `End Line`.
+
+- Use this excerpt for tone and mood inference.
+
+3. Tone Tag Inference:
+
+- Analyze the full excerpt.
+
+- Tag scene mood using `{tone:*}` tags, including emotional escalation (e.g., `{tone:ritual}`, `{tone:despair}`, `{tone:triumph}`).
+
+4. Notes Summary:
+
+- Summarize key narrative and emotional events during the music span.
+
+- Reference character appearances, SEs, background changes, fights, or emotional beats.
+
+- Include relevant developer comments (`;` lines) that describe mood or implementation context.
+
+5. **Stop Reason Logging**:
+
+- For every `[bgm###]` entry, copy and log the **exact** line that triggered the BGM to stop.
+- This should be stored or visible for validation and troubleshooting.
+
+---
+
+## ✅ **STOP CONDITION CHECKLIST**
+Use this every time before assigning the `End Line`:
+
+- [ ] I scanned every line from `Start Line` onward  
+- [ ] I stopped only at one of the following:
+  - [ ] `[fadeoutbgm]`
+  - [ ] `[bgmstop]`
+  - [ ] `[ANTEN]` without `bgmon`
+  - [ ] `[bgm###]` (different from the current one)
+- [ ] I copied the full line content that triggered the stop
+- [ ] If no valid stop condition is found and a `[sel##]` or `[jump storage="..."]` appears near the end of the file:
+    - [ ] I checked for `[jump]` statements nested inside `[if]`, `[elsif]`, or `[endif]` blocks
+    - [ ] I traced all possible jump destinations
+    - [ ] I added a continuation row for each destination where the BGM carries forward
+
+---
+
+> ⚠️ For each `[bgm###]` macro, always determine the end of its playback and analyze the full section from start to stop for tone and narrative context. Use the “Standard BGM Entry Requirements” and STOP CONDITION CHECKLIST above to populate the `index_bgm.csv` fields and ensure consistency.

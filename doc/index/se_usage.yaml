@@ -1,0 +1,4338 @@
+﻿- SE_Name: se001
+  Used: false
+- SE_Name: se002
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana088.ks
+    LineNumber: 99
+    LinePreview: '[se buf=0 storage="se002"]'
+- SE_Name: se003
+  Used: false
+- SE_Name: se004
+  Used: false
+- SE_Name: se005
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 1894
+    LinePreview: '[se buf=0 storage="se005"]'
+- SE_Name: se006
+  Used: false
+- SE_Name: SE0100
+  Used: false
+- SE_Name: SE0101
+  Used: false
+- SE_Name: SE0102
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana073.ks
+    LineNumber: 651
+    LinePreview: '[se buf=0 storage="SE0102"]'
+- SE_Name: SE0103
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 544
+    LinePreview: ;んー[se buf=0 storage="SE0103"]
+- SE_Name: SE0104
+  Used: false
+- SE_Name: SE0105
+  Used: false
+- SE_Name: SE0106
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana073.ks
+    LineNumber: 211
+    LinePreview: '[se buf=0 storage="SE0106"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana073.ks
+    LineNumber: 596
+    LinePreview: '[se buf=0 storage="SE0106"]'
+- SE_Name: SE0107
+  Used: false
+- SE_Name: SE0108
+  Used: false
+- SE_Name: SE0109
+  Used: false
+- SE_Name: SE0110
+  Used: false
+- SE_Name: SE0111
+  Used: false
+- SE_Name: SE0112
+  Used: false
+- SE_Name: SE0113
+  Used: false
+- SE_Name: SE0114
+  Used: false
+- SE_Name: SE0115
+  Used: false
+- SE_Name: SE0116
+  Used: false
+- SE_Name: SE0117
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana079.ks
+    LineNumber: 9
+    LinePreview: '[se buf=0 storage="SE0117"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana106.ks
+    LineNumber: 188
+    LinePreview: '[se buf=1 storage="SE0117"]'
+- SE_Name: SE0118
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana088.ks
+    LineNumber: 15
+    LinePreview: '[se buf=0 storage="SE0118"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana088.ks
+    LineNumber: 69
+    LinePreview: '[se buf=0 storage="SE0118"]'
+- SE_Name: SE0120
+  Used: false
+- SE_Name: SE0121
+  Used: false
+- SE_Name: SE0122
+  Used: false
+- SE_Name: SE0123
+  Used: false
+- SE_Name: SE0124
+  Used: false
+- SE_Name: SE0130
+  Used: false
+- SE_Name: SE0140
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana106.ks
+    LineNumber: 42
+    LinePreview: '[se buf=1 storage="SE0140" loop]'
+- SE_Name: SE0141
+  Used: false
+- SE_Name: SE0142
+  Used: false
+- SE_Name: SE0150
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana123.ks
+    LineNumber: 21
+    LinePreview: '[se buf=0 storage="SE0150"]'
+- SE_Name: SE0151
+  Used: false
+- SE_Name: SE0160
+  Used: false
+- SE_Name: SE0161
+  Used: false
+- SE_Name: SE0163
+  Used: false
+- SE_Name: SE0164
+  Used: false
+- SE_Name: SE0170
+  Used: false
+- SE_Name: SE0180
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana081.ks
+    LineNumber: 45
+    LinePreview: '[se buf=0 storage="SE0180"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana088.ks
+    LineNumber: 159
+    LinePreview: '[se buf=0 storage="SE0180"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana097.ks
+    LineNumber: 43
+    LinePreview: '[se buf=0 storage="SE0180"]'
+- SE_Name: SE0181
+  Used: false
+- SE_Name: SE0182
+  Used: false
+- SE_Name: SE0183
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 2741
+    LinePreview: '[se buf=0 storage="SE0183_3"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana006.ks
+    LineNumber: 78
+    LinePreview: '[se buf=0 storage="SE0183_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana009.ks
+    LineNumber: 51
+    LinePreview: '[se buf=0 storage="SE0183_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana012.ks
+    LineNumber: 57
+    LinePreview: '[se buf=0 storage="SE0183_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana039.ks
+    LineNumber: 680
+    LinePreview: '[se buf=0 storage="SE0183_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana054.ks
+    LineNumber: 248
+    LinePreview: '[se buf=0 storage="SE0183_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana065.ks
+    LineNumber: 121
+    LinePreview: '[se buf=0 storage="SE0183_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana073.ks
+    LineNumber: 210
+    LinePreview: ;[se buf=0 storage="SE0183_2"]
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana082.ks
+    LineNumber: 110
+    LinePreview: '[se buf=0 storage="SE0183_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana088.ks
+    LineNumber: 173
+    LinePreview: '[se buf=0 storage="SE0183_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana088.ks
+    LineNumber: 221
+    LinePreview: '[se buf=0 storage="SE0183_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana097.ks
+    LineNumber: 9
+    LinePreview: '[se buf=0 storage="SE0183_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana126.ks
+    LineNumber: 56
+    LinePreview: '[se buf=0 storage="SE0183_2"]'
+- SE_Name: SE0183_2
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana006.ks
+    LineNumber: 78
+    LinePreview: '[se buf=0 storage="SE0183_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana009.ks
+    LineNumber: 51
+    LinePreview: '[se buf=0 storage="SE0183_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana012.ks
+    LineNumber: 57
+    LinePreview: '[se buf=0 storage="SE0183_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana039.ks
+    LineNumber: 680
+    LinePreview: '[se buf=0 storage="SE0183_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana054.ks
+    LineNumber: 248
+    LinePreview: '[se buf=0 storage="SE0183_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana065.ks
+    LineNumber: 121
+    LinePreview: '[se buf=0 storage="SE0183_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana073.ks
+    LineNumber: 210
+    LinePreview: ;[se buf=0 storage="SE0183_2"]
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana082.ks
+    LineNumber: 110
+    LinePreview: '[se buf=0 storage="SE0183_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana088.ks
+    LineNumber: 173
+    LinePreview: '[se buf=0 storage="SE0183_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana088.ks
+    LineNumber: 221
+    LinePreview: '[se buf=0 storage="SE0183_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana097.ks
+    LineNumber: 9
+    LinePreview: '[se buf=0 storage="SE0183_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana126.ks
+    LineNumber: 56
+    LinePreview: '[se buf=0 storage="SE0183_2"]'
+- SE_Name: SE0183_3
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 2741
+    LinePreview: '[se buf=0 storage="SE0183_3"]'
+- SE_Name: SE0184
+  Used: false
+- SE_Name: SE0185
+  Used: false
+- SE_Name: SE0186
+  Used: false
+- SE_Name: SE0187
+  Used: false
+- SE_Name: SE0188
+  Used: false
+- SE_Name: SE0189
+  Used: false
+- SE_Name: SE0189_1
+  Used: false
+- SE_Name: SE0201
+  Used: false
+- SE_Name: SE0202
+  Used: false
+- SE_Name: SE0203
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana116.ks
+    LineNumber: 169
+    LinePreview: '[se buf=0 storage="SE0203"]'
+- SE_Name: SE0203_2
+  Used: false
+- SE_Name: SE0204
+  Used: false
+- SE_Name: SE0205
+  Used: false
+- SE_Name: SE0205_2
+  Used: false
+- SE_Name: SE0206
+  Used: false
+- SE_Name: SE0206_2
+  Used: false
+- SE_Name: SE0206_3
+  Used: false
+- SE_Name: SE0207
+  Used: false
+- SE_Name: SE0207_2
+  Used: false
+- SE_Name: SE0207_3
+  Used: false
+- SE_Name: SE0208
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana099.ks
+    LineNumber: 247
+    LinePreview: '[se buf=0 storage="SE0208"]'
+- SE_Name: SE0209
+  Used: false
+- SE_Name: SE0210
+  Used: false
+- SE_Name: SE0210_2
+  Used: false
+- SE_Name: SE0211
+  Used: false
+- SE_Name: SE0212
+  Used: false
+- SE_Name: SE0213
+  Used: false
+- SE_Name: SE0214
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_seFileDef.ks
+    LineNumber: 71
+    LinePreview: '[se storage=SE0214_3]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_seFileDef.ks
+    LineNumber: 76
+    LinePreview: '[se storage=SE0214]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana116.ks
+    LineNumber: 190
+    LinePreview: '[se buf=0 storage="SE0214_3"]'
+- SE_Name: SE0214_2
+  Used: false
+- SE_Name: SE0214_3
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_seFileDef.ks
+    LineNumber: 71
+    LinePreview: '[se storage=SE0214_3]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana116.ks
+    LineNumber: 190
+    LinePreview: '[se buf=0 storage="SE0214_3"]'
+- SE_Name: SE0214_4
+  Used: false
+- SE_Name: SE0215
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana106.ks
+    LineNumber: 577
+    LinePreview: '[se buf=0 storage="SE0215"]'
+- SE_Name: SE0216
+  Used: false
+- SE_Name: SE0217
+  Used: false
+- SE_Name: SE0218_1
+  Used: false
+- SE_Name: SE0218_2
+  Used: false
+- SE_Name: SE0220
+  Used: false
+- SE_Name: SE0221
+  Used: false
+- SE_Name: SE0221_1
+  Used: false
+- SE_Name: SE0222
+  Used: false
+- SE_Name: SE0222_1
+  Used: false
+- SE_Name: SE0223
+  Used: false
+- SE_Name: SE0224
+  Used: false
+- SE_Name: SE0225
+  Used: false
+- SE_Name: SE0250
+  Used: false
+- SE_Name: SE0280
+  Used: false
+- SE_Name: SE0280_2
+  Used: false
+- SE_Name: SE0280_3
+  Used: false
+- SE_Name: SE0281
+  Used: false
+- SE_Name: SE0281_1
+  Used: false
+- SE_Name: SE0290
+  Used: false
+- SE_Name: SE0301
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana073.ks
+    LineNumber: 848
+    LinePreview: '[se buf=0 storage="SE0301"]'
+- SE_Name: SE0302
+  Used: false
+- SE_Name: SE0303
+  Used: false
+- SE_Name: SE0310
+  Used: false
+- SE_Name: SE0311
+  Used: false
+- SE_Name: SE0312
+  Used: false
+- SE_Name: SE0313
+  Used: false
+- SE_Name: SE0320
+  Used: false
+- SE_Name: SE0321
+  Used: false
+- SE_Name: SE0322
+  Used: false
+- SE_Name: SE0324
+  Used: false
+- SE_Name: SE0325
+  Used: false
+- SE_Name: SE0330
+  Used: false
+- SE_Name: SE0331
+  Used: false
+- SE_Name: SE0332
+  Used: false
+- SE_Name: SE0340
+  Used: false
+- SE_Name: SE0342
+  Used: false
+- SE_Name: SE0343
+  Used: false
+- SE_Name: SE0344
+  Used: false
+- SE_Name: SE0345
+  Used: false
+- SE_Name: SE0350
+  Used: false
+- SE_Name: SE0351
+  Used: false
+- SE_Name: SE0352
+  Used: false
+- SE_Name: SE0360
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana098.ks
+    LineNumber: 14
+    LinePreview: '[se buf=0 storage="SE0360_1"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana115.ks
+    LineNumber: 93
+    LinePreview: '[se buf=0 storage="SE0360_1"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana115.ks
+    LineNumber: 439
+    LinePreview: '[se buf=0 storage="SE0360_1"]'
+- SE_Name: SE0360_1
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana098.ks
+    LineNumber: 14
+    LinePreview: '[se buf=0 storage="SE0360_1"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana115.ks
+    LineNumber: 93
+    LinePreview: '[se buf=0 storage="SE0360_1"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana115.ks
+    LineNumber: 439
+    LinePreview: '[se buf=0 storage="SE0360_1"]'
+- SE_Name: SE0361
+  Used: false
+- SE_Name: SE0361_1
+  Used: false
+- SE_Name: SE0363
+  Used: false
+- SE_Name: SE0365
+  Used: false
+- SE_Name: SE0370
+  Used: false
+- SE_Name: SE0371
+  Used: false
+- SE_Name: SE0380
+  Used: false
+- SE_Name: SE0381
+  Used: false
+- SE_Name: SE0390
+  Used: false
+- SE_Name: SE0391
+  Used: false
+- SE_Name: SE0392
+  Used: false
+- SE_Name: SE0394
+  Used: false
+- SE_Name: SE0395
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana082.ks
+    LineNumber: 63
+    LinePreview: '[se buf=0 storage="SE0395"]'
+- SE_Name: SE0396
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana088.ks
+    LineNumber: 66
+    LinePreview: '[se buf=0 storage="SE0396"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana106.ks
+    LineNumber: 13
+    LinePreview: '[se buf=0 storage="SE0396"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana124.ks
+    LineNumber: 593
+    LinePreview: '[se buf=0 storage="SE0396"]'
+- SE_Name: SE0397
+  Used: false
+- SE_Name: SE0401
+  Used: false
+- SE_Name: SE0402
+  Used: false
+- SE_Name: SE0402_2
+  Used: false
+- SE_Name: SE0411
+  Used: false
+- SE_Name: SE0412
+  Used: false
+- SE_Name: SE0413
+  Used: false
+- SE_Name: SE0414
+  Used: false
+- SE_Name: SE0415
+  Used: false
+- SE_Name: SE0416
+  Used: false
+- SE_Name: SE0420
+  Used: false
+- SE_Name: SE0425
+  Used: false
+- SE_Name: SE0426
+  Used: false
+- SE_Name: SE0427
+  Used: false
+- SE_Name: SE0428
+  Used: false
+- SE_Name: SE0430
+  Used: false
+- SE_Name: SE0431
+  Used: false
+- SE_Name: SE0440
+  Used: false
+- SE_Name: SE0441
+  Used: false
+- SE_Name: SE0443
+  Used: false
+- SE_Name: SE0444
+  Used: false
+- SE_Name: SE0445
+  Used: false
+- SE_Name: SE0446
+  Used: false
+- SE_Name: SE0447
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana075.ks
+    LineNumber: 469
+    LinePreview: '[se buf=0 storage="SE0447"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana075.ks
+    LineNumber: 537
+    LinePreview: '[se buf=0 storage="SE0447"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana075.ks
+    LineNumber: 549
+    LinePreview: '[se buf=0 storage="SE0447"]'
+- SE_Name: SE0448
+  Used: false
+- SE_Name: SE0449
+  Used: false
+- SE_Name: SE0449_1
+  Used: false
+- SE_Name: SE0450
+  Used: false
+- SE_Name: SE0451
+  Used: false
+- SE_Name: SE0460
+  Used: false
+- SE_Name: SE0460_2
+  Used: false
+- SE_Name: SE0461
+  Used: false
+- SE_Name: SE0462
+  Used: false
+- SE_Name: SE0470
+  Used: false
+- SE_Name: SE0471
+  Used: false
+- SE_Name: SE0480
+  Used: false
+- SE_Name: SE0481
+  Used: false
+- SE_Name: SE0490
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana075.ks
+    LineNumber: 10
+    LinePreview: '[se buf=0 storage="SE0490"]'
+- SE_Name: SE0491
+  Used: false
+- SE_Name: SE0492
+  Used: false
+- SE_Name: SE0493
+  Used: false
+- SE_Name: SE0493_2
+  Used: false
+- SE_Name: SE0494
+  Used: false
+- SE_Name: SE0494_2
+  Used: false
+- SE_Name: SE0495
+  Used: false
+- SE_Name: SE0495_2
+  Used: false
+- SE_Name: SE0496
+  Used: false
+- SE_Name: SE0497
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana019.ks
+    LineNumber: 464
+    LinePreview: '[se buf=0 storage="SE0497"]'
+- SE_Name: SE0498
+  Used: false
+- SE_Name: SE0499
+  Used: false
+- SE_Name: SE0501
+  Used: false
+- SE_Name: SE0502
+  Used: false
+- SE_Name: SE0503
+  Used: false
+- SE_Name: SE0551
+  Used: false
+- SE_Name: SE0552
+  Used: false
+- SE_Name: SE0560
+  Used: false
+- SE_Name: SE0570
+  Used: false
+- SE_Name: SE0571
+  Used: false
+- SE_Name: SE0572
+  Used: false
+- SE_Name: SE0573
+  Used: false
+- SE_Name: SE0602
+  Used: false
+- SE_Name: SE0603
+  Used: false
+- SE_Name: SE0604
+  Used: false
+- SE_Name: SE0605
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana088.ks
+    LineNumber: 63
+    LinePreview: '[se buf=0 storage="SE0605"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana097.ks
+    LineNumber: 581
+    LinePreview: ;[se buf=0 storage="SE0605"]
+- SE_Name: SE0606
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana036.ks
+    LineNumber: 837
+    LinePreview: ;それっぽくないからない方がいいかぁ[se buf=0 storage="SE0606"]
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana036.ks
+    LineNumber: 988
+    LinePreview: ;それっぽくないからない方がいいかぁ[se buf=0 storage="SE0606"]
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana060.ks
+    LineNumber: 28
+    LinePreview: ;やめとこ[se buf=0 storage="SE0606"]
+- SE_Name: SE0607
+  Used: false
+- SE_Name: SE0608
+  Used: false
+- SE_Name: SE0609
+  Used: false
+- SE_Name: SE0610
+  Used: false
+- SE_Name: SE0610_2
+  Used: false
+- SE_Name: SE0620
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana097.ks
+    LineNumber: 580
+    LinePreview: ;[se buf=0 storage="SE0620"]
+- SE_Name: SE0621
+  Used: false
+- SE_Name: SE0630
+  Used: false
+- SE_Name: SE0670
+  Used: false
+- SE_Name: SE0671
+  Used: false
+- SE_Name: SE0672
+  Used: false
+- SE_Name: SE0673
+  Used: false
+- SE_Name: SE0674
+  Used: false
+- SE_Name: SE0675
+  Used: false
+- SE_Name: SE0676
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana106.ks
+    LineNumber: 8
+    LinePreview: ;[se buf=0 storage="SE0676"]
+- SE_Name: SE0677
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana088.ks
+    LineNumber: 258
+    LinePreview: '[se buf=1 storage="SE0677"]'
+- SE_Name: SE0702
+  Used: false
+- SE_Name: SE0710
+  Used: false
+- SE_Name: SE0721
+  Used: false
+- SE_Name: SE0722
+  Used: false
+- SE_Name: SE0801
+  Used: false
+- SE_Name: SE0820
+  Used: false
+- SE_Name: SE0821
+  Used: false
+- SE_Name: SE0822
+  Used: false
+- SE_Name: SE0823
+  Used: false
+- SE_Name: se098
+  Used: false
+- SE_Name: SE1001
+  Used: false
+- SE_Name: SE1002
+  Used: false
+- SE_Name: SE1003
+  Used: false
+- SE_Name: SE1010
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana089.ks
+    LineNumber: 1161
+    LinePreview: '[se buf=0 storage="SE1010"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana089.ks
+    LineNumber: 1195
+    LinePreview: '[se buf=0 storage="SE1010"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana089.ks
+    LineNumber: 1218
+    LinePreview: '[se buf=0 storage="SE1010"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana089.ks
+    LineNumber: 1221
+    LinePreview: '[se buf=0 storage="SE1010"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana089.ks
+    LineNumber: 1224
+    LinePreview: '[se buf=0 storage="SE1010"]'
+- SE_Name: SE1011
+  Used: false
+- SE_Name: SE1015
+  Used: false
+- SE_Name: SE1016
+  Used: false
+- SE_Name: SE1017
+  Used: false
+- SE_Name: SE1020
+  Used: false
+- SE_Name: SE1021
+  Used: false
+- SE_Name: SE1022
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 2023
+    LinePreview: '[se buf=0 storage="SE1022"]'
+- SE_Name: SE1023
+  Used: false
+- SE_Name: SE1024
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 1957
+    LinePreview: '[se buf=0 storage="SE1024"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 1970
+    LinePreview: '[se buf=0 storage="SE1024"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 2083
+    LinePreview: '[se buf=0 storage="SE1024"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana004.ks
+    LineNumber: 174
+    LinePreview: '[se buf=0 storage="SE1024"]'
+- SE_Name: SE1025
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana105.ks
+    LineNumber: 162
+    LinePreview: '[se buf=0 storage="SE1025"]'
+- SE_Name: SE1026
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 1960
+    LinePreview: '[se buf=1 storage="SE1026"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 1973
+    LinePreview: '[se buf=1 storage="SE1026"]'
+- SE_Name: SE1027
+  Used: false
+- SE_Name: SE1028
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana105.ks
+    LineNumber: 129
+    LinePreview: '[se buf=0 storage="SE1028"]'
+- SE_Name: SE1029
+  Used: false
+- SE_Name: SE1030
+  Used: false
+- SE_Name: SE1031
+  Used: false
+- SE_Name: SE1032
+  Used: false
+- SE_Name: SE1040
+  Used: false
+- SE_Name: SE1050
+  Used: false
+- SE_Name: SE1050_1
+  Used: false
+- SE_Name: SE1051
+  Used: false
+- SE_Name: SE1060
+  Used: false
+- SE_Name: SE1061
+  Used: false
+- SE_Name: SE1062
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana087.ks
+    LineNumber: 157
+    LinePreview: ;[se buf=0 storage="SE1062_2"]
+- SE_Name: SE1062_2
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana087.ks
+    LineNumber: 157
+    LinePreview: ;[se buf=0 storage="SE1062_2"]
+- SE_Name: SE1062_3
+  Used: false
+- SE_Name: SE1062_4
+  Used: false
+- SE_Name: SE1063
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana101.ks
+    LineNumber: 937
+    LinePreview: '[se buf=0 storage="SE1063_2"]'
+- SE_Name: SE1063_2
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana101.ks
+    LineNumber: 937
+    LinePreview: '[se buf=0 storage="SE1063_2"]'
+- SE_Name: SE1063_3
+  Used: false
+- SE_Name: SE1064
+  Used: false
+- SE_Name: SE1065
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana108.ks
+    LineNumber: 164
+    LinePreview: '[se buf=1 storage="SE1065"]'
+- SE_Name: SE1066
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana101.ks
+    LineNumber: 936
+    LinePreview: ;[se buf=0 storage="SE1066"]
+- SE_Name: SE1067
+  Used: false
+- SE_Name: SE1068
+  Used: false
+- SE_Name: SE1069
+  Used: false
+- SE_Name: SE1070
+  Used: false
+- SE_Name: SE1080
+  Used: false
+- SE_Name: SE1081
+  Used: false
+- SE_Name: SE1082
+  Used: false
+- SE_Name: SE1083
+  Used: false
+- SE_Name: SE1085
+  Used: false
+- SE_Name: SE1086
+  Used: false
+- SE_Name: SE1090
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana079.ks
+    LineNumber: 285
+    LinePreview: '[se buf=0 storage="SE1090"]'
+- SE_Name: SE1091
+  Used: false
+- SE_Name: SE1092
+  Used: false
+- SE_Name: SE1092_2
+  Used: false
+- SE_Name: SE1093
+  Used: false
+- SE_Name: SE1093_1
+  Used: false
+- SE_Name: SE1093_2
+  Used: false
+- SE_Name: SE1094
+  Used: false
+- SE_Name: SE1095
+  Used: false
+- SE_Name: SE1096
+  Used: false
+- SE_Name: SE1097
+  Used: false
+- SE_Name: SE1098
+  Used: false
+- SE_Name: SE1099
+  Used: false
+- SE_Name: SE1099_2
+  Used: false
+- SE_Name: SE1101
+  Used: false
+- SE_Name: SE1102
+  Used: false
+- SE_Name: SE1103
+  Used: false
+- SE_Name: SE1104
+  Used: false
+- SE_Name: SE1110
+  Used: false
+- SE_Name: SE1111
+  Used: false
+- SE_Name: SE1120
+  Used: false
+- SE_Name: SE1121
+  Used: false
+- SE_Name: SE1122
+  Used: false
+- SE_Name: SE1140
+  Used: false
+- SE_Name: SE1141
+  Used: false
+- SE_Name: SE1150
+  Used: false
+- SE_Name: SE1160
+  Used: false
+- SE_Name: SE1161
+  Used: false
+- SE_Name: SE1162
+  Used: false
+- SE_Name: SE1163
+  Used: false
+- SE_Name: SE1180
+  Used: false
+- SE_Name: SE1190
+  Used: false
+- SE_Name: SE1201
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana064.ks
+    LineNumber: 391
+    LinePreview: '[se buf=0 storage="SE1201"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana087.ks
+    LineNumber: 265
+    LinePreview: '[se buf=0 storage="SE1201"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana092.ks
+    LineNumber: 1196
+    LinePreview: '[se buf=0 storage="SE1201"]'
+- SE_Name: SE1202
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 1818
+    LinePreview: '[se buf=0 storage="SE1202"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 2124
+    LinePreview: '[se buf=0 storage="SE1202"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana013.ks
+    LineNumber: 105
+    LinePreview: '[se buf=0 storage="SE1202"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana048.ks
+    LineNumber: 422
+    LinePreview: '[se buf=0 storage="SE1202"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana054.ks
+    LineNumber: 504
+    LinePreview: '[se buf=0 storage="SE1202"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana056.ks
+    LineNumber: 384
+    LinePreview: '[se buf=0 storage="SE1202"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana084.ks
+    LineNumber: 316
+    LinePreview: '[se buf=0 storage="SE1202"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana087.ks
+    LineNumber: 195
+    LinePreview: '[se buf=0 storage="SE1202"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana097.ks
+    LineNumber: 280
+    LinePreview: '[se buf=0 storage="SE1202"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana101.ks
+    LineNumber: 1823
+    LinePreview: '[se buf=0 storage="SE1202"]'
+- SE_Name: SE1203
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana073.ks
+    LineNumber: 909
+    LinePreview: '[se buf=0 storage="SE1203"]'
+- SE_Name: SE1212
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana084.ks
+    LineNumber: 282
+    LinePreview: '[se buf=0 storage="SE1212"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana120.ks
+    LineNumber: 107
+    LinePreview: '[se buf=0 storage="SE1212"]'
+- SE_Name: SE1250
+  Used: false
+- SE_Name: SE1251
+  Used: false
+- SE_Name: SE1252
+  Used: false
+- SE_Name: SE1253
+  Used: false
+- SE_Name: SE1254
+  Used: false
+- SE_Name: SE1255
+  Used: false
+- SE_Name: SE1256
+  Used: false
+- SE_Name: SE1257
+  Used: false
+- SE_Name: SE1260
+  Used: false
+- SE_Name: SE1261
+  Used: false
+- SE_Name: SE1262
+  Used: false
+- SE_Name: SE1270
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana064.ks
+    LineNumber: 182
+    LinePreview: '[se buf=0 storage="SE1270"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana064.ks
+    LineNumber: 282
+    LinePreview: '[se buf=0 storage="SE1270"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana081.ks
+    LineNumber: 152
+    LinePreview: '[se buf=1 storage="SE1270"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana084.ks
+    LineNumber: 350
+    LinePreview: '[se buf=0 storage="SE1270_2"]'
+- SE_Name: SE1270_2
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana084.ks
+    LineNumber: 350
+    LinePreview: '[se buf=0 storage="SE1270_2"]'
+- SE_Name: SE1271
+  Used: false
+- SE_Name: SE1272
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\_arcana_macro.ks
+    LineNumber: 294
+    LinePreview: '; Suggested SE: SE1272'
+- SE_Name: SE1273
+  Used: false
+- SE_Name: SE1274
+  Used: false
+- SE_Name: SE1275
+  Used: false
+- SE_Name: SE1276
+  Used: false
+- SE_Name: SE1279
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana004.ks
+    LineNumber: 103
+    LinePreview: '[se buf=0 storage="SE1279"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana004.ks
+    LineNumber: 111
+    LinePreview: '[se buf=0 storage="SE1279"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana004.ks
+    LineNumber: 306
+    LinePreview: '[se buf=0 storage="SE1279"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana004.ks
+    LineNumber: 332
+    LinePreview: '[se buf=0 storage="SE1279"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana010.ks
+    LineNumber: 182
+    LinePreview: '[se buf=0 storage="SE1279"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana033.ks
+    LineNumber: 705
+    LinePreview: '[se buf=0 storage="SE1279"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana082.ks
+    LineNumber: 156
+    LinePreview: '[se buf=0 storage="SE1279"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana082.ks
+    LineNumber: 247
+    LinePreview: '[se buf=0 storage="SE1279"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana082.ks
+    LineNumber: 339
+    LinePreview: '[se buf=0 storage="SE1279"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana104.ks
+    LineNumber: 210
+    LinePreview: '[se buf=0 storage="SE1279"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\_arcana_macro.ks
+    LineNumber: 276
+    LinePreview: ;	[Magic_カクエンミズチ * se="SE1279" image="xig03_cut007_04"]
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\_arcana_macro.ks
+    LineNumber: 280
+    LinePreview: '[se buf=0 storage="SE1279"]'
+- SE_Name: SE1280
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana101.ks
+    LineNumber: 910
+    LinePreview: '[se buf=0 storage="SE1280"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana101.ks
+    LineNumber: 1134
+    LinePreview: '[se buf=0 storage="SE1280"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana108.ks
+    LineNumber: 197
+    LinePreview: '[se buf=0 storage="SE1280"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana108.ks
+    LineNumber: 222
+    LinePreview: '[se buf=0 storage="SE1280"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana122.ks
+    LineNumber: 186
+    LinePreview: '[se buf=0 storage="SE1280"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana125.ks
+    LineNumber: 142
+    LinePreview: '[se buf=0 storage="SE1280"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana128.ks
+    LineNumber: 137
+    LinePreview: '[se buf=0 storage="SE1280"]'
+- SE_Name: SE1281
+  Used: false
+- SE_Name: SE1282
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana101.ks
+    LineNumber: 736
+    LinePreview: '[se buf=0 storage="SE1282"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana101.ks
+    LineNumber: 1183
+    LinePreview: '[se buf=0 storage="SE1282"]'
+- SE_Name: SE1290
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana090.ks
+    LineNumber: 288
+    LinePreview: '[se buf=0 storage="SE1290"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana092.ks
+    LineNumber: 1167
+    LinePreview: '[se buf=0 storage="SE1290"]'
+- SE_Name: SE1291
+  Used: false
+- SE_Name: SE1301
+  Used: false
+- SE_Name: SE1302
+  Used: false
+- SE_Name: SE1303
+  Used: false
+- SE_Name: SE1305
+  Used: false
+- SE_Name: SE1306
+  Used: false
+- SE_Name: SE1350
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana086.ks
+    LineNumber: 637
+    LinePreview: '[se buf=0 storage="SE1350"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana086.ks
+    LineNumber: 738
+    LinePreview: '[se buf=0 storage="SE1350"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana086.ks
+    LineNumber: 811
+    LinePreview: '[se buf=0 storage="SE1350"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana086.ks
+    LineNumber: 892
+    LinePreview: '[se buf=0 storage="SE1350"]'
+- SE_Name: SE1360
+  Used: false
+- SE_Name: SE1361
+  Used: false
+- SE_Name: SE1362
+  Used: false
+- SE_Name: SE1363
+  Used: false
+- SE_Name: SE1364
+  Used: false
+- SE_Name: SE1365
+  Used: false
+- SE_Name: SE1366
+  Used: false
+- SE_Name: SE1366_2
+  Used: false
+- SE_Name: SE1401
+  Used: false
+- SE_Name: SE1402
+  Used: false
+- SE_Name: SE1403
+  Used: false
+- SE_Name: SE1404
+  Used: false
+- SE_Name: SE1404_2
+  Used: false
+- SE_Name: SE1404_3
+  Used: false
+- SE_Name: SE1404_4
+  Used: false
+- SE_Name: SE1404_5
+  Used: false
+- SE_Name: SE1404_6
+  Used: false
+- SE_Name: SE1405
+  Used: false
+- SE_Name: SE1406
+  Used: false
+- SE_Name: SE1407
+  Used: false
+- SE_Name: SE1408
+  Used: false
+- SE_Name: SE1409
+  Used: false
+- SE_Name: SE1410
+  Used: false
+- SE_Name: SE1411
+  Used: false
+- SE_Name: SE1412
+  Used: false
+- SE_Name: SE1413
+  Used: false
+- SE_Name: SE1420
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 232
+    LinePreview: '[se buf=0 storage="SE1420"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 242
+    LinePreview: '[se buf=0 storage="SE1420"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 256
+    LinePreview: '[se buf=0 storage="SE1420"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 1738
+    LinePreview: '[se buf=0 storage="SE1420"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 1748
+    LinePreview: '[se buf=0 storage="SE1420"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 1759
+    LinePreview: '[se buf=0 storage="SE1420"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana007.ks
+    LineNumber: 295
+    LinePreview: '[se buf=0 storage="SE1420"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana024.ks
+    LineNumber: 48
+    LinePreview: '[se buf=0 storage="SE1420"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana026.ks
+    LineNumber: 46
+    LinePreview: '[se buf=0 storage="SE1420"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana028.ks
+    LineNumber: 44
+    LinePreview: '[se buf=0 storage="SE1420"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana033.ks
+    LineNumber: 1232
+    LinePreview: '[se buf=0 storage="SE1420"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana046.ks
+    LineNumber: 458
+    LinePreview: '[se buf=0 storage="SE1420"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana046.ks
+    LineNumber: 466
+    LinePreview: '[se buf=0 storage="SE1420"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana122.ks
+    LineNumber: 251
+    LinePreview: '[se buf=0 storage="SE1420"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana125.ks
+    LineNumber: 185
+    LinePreview: '[se buf=0 storage="SE1420"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana128.ks
+    LineNumber: 179
+    LinePreview: '[se buf=0 storage="SE1420"]'
+- SE_Name: SE1450
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana101.ks
+    LineNumber: 179
+    LinePreview: '[se buf=1 storage="SE1450"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana101.ks
+    LineNumber: 200
+    LinePreview: '[se buf=1 storage="SE1450"]'
+- SE_Name: SE1451
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana101.ks
+    LineNumber: 151
+    LinePreview: '[se buf=0 storage="SE1451"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana101.ks
+    LineNumber: 199
+    LinePreview: '[se buf=0 storage="SE1451"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana127.ks
+    LineNumber: 14
+    LinePreview: '[se storage="SE1451"]'
+- SE_Name: SE1460
+  Used: false
+- SE_Name: SE1470
+  Used: false
+- SE_Name: SE1501
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana033.ks
+    LineNumber: 668
+    LinePreview: '[se buf=0 storage="SE1501"]'
+- SE_Name: SE1502
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana004.ks
+    LineNumber: 402
+    LinePreview: '[se buf=0 storage="SE1502"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana108.ks
+    LineNumber: 432
+    LinePreview: '[se buf=1 storage="SE1502"]'
+- SE_Name: SE1503
+  Used: false
+- SE_Name: SE1504
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana048.ks
+    LineNumber: 294
+    LinePreview: '[se buf=0 storage="SE1504"]'
+- SE_Name: SE1505
+  Used: false
+- SE_Name: SE1506
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana108.ks
+    LineNumber: 430
+    LinePreview: '[se buf=0 storage="SE1506"]'
+- SE_Name: SE1507
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 2130
+    LinePreview: '[se buf=1 storage="SE1507"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana101.ks
+    LineNumber: 710
+    LinePreview: '[se buf=0 storage="SE1507"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana104.ks
+    LineNumber: 272
+    LinePreview: '[se buf=0 storage="SE1507"]'
+- SE_Name: SE1508
+  Used: false
+- SE_Name: SE1509
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\_arcana_macro.ks
+    LineNumber: 295
+    LinePreview: ;	[Magic_カクエンミズチ * se="SE1509" image="xig03_cut001_03"]
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\_arcana_macro.ks
+    LineNumber: 301
+    LinePreview: '[se buf=0 storage="SE1509"]'
+- SE_Name: SE1510
+  Used: false
+- SE_Name: SE1520
+  Used: false
+- SE_Name: SE1521
+  Used: false
+- SE_Name: SE1550
+  Used: false
+- SE_Name: SE1551
+  Used: false
+- SE_Name: SE1552
+  Used: false
+- SE_Name: SE1553
+  Used: false
+- SE_Name: SE1554
+  Used: false
+- SE_Name: SE1555
+  Used: false
+- SE_Name: SE2001
+  Used: false
+- SE_Name: SE2002
+  Used: false
+- SE_Name: SE2010
+  Used: false
+- SE_Name: SE2011
+  Used: false
+- SE_Name: SE2020
+  Used: false
+- SE_Name: SE2030
+  Used: false
+- SE_Name: SE2040
+  Used: false
+- SE_Name: SE2041
+  Used: false
+- SE_Name: SE2050
+  Used: false
+- SE_Name: SE2051
+  Used: false
+- SE_Name: SE2052
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana114.ks
+    LineNumber: 215
+    LinePreview: ;[se buf=1 storage="SE2052"]
+- SE_Name: SE2055
+  Used: false
+- SE_Name: SE2057
+  Used: false
+- SE_Name: SE2060
+  Used: false
+- SE_Name: SE2061
+  Used: false
+- SE_Name: SE2062
+  Used: false
+- SE_Name: SE2063
+  Used: false
+- SE_Name: SE2063_2
+  Used: false
+- SE_Name: SE2063_3
+  Used: false
+- SE_Name: SE2063_4
+  Used: false
+- SE_Name: SE2063_5
+  Used: false
+- SE_Name: SE2064
+  Used: false
+- SE_Name: SE2070
+  Used: false
+- SE_Name: SE2071
+  Used: false
+- SE_Name: SE2081
+  Used: false
+- SE_Name: SE2082
+  Used: false
+- SE_Name: SE2090
+  Used: false
+- SE_Name: SE2091
+  Used: false
+- SE_Name: SE2092
+  Used: false
+- SE_Name: SE2093
+  Used: false
+- SE_Name: SE2094
+  Used: false
+- SE_Name: SE2095
+  Used: false
+- SE_Name: SE2096
+  Used: false
+- SE_Name: SE2097
+  Used: false
+- SE_Name: SE2101
+  Used: false
+- SE_Name: SE2102
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana019.ks
+    LineNumber: 457
+    LinePreview: '[se buf=0 storage="SE2102"]'
+- SE_Name: SE2103
+  Used: false
+- SE_Name: SE2104
+  Used: false
+- SE_Name: SE2105
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana104.ks
+    LineNumber: 301
+    LinePreview: '[se buf=0 storage="SE2105"]'
+- SE_Name: SE2106
+  Used: false
+- SE_Name: SE2107
+  Used: false
+- SE_Name: SE2201
+  Used: false
+- SE_Name: SE2202
+  Used: false
+- SE_Name: SE2203
+  Used: false
+- SE_Name: SE2204
+  Used: false
+- SE_Name: SE2205
+  Used: false
+- SE_Name: SE2206
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana088.ks
+    LineNumber: 251
+    LinePreview: '[se buf=0 storage="SE2206"]'
+- SE_Name: SE2402
+  Used: false
+- SE_Name: SE2501
+  Used: false
+- SE_Name: SE2502
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana092.ks
+    LineNumber: 792
+    LinePreview: '[se storage="SE2502"]'
+- SE_Name: SE2503
+  Used: false
+- SE_Name: SE3001
+  Used: false
+- SE_Name: SE3002
+  Used: false
+- SE_Name: SE3003
+  Used: false
+- SE_Name: SE3004
+  Used: false
+- SE_Name: SE3005
+  Used: false
+- SE_Name: SE3020
+  Used: false
+- SE_Name: SE3021
+  Used: false
+- SE_Name: SE3022
+  Used: false
+- SE_Name: SE3023
+  Used: false
+- SE_Name: SE3024
+  Used: false
+- SE_Name: SE3025
+  Used: false
+- SE_Name: SE3026
+  Used: false
+- SE_Name: SE3027
+  Used: false
+- SE_Name: SE3028
+  Used: false
+- SE_Name: SE3029
+  Used: false
+- SE_Name: SE3030
+  Used: false
+- SE_Name: SE3050
+  Used: false
+- SE_Name: SE3051
+  Used: false
+- SE_Name: SE3060
+  Used: false
+- SE_Name: SE3061
+  Used: false
+- SE_Name: SE3062
+  Used: false
+- SE_Name: SE3070
+  Used: false
+- SE_Name: SE3101
+  Used: false
+- SE_Name: SE3102
+  Used: false
+- SE_Name: SE3110
+  Used: false
+- SE_Name: SE3110_2
+  Used: false
+- SE_Name: SE3111
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana042.ks
+    LineNumber: 77
+    LinePreview: '[se buf=0 storage="SE3111_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana042.ks
+    LineNumber: 101
+    LinePreview: '[se buf=0 storage="SE3111_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana075.ks
+    LineNumber: 151
+    LinePreview: '[se buf=1 storage="SE3111_2"]'
+- SE_Name: SE3111_2
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana042.ks
+    LineNumber: 77
+    LinePreview: '[se buf=0 storage="SE3111_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana042.ks
+    LineNumber: 101
+    LinePreview: '[se buf=0 storage="SE3111_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana075.ks
+    LineNumber: 151
+    LinePreview: '[se buf=1 storage="SE3111_2"]'
+- SE_Name: SE3112
+  Used: false
+- SE_Name: SE3113
+  Used: false
+- SE_Name: SE3150
+  Used: false
+- SE_Name: SE3151
+  Used: false
+- SE_Name: SE3201
+  Used: false
+- SE_Name: SE3202
+  Used: false
+- SE_Name: SE3203
+  Used: false
+- SE_Name: SE320_2
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana055.ks
+    LineNumber: 442
+    LinePreview: '[se storage="SE320_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana077.ks
+    LineNumber: 642
+    LinePreview: '[se buf=0 storage="SE320_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana099.ks
+    LineNumber: 148
+    LinePreview: '[se buf=0 storage="SE320_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana101.ks
+    LineNumber: 1400
+    LinePreview: '[se buf=0 storage="SE320_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana104.ks
+    LineNumber: 89
+    LinePreview: '[se buf=0 storage="SE320_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana104.ks
+    LineNumber: 307
+    LinePreview: '[se buf=0 storage="SE320_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana126.ks
+    LineNumber: 161
+    LinePreview: '[se buf=0 storage="SE320_2"]'
+- SE_Name: SE3210
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana047.ks
+    LineNumber: 1016
+    LinePreview: '[se buf=0 storage="SE3210"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana047.ks
+    LineNumber: 1080
+    LinePreview: '[se buf=0 storage="SE3210"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana089.ks
+    LineNumber: 274
+    LinePreview: '[se buf=0 storage="SE3210"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana089.ks
+    LineNumber: 288
+    LinePreview: '[se buf=0 storage="SE3210"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana089.ks
+    LineNumber: 635
+    LinePreview: '[se buf=0 storage="SE3210"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana089.ks
+    LineNumber: 653
+    LinePreview: '[se buf=0 storage="SE3210"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana110.ks
+    LineNumber: 631
+    LinePreview: '[se buf=3 storage="SE3210"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana110.ks
+    LineNumber: 706
+    LinePreview: '[se buf=3 storage="SE3210"]'
+- SE_Name: SE3220
+  Used: false
+- SE_Name: SE3230
+  Used: false
+- SE_Name: SE3231
+  Used: false
+- SE_Name: SE3232
+  Used: false
+- SE_Name: SE3301
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_seFileDef.ks
+    LineNumber: 10
+    LinePreview: "[eval exp=\"sf.SE触手伸びる = 'SE3301'\"]"
+- SE_Name: SE3302
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana047.ks
+    LineNumber: 1031
+    LinePreview: '[se buf=0 storage="SE3302"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana089.ks
+    LineNumber: 361
+    LinePreview: '[se buf=0 storage="SE3302"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana089.ks
+    LineNumber: 600
+    LinePreview: '[se buf=0 storage="SE3302"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana092.ks
+    LineNumber: 1405
+    LinePreview: '[se buf=0 storage="SE3302"]'
+- SE_Name: SE3303
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana047.ks
+    LineNumber: 156
+    LinePreview: '[se buf=1 storage="SE3303"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana063.ks
+    LineNumber: 1370
+    LinePreview: '[se buf=0 storage="SE3303"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana063.ks
+    LineNumber: 1387
+    LinePreview: '[se buf=0 storage="SE3303"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana063.ks
+    LineNumber: 1450
+    LinePreview: '[se buf=0 storage="SE3303"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana063.ks
+    LineNumber: 1461
+    LinePreview: '[se buf=0 storage="SE3303"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana086.ks
+    LineNumber: 280
+    LinePreview: '[se storage="SE3303"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana086.ks
+    LineNumber: 482
+    LinePreview: '[se storage="SE3303"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana092.ks
+    LineNumber: 360
+    LinePreview: '[se storage="SE3303"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana092.ks
+    LineNumber: 964
+    LinePreview: '[se storage="SE3303"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana092.ks
+    LineNumber: 1319
+    LinePreview: '[evcg射精フラ storage="ev35e" se="SE3303"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana092.ks
+    LineNumber: 1681
+    LinePreview: '[se buf=1 storage="SE3303"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana092.ks
+    LineNumber: 1718
+    LinePreview: '[se buf=1 storage="SE3303"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana092.ks
+    LineNumber: 1726
+    LinePreview: '[se buf=1 storage="SE3303"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana110.ks
+    LineNumber: 705
+    LinePreview: '[se storage="SE3303"]'
+- SE_Name: SE3304
+  Used: false
+- SE_Name: SE3305
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana047.ks
+    LineNumber: 668
+    LinePreview: '[se buf=3 storage="SE3305"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana047.ks
+    LineNumber: 925
+    LinePreview: '[se storage="SE3305"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana092.ks
+    LineNumber: 659
+    LinePreview: '[se storage="SE3305"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana092.ks
+    LineNumber: 1650
+    LinePreview: '[se storage="SE3305"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana092.ks
+    LineNumber: 1682
+    LinePreview: '[se buf=2 storage="SE3305"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana092.ks
+    LineNumber: 1719
+    LinePreview: '[se buf=2 storage="SE3305"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana092.ks
+    LineNumber: 1727
+    LinePreview: '[se buf=2 storage="SE3305"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana124.ks
+    LineNumber: 521
+    LinePreview: '[se storage="SE3305"]'
+- SE_Name: SE3306
+  Used: false
+- SE_Name: SE3307
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana047.ks
+    LineNumber: 862
+    LinePreview: '[se storage="SE3307"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana047.ks
+    LineNumber: 981
+    LinePreview: '[se storage="SE3307"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana047.ks
+    LineNumber: 1118
+    LinePreview: '[se storage="SE3307"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana055.ks
+    LineNumber: 418
+    LinePreview: '[se storage="SE3307"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana063.ks
+    LineNumber: 1422
+    LinePreview: '[se buf=0 storage="SE3307"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana063.ks
+    LineNumber: 1479
+    LinePreview: '[se buf=0 storage="SE3307"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana092.ks
+    LineNumber: 251
+    LinePreview: '[se storage="SE3307"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana092.ks
+    LineNumber: 965
+    LinePreview: ;[se storage="SE3307"]
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana092.ks
+    LineNumber: 1538
+    LinePreview: '[se storage=SE3307]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana110.ks
+    LineNumber: 630
+    LinePreview: '[se storage="SE3307"]'
+- SE_Name: SE3310
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana063.ks
+    LineNumber: 1547
+    LinePreview: '[se buf=0 storage="SE3310"]'
+- SE_Name: SE3311
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana047.ks
+    LineNumber: 71
+    LinePreview: '[se buf=1 storage="SE3311"]'
+- SE_Name: SE3320
+  Used: false
+- SE_Name: SE3321
+  Used: false
+- SE_Name: SE3322
+  Used: false
+- SE_Name: SE3323
+  Used: false
+- SE_Name: SE3324
+  Used: false
+- SE_Name: SE3325
+  Used: false
+- SE_Name: SE3326
+  Used: false
+- SE_Name: SE3350
+  Used: false
+- SE_Name: SE3351
+  Used: false
+- SE_Name: SE3352
+  Used: false
+- SE_Name: SE3353
+  Used: false
+- SE_Name: SE3354
+  Used: false
+- SE_Name: SE3355
+  Used: false
+- SE_Name: SE3356
+  Used: false
+- SE_Name: SE3360
+  Used: false
+- SE_Name: SE3401
+  Used: false
+- SE_Name: SE3402
+  Used: false
+- SE_Name: SE3403
+  Used: false
+- SE_Name: SE3404
+  Used: false
+- SE_Name: SE3405
+  Used: false
+- SE_Name: SE3406
+  Used: false
+- SE_Name: SE3407
+  Used: false
+- SE_Name: SE3408
+  Used: false
+- SE_Name: SE3420
+  Used: false
+- SE_Name: SE3421
+  Used: false
+- SE_Name: SE3422
+  Used: false
+- SE_Name: SE3423
+  Used: false
+- SE_Name: SE3430
+  Used: false
+- SE_Name: SE3431
+  Used: false
+- SE_Name: SE3432
+  Used: false
+- SE_Name: SE3433
+  Used: false
+- SE_Name: SE3434
+  Used: false
+- SE_Name: SE3435
+  Used: false
+- SE_Name: SE3436
+  Used: false
+- SE_Name: SE3437
+  Used: false
+- SE_Name: SE3438
+  Used: false
+- SE_Name: SE3439
+  Used: false
+- SE_Name: SE3500
+  Used: false
+- SE_Name: SE3502
+  Used: false
+- SE_Name: SE3503
+  Used: false
+- SE_Name: SE3504
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana088.ks
+    LineNumber: 397
+    LinePreview: '[se buf=0 storage="SE3504"]'
+- SE_Name: SE3530
+  Used: false
+- SE_Name: SE3531
+  Used: false
+- SE_Name: SE3550
+  Used: false
+- SE_Name: SE3600
+  Used: false
+- SE_Name: SE3601
+  Used: false
+- SE_Name: SE3602
+  Used: false
+- SE_Name: SE3603
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 1500
+    LinePreview: '[se storage="SE3603"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana048.ks
+    LineNumber: 118
+    LinePreview: '[se buf=0 storage="SE3603"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana058.ks
+    LineNumber: 18
+    LinePreview: '[se buf=0 storage="SE3603"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana064.ks
+    LineNumber: 123
+    LinePreview: ;[se buf=0 storage="SE3603"]
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana064.ks
+    LineNumber: 150
+    LinePreview: '[se buf=0 storage="SE3603"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana101.ks
+    LineNumber: 1594
+    LinePreview: '[se buf=0 storage="SE3603"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana108.ks
+    LineNumber: 98
+    LinePreview: '[se buf=0 storage="SE3603"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana108.ks
+    LineNumber: 105
+    LinePreview: '[se buf=0 storage="SE3603"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana108.ks
+    LineNumber: 113
+    LinePreview: '[se buf=0 storage="SE3603"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana108.ks
+    LineNumber: 263
+    LinePreview: '[se buf=0 storage="SE3603"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\_arcana_macro.ks
+    LineNumber: 320
+    LinePreview: '[se buf=0 storage="SE3603"]'
+- SE_Name: SE3604
+  Used: false
+- SE_Name: SE3605
+  Used: false
+- SE_Name: SE3606
+  Used: false
+- SE_Name: SE3607
+  Used: false
+- SE_Name: SE3608
+  Used: false
+- SE_Name: SE3609
+  Used: false
+- SE_Name: SE4001
+  Used: false
+- SE_Name: SE4101
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_seFileDef.ks
+    LineNumber: 6
+    LinePreview: ;[eval exp="sf.SE触手挿入 = 'SE4101'"]
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana055.ks
+    LineNumber: 551
+    LinePreview: '[se buf=0 storage="SE4101"]'
+- SE_Name: SE4102
+  Used: false
+- SE_Name: SE4103
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana121.ks
+    LineNumber: 194
+    LinePreview: '[se storage=SE4103_3]'
+- SE_Name: SE4103_2
+  Used: false
+- SE_Name: SE4103_3
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana121.ks
+    LineNumber: 194
+    LinePreview: '[se storage=SE4103_3]'
+- SE_Name: SE4110
+  Used: false
+- SE_Name: SE4111
+  Used: false
+- SE_Name: SE4120
+  Used: false
+- SE_Name: SE4121
+  Used: false
+- SE_Name: SE4121_2
+  Used: false
+- SE_Name: SE4121_3
+  Used: false
+- SE_Name: SE4122
+  Used: false
+- SE_Name: SE4122_2
+  Used: false
+- SE_Name: SE4123
+  Used: false
+- SE_Name: SE4123_2
+  Used: false
+- SE_Name: SE4124
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana051.ks
+    LineNumber: 864
+    LinePreview: ;[se buf=0 storage="SE4124"]
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana055.ks
+    LineNumber: 574
+    LinePreview: '[se buf=0 storage="SE4124"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana059.ks
+    LineNumber: 1075
+    LinePreview: '[se buf=0 storage="SE4124"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana074.ks
+    LineNumber: 318
+    LinePreview: '[se buf=0 storage="SE4124"]'
+- SE_Name: SE4124_2
+  Used: false
+- SE_Name: SE4124_3
+  Used: false
+- SE_Name: SE4125
+  Used: false
+- SE_Name: SE4125_2
+  Used: false
+- SE_Name: SE4126
+  Used: false
+- SE_Name: SE4126_2
+  Used: false
+- SE_Name: SE4127
+  Used: false
+- SE_Name: SE4127_2
+  Used: false
+- SE_Name: SE4127_3
+  Used: false
+- SE_Name: SE4128
+  Used: false
+- SE_Name: SE4128_2
+  Used: false
+- SE_Name: SE4129
+  Used: false
+- SE_Name: SE4129_2
+  Used: false
+- SE_Name: SE4129_3
+  Used: false
+- SE_Name: SE4130
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana059.ks
+    LineNumber: 257
+    LinePreview: '[se buf=1 storage="SE4130" loop]'
+- SE_Name: SE4131
+  Used: false
+- SE_Name: SE4140
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana047.ks
+    LineNumber: 513
+    LinePreview: '[se buf=3 storage="SE4140"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana051.ks
+    LineNumber: 90
+    LinePreview: '[se buf=0 storage="SE4140"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana051.ks
+    LineNumber: 225
+    LinePreview: '[se buf=1 storage="SE4140_2" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana051.ks
+    LineNumber: 429
+    LinePreview: '[se buf=1 storage="SE4140_2" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana051.ks
+    LineNumber: 1053
+    LinePreview: '[se buf=0 storage="SE4140"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana055.ks
+    LineNumber: 501
+    LinePreview: '[se buf=0 storage="SE4140"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana055.ks
+    LineNumber: 721
+    LinePreview: '[se buf=0 storage="SE4140"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana055.ks
+    LineNumber: 936
+    LinePreview: '[se buf=0 storage="SE4140"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana059.ks
+    LineNumber: 1235
+    LinePreview: '[se buf=0 storage="SE4140"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana067.ks
+    LineNumber: 317
+    LinePreview: ;[se buf=1 storage="SE4140_2" loop]
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana067.ks
+    LineNumber: 318
+    LinePreview: '[se buf=0 storage="SE4140"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana067.ks
+    LineNumber: 347
+    LinePreview: '[se buf=1 storage="SE4140_2" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana067.ks
+    LineNumber: 1229
+    LinePreview: '[se buf=0 storage="SE4140"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana067.ks
+    LineNumber: 1761
+    LinePreview: '[se buf=0 storage="SE4140"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana074.ks
+    LineNumber: 19
+    LinePreview: '[se buf=0 storage="SE4140"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana076.ks
+    LineNumber: 162
+    LinePreview: '[se buf=1 storage="SE4140_2" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana076.ks
+    LineNumber: 592
+    LinePreview: '[se buf=0 storage="SE4140"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana076.ks
+    LineNumber: 907
+    LinePreview: '[se buf=0 storage="SE4140"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana080.ks
+    LineNumber: 229
+    LinePreview: '[se buf=0 storage="SE4140"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana080.ks
+    LineNumber: 304
+    LinePreview: '[se buf=0 storage="SE4140"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana089.ks
+    LineNumber: 1383
+    LinePreview: '[se buf=0 storage="SE4140"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana092.ks
+    LineNumber: 1240
+    LinePreview: '[se buf=0 storage="SE4140"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana098.ks
+    LineNumber: 105
+    LinePreview: '[se buf=0 storage="SE4140"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana098.ks
+    LineNumber: 141
+    LinePreview: '[se buf=1 storage="SE4140_2" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana098.ks
+    LineNumber: 636
+    LinePreview: '[se buf=1 storage="SE4140_4" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana103.ks
+    LineNumber: 356
+    LinePreview: '[se buf=0 storage="SE4140"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana103.ks
+    LineNumber: 499
+    LinePreview: '[se buf=0 storage="SE4140"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana113.ks
+    LineNumber: 243
+    LinePreview: '[se buf=1 storage="SE4140_2" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana113.ks
+    LineNumber: 546
+    LinePreview: '[se buf=1 storage="SE4140_4" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana115.ks
+    LineNumber: 548
+    LinePreview: '[se buf=1 storage="SE4140_2" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana117.ks
+    LineNumber: 707
+    LinePreview: ;[se buf=0 storage="SE4140"]
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana121.ks
+    LineNumber: 390
+    LinePreview: '[se buf=0 storage="SE4140"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana121.ks
+    LineNumber: 394
+    LinePreview: '[se buf=1 storage="SE4140_4" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana121.ks
+    LineNumber: 817
+    LinePreview: '[se buf=0 storage="SE4140"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana121.ks
+    LineNumber: 877
+    LinePreview: '[se buf=0 storage="SE4140"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana121.ks
+    LineNumber: 1302
+    LinePreview: '[se buf=0 storage="SE4140"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana124.ks
+    LineNumber: 886
+    LinePreview: '[se buf=0 storage="SE4140"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana124.ks
+    LineNumber: 1133
+    LinePreview: '[se buf=0 storage="SE4140"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana127.ks
+    LineNumber: 1109
+    LinePreview: '[se buf=0 storage="SE4140"]'
+- SE_Name: SE4140_2
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana051.ks
+    LineNumber: 225
+    LinePreview: '[se buf=1 storage="SE4140_2" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana051.ks
+    LineNumber: 429
+    LinePreview: '[se buf=1 storage="SE4140_2" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana067.ks
+    LineNumber: 317
+    LinePreview: ;[se buf=1 storage="SE4140_2" loop]
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana067.ks
+    LineNumber: 347
+    LinePreview: '[se buf=1 storage="SE4140_2" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana076.ks
+    LineNumber: 162
+    LinePreview: '[se buf=1 storage="SE4140_2" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana098.ks
+    LineNumber: 141
+    LinePreview: '[se buf=1 storage="SE4140_2" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana113.ks
+    LineNumber: 243
+    LinePreview: '[se buf=1 storage="SE4140_2" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana115.ks
+    LineNumber: 548
+    LinePreview: '[se buf=1 storage="SE4140_2" loop]'
+- SE_Name: SE4140_3
+  Used: false
+- SE_Name: SE4140_4
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana098.ks
+    LineNumber: 636
+    LinePreview: '[se buf=1 storage="SE4140_4" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana113.ks
+    LineNumber: 546
+    LinePreview: '[se buf=1 storage="SE4140_4" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana121.ks
+    LineNumber: 394
+    LinePreview: '[se buf=1 storage="SE4140_4" loop]'
+- SE_Name: SE4150
+  Used: false
+- SE_Name: SE4151
+  Used: false
+- SE_Name: SE4152
+  Used: false
+- SE_Name: SE4152_10
+  Used: false
+- SE_Name: SE4152_2
+  Used: false
+- SE_Name: SE4152_3
+  Used: false
+- SE_Name: SE4152_4
+  Used: false
+- SE_Name: SE4152_5
+  Used: false
+- SE_Name: SE4152_6
+  Used: false
+- SE_Name: SE4152_7
+  Used: false
+- SE_Name: SE4152_8
+  Used: false
+- SE_Name: SE4152_9
+  Used: false
+- SE_Name: SE4153
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_seFileDef.ks
+    LineNumber: 27
+    LinePreview: ;[eval exp="sf.SE射精_中_人_長 = 'SE4153_2'"]
+- SE_Name: SE4153_2
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_seFileDef.ks
+    LineNumber: 27
+    LinePreview: ;[eval exp="sf.SE射精_中_人_長 = 'SE4153_2'"]
+- SE_Name: SE4153_3
+  Used: false
+- SE_Name: SE4153_4
+  Used: false
+- SE_Name: SE4153_5
+  Used: false
+- SE_Name: SE4153_6
+  Used: false
+- SE_Name: SE4153_7
+  Used: false
+- SE_Name: SE4153_8
+  Used: false
+- SE_Name: SE4154
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_seFileDef.ks
+    LineNumber: 14
+    LinePreview: "[eval exp=\"sf.SE射精_中_人外_短 = 'SE4154'\"]"
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_seFileDef.ks
+    LineNumber: 15
+    LinePreview: "[eval exp=\"sf.SE射精_中_人外_長 = 'SE4154_12'\"]"
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_seFileDef.ks
+    LineNumber: 25
+    LinePreview: ;[eval exp="sf.SE射精_中_人_短 = 'SE4154_5'"]
+- SE_Name: SE4154_10
+  Used: false
+- SE_Name: SE4154_11
+  Used: false
+- SE_Name: SE4154_12
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_seFileDef.ks
+    LineNumber: 15
+    LinePreview: "[eval exp=\"sf.SE射精_中_人外_長 = 'SE4154_12'\"]"
+- SE_Name: SE4154_2
+  Used: false
+- SE_Name: SE4154_3
+  Used: false
+- SE_Name: SE4154_4
+  Used: false
+- SE_Name: SE4154_5
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_seFileDef.ks
+    LineNumber: 25
+    LinePreview: ;[eval exp="sf.SE射精_中_人_短 = 'SE4154_5'"]
+- SE_Name: SE4154_6
+  Used: false
+- SE_Name: SE4154_7
+  Used: false
+- SE_Name: SE4154_8
+  Used: false
+- SE_Name: SE4154_9
+  Used: false
+- SE_Name: SE4160
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_seFileDef.ks
+    LineNumber: 29
+    LinePreview: "[eval exp=\"sf.SE射精_外_人_短 = 'SE4160'\"]"
+- SE_Name: SE4161
+  Used: false
+- SE_Name: SE4161_10
+  Used: false
+- SE_Name: SE4161_2
+  Used: false
+- SE_Name: SE4161_3
+  Used: false
+- SE_Name: SE4161_4
+  Used: false
+- SE_Name: SE4161_5
+  Used: false
+- SE_Name: SE4161_6
+  Used: false
+- SE_Name: SE4161_7
+  Used: false
+- SE_Name: SE4161_8
+  Used: false
+- SE_Name: SE4161_9
+  Used: false
+- SE_Name: SE4162
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_seFileDef.ks
+    LineNumber: 30
+    LinePreview: "[eval exp=\"sf.SE射精_外_人_長 = 'SE4162_2'\"]"
+- SE_Name: SE4162_2
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_seFileDef.ks
+    LineNumber: 30
+    LinePreview: "[eval exp=\"sf.SE射精_外_人_長 = 'SE4162_2'\"]"
+- SE_Name: SE4162_3
+  Used: false
+- SE_Name: SE4162_4
+  Used: false
+- SE_Name: SE4162_5
+  Used: false
+- SE_Name: SE4162_6
+  Used: false
+- SE_Name: SE4162_7
+  Used: false
+- SE_Name: SE4162_8
+  Used: false
+- SE_Name: SE4163
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_seFileDef.ks
+    LineNumber: 16
+    LinePreview: "[eval exp=\"sf.SE射精_外_人外_短 = 'SE4163'\"]"
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_seFileDef.ks
+    LineNumber: 17
+    LinePreview: "[eval exp=\"sf.SE射精_外_人外_長 = 'SE4163_10'\"]"
+- SE_Name: SE4163_10
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_seFileDef.ks
+    LineNumber: 17
+    LinePreview: "[eval exp=\"sf.SE射精_外_人外_長 = 'SE4163_10'\"]"
+- SE_Name: SE4163_2
+  Used: false
+- SE_Name: SE4163_3
+  Used: false
+- SE_Name: SE4163_4
+  Used: false
+- SE_Name: SE4163_5
+  Used: false
+- SE_Name: SE4163_6
+  Used: false
+- SE_Name: SE4163_7
+  Used: false
+- SE_Name: SE4163_8
+  Used: false
+- SE_Name: SE4163_9
+  Used: false
+- SE_Name: SE4190
+  Used: false
+- SE_Name: SE4191
+  Used: false
+- SE_Name: SE4201
+  Used: false
+- SE_Name: SE4202
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana047.ks
+    LineNumber: 694
+    LinePreview: '[se buf=3 storage="SE4202"]'
+- SE_Name: SE4203
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana067.ks
+    LineNumber: 886
+    LinePreview: '[se buf=0 storage="SE4203_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana074.ks
+    LineNumber: 897
+    LinePreview: '[se buf=0 storage="SE4203_2"]'
+- SE_Name: SE4203_2
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana067.ks
+    LineNumber: 886
+    LinePreview: '[se buf=0 storage="SE4203_2"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana074.ks
+    LineNumber: 897
+    LinePreview: '[se buf=0 storage="SE4203_2"]'
+- SE_Name: SE4301
+  Used: false
+- SE_Name: SE4302
+  Used: false
+- SE_Name: SE4303
+  Used: false
+- SE_Name: SE4304
+  Used: false
+- SE_Name: SE4305
+  Used: false
+- SE_Name: SE4306
+  Used: false
+- SE_Name: SE491_2
+  Used: false
+- SE_Name: SE497_2
+  Used: false
+- SE_Name: SE500
+  Used: false
+- SE_Name: SE9011
+  Used: false
+- SE_Name: SE9012
+  Used: false
+- SE_Name: SE9013
+  Used: false
+- SE_Name: SE9014
+  Used: false
+- SE_Name: SE9015
+  Used: false
+- SE_Name: SE9016
+  Used: false
+- SE_Name: SE9017
+  Used: false
+- SE_Name: SE9018
+  Used: false
+- SE_Name: SE9019
+  Used: false
+- SE_Name: SE9020
+  Used: false
+- SE_Name: SE9021
+  Used: false
+- SE_Name: SE9022
+  Used: false
+- SE_Name: SE9023
+  Used: false
+- SE_Name: SE9024
+  Used: false
+- SE_Name: SE9025
+  Used: false
+- SE_Name: SE9051
+  Used: false
+- SE_Name: SE9052
+  Used: false
+- SE_Name: SE9053
+  Used: false
+- SE_Name: SE9054
+  Used: false
+- SE_Name: SE9055
+  Used: false
+- SE_Name: seA001
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana046.ks
+    LineNumber: 394
+    LinePreview: '[se buf=0 storage="seA001"]'
+- SE_Name: seA002
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana069.ks
+    LineNumber: 179
+    LinePreview: '[se buf=0 storage="seA002"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana091.ks
+    LineNumber: 31
+    LinePreview: '[se buf=0 storage="seA002"]'
+- SE_Name: seA003
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana091.ks
+    LineNumber: 354
+    LinePreview: '[se buf=0 storage="seA003"]'
+- SE_Name: seA004
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana096.ks
+    LineNumber: 13
+    LinePreview: '[se buf=0 storage="seA004"]'
+- SE_Name: seA005
+  Used: false
+- SE_Name: seA006
+  Used: false
+- SE_Name: seA007
+  Used: false
+- SE_Name: seA008
+  Used: false
+- SE_Name: seA009
+  Used: false
+- SE_Name: seA010
+  Used: false
+- SE_Name: seA011
+  Used: false
+- SE_Name: seA012
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana073.ks
+    LineNumber: 243
+    LinePreview: '[se buf=0 storage="seA012"]'
+- SE_Name: seA013
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana068.ks
+    LineNumber: 269
+    LinePreview: '[se buf=0 storage="seA013"]'
+- SE_Name: seA014
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana900.ks
+    LineNumber: 99
+    LinePreview: '[se buf=0 storage="seA014"]'
+- SE_Name: seA015
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana073.ks
+    LineNumber: 676
+    LinePreview: '[se buf=0 storage="seA015"]'
+- SE_Name: seA016
+  Used: false
+- SE_Name: seA017
+  Used: false
+- SE_Name: seA018
+  Used: false
+- SE_Name: seA019
+  Used: false
+- SE_Name: seA020
+  Used: false
+- SE_Name: seA021
+  Used: false
+- SE_Name: seA022
+  Used: false
+- SE_Name: seA023
+  Used: false
+- SE_Name: seA024
+  Used: false
+- SE_Name: seA025
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana900.ks
+    LineNumber: 49
+    LinePreview: '[se buf=0 storage="seA025"]'
+- SE_Name: seA026
+  Used: false
+- SE_Name: seA027
+  Used: false
+- SE_Name: seA028
+  Used: false
+- SE_Name: seA029
+  Used: false
+- SE_Name: seA030
+  Used: false
+- SE_Name: seA031
+  Used: false
+- SE_Name: seA032
+  Used: false
+- SE_Name: seA033
+  Used: false
+- SE_Name: seA034
+  Used: false
+- SE_Name: seA035
+  Used: false
+- SE_Name: seA036
+  Used: false
+- SE_Name: seA037
+  Used: false
+- SE_Name: seA038
+  Used: false
+- SE_Name: seA039
+  Used: false
+- SE_Name: seA040
+  Used: false
+- SE_Name: seA041
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana002.ks
+    LineNumber: 99
+    LinePreview: '[se buf=1 storage="seA041" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 22
+    LinePreview: '[se buf=1 storage="seA041" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana900.ks
+    LineNumber: 9
+    LinePreview: '[se buf=1 storage="seA041" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana900.ks
+    LineNumber: 34
+    LinePreview: ;[se buf=1 storage="seA041" loop]
+- SE_Name: seA042
+  Used: false
+- SE_Name: seA043
+  Used: false
+- SE_Name: seA044
+  Used: false
+- SE_Name: seA045
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 516
+    LinePreview: '[se buf=0 storage="seA045"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana088.ks
+    LineNumber: 357
+    LinePreview: '[se buf=0 storage="seA045"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana120.ks
+    LineNumber: 6
+    LinePreview: '[se buf=0 storage="seA045"]'
+- SE_Name: seA046
+  Used: false
+- SE_Name: seA047
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana077.ks
+    LineNumber: 500
+    LinePreview: ;[se buf=0 storage="seA047"]
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana077.ks
+    LineNumber: 578
+    LinePreview: '[se buf=0 storage="seA047"]'
+- SE_Name: seA048
+  Used: false
+- SE_Name: seA049
+  Used: false
+- SE_Name: seA050
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana073.ks
+    LineNumber: 224
+    LinePreview: '[se buf=0 storage="seA050"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana073.ks
+    LineNumber: 661
+    LinePreview: '[se buf=0 storage="seA050"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana077.ks
+    LineNumber: 863
+    LinePreview: '[se buf=0 storage="seA050"]'
+- SE_Name: seA051
+  Used: false
+- SE_Name: seA052
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 1629
+    LinePreview: '[se buf=0 storage="seA052"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana033.ks
+    LineNumber: 72
+    LinePreview: '[se buf=0 storage="seA052" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana077.ks
+    LineNumber: 501
+    LinePreview: '[se buf=0 storage="seA052"]'
+- SE_Name: seA053
+  Used: false
+- SE_Name: seA054
+  Used: false
+- SE_Name: seA055
+  Used: false
+- SE_Name: seA056
+  Used: false
+- SE_Name: seA057
+  Used: false
+- SE_Name: seA058
+  Used: false
+- SE_Name: seA059
+  Used: false
+- SE_Name: seA060
+  Used: false
+- SE_Name: seA061
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana005.ks
+    LineNumber: 97
+    LinePreview: '[se buf=0 storage="seA061"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana019.ks
+    LineNumber: 257
+    LinePreview: '[se buf=0 storage="seA061"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana019.ks
+    LineNumber: 264
+    LinePreview: '[se buf=0 storage="seA061"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana040.ks
+    LineNumber: 506
+    LinePreview: '[se buf=1 storage="seA061"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana040.ks
+    LineNumber: 937
+    LinePreview: '[se buf=0 storage="seA061"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana073.ks
+    LineNumber: 890
+    LinePreview: '[se buf=0 storage="seA061"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana099.ks
+    LineNumber: 312
+    LinePreview: '[se buf=0 storage="seA061"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana101.ks
+    LineNumber: 243
+    LinePreview: '[se buf=0 storage="seA061"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana106.ks
+    LineNumber: 347
+    LinePreview: '[se buf=0 storage="seA061"]'
+- SE_Name: seA062
+  Used: false
+- SE_Name: seA063
+  Used: false
+- SE_Name: seA064
+  Used: false
+- SE_Name: seA065
+  Used: false
+- SE_Name: seA066
+  Used: false
+- SE_Name: seA066a
+  Used: false
+- SE_Name: seA067
+  Used: false
+- SE_Name: seA068
+  Used: false
+- SE_Name: seA069
+  Used: false
+- SE_Name: seA070
+  Used: false
+- SE_Name: seA071
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana039.ks
+    LineNumber: 114
+    LinePreview: '[se buf=0 storage="seA071"]'
+- SE_Name: seA072
+  Used: false
+- SE_Name: seA073
+  Used: false
+- SE_Name: seA074
+  Used: false
+- SE_Name: seA075
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana073.ks
+    LineNumber: 247
+    LinePreview: '[se buf=1 storage="seA075"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\plugin\SliderFuntion.tjs
+    LineNumber: 450
+    LinePreview: kag.se[sf.SE_sys_buf].play(%[storage:'seA075.ogg',loop:false]);
+- SE_Name: seA076
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana011.ks
+    LineNumber: 163
+    LinePreview: '[se buf=0 storage="seA076"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana040.ks
+    LineNumber: 503
+    LinePreview: '[se buf=0 storage="seA076"]'
+- SE_Name: seA077
+  Used: false
+- SE_Name: seA078
+  Used: false
+- SE_Name: seA079
+  Used: false
+- SE_Name: seA080
+  Used: false
+- SE_Name: seA081
+  Used: false
+- SE_Name: seA082
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana114.ks
+    LineNumber: 216
+    LinePreview: '[se buf=1 storage="seA082"]'
+- SE_Name: seA083
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana004.ks
+    LineNumber: 98
+    LinePreview: '[se buf=0 storage="seA083"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana004.ks
+    LineNumber: 100
+    LinePreview: '[se buf=1 storage="seA083"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana004.ks
+    LineNumber: 277
+    LinePreview: '[se buf=0 storage="seA083"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana033.ks
+    LineNumber: 728
+    LinePreview: '[se buf=0 storage="seA083"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana101.ks
+    LineNumber: 830
+    LinePreview: '[se buf=1 storage="seA083"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana101.ks
+    LineNumber: 845
+    LinePreview: '[se buf=1 storage="seA083"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana101.ks
+    LineNumber: 855
+    LinePreview: '[se buf=1 storage="seA083"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana122.ks
+    LineNumber: 202
+    LinePreview: '[se buf=0 storage="seA083a"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana122.ks
+    LineNumber: 225
+    LinePreview: '[se buf=0 storage="seA083"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana813.ks
+    LineNumber: 40
+    LinePreview: '[se buf=0 storage="seA083"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana813.ks
+    LineNumber: 69
+    LinePreview: '[se buf=0 storage="seA083"]'
+- SE_Name: seA083a
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana122.ks
+    LineNumber: 202
+    LinePreview: '[se buf=0 storage="seA083a"]'
+- SE_Name: seA084
+  Used: false
+- SE_Name: seA085
+  Used: false
+- SE_Name: seA086
+  Used: false
+- SE_Name: seA087
+  Used: false
+- SE_Name: seA088
+  Used: false
+- SE_Name: seA089
+  Used: false
+- SE_Name: seA090
+  Used: false
+- SE_Name: seB001
+  Used: false
+- SE_Name: seB002
+  Used: false
+- SE_Name: seB003
+  Used: false
+- SE_Name: seB004
+  Used: false
+- SE_Name: seB005
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana092.ks
+    LineNumber: 241
+    LinePreview: '[se buf=0 storage="seB005"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana092.ks
+    LineNumber: 780
+    LinePreview: '[se buf=0 storage="seB005"]'
+- SE_Name: seB006
+  Used: false
+- SE_Name: seB007
+  Used: false
+- SE_Name: seB008
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 1291
+    LinePreview: '[se buf=0 storage="seB008"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 1310
+    LinePreview: '[se buf=0 storage="seB008"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 1325
+    LinePreview: '[se buf=0 storage="seB008"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 1382
+    LinePreview: '[se buf=0 storage="seB008"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 1401
+    LinePreview: '[se buf=0 storage="seB008"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana004.ks
+    LineNumber: 202
+    LinePreview: '[se buf=0 storage="seB008"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana004.ks
+    LineNumber: 307
+    LinePreview: '[se buf=1 storage="seB008"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana004.ks
+    LineNumber: 333
+    LinePreview: '[se buf=1 storage="seB008"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana033.ks
+    LineNumber: 747
+    LinePreview: '[se buf=0 storage="seB008"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana033.ks
+    LineNumber: 769
+    LinePreview: '[se buf=0 storage="seB008"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana033.ks
+    LineNumber: 793
+    LinePreview: '[se buf=0 storage="seB008"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana033.ks
+    LineNumber: 875
+    LinePreview: '[se buf=0 storage="seB008"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana033.ks
+    LineNumber: 911
+    LinePreview: '[se buf=0 storage="seB008"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana033.ks
+    LineNumber: 923
+    LinePreview: '[se buf=0 storage="seB008"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana046.ks
+    LineNumber: 450
+    LinePreview: '[se buf=0 storage="seB008"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana046.ks
+    LineNumber: 487
+    LinePreview: '[se buf=0 storage="seB008"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana056.ks
+    LineNumber: 51
+    LinePreview: '[se buf=0 storage="seB008"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana056.ks
+    LineNumber: 94
+    LinePreview: '[se buf=0 storage="seB008"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana063.ks
+    LineNumber: 93
+    LinePreview: '[se buf=0 storage="seB008"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana079.ks
+    LineNumber: 306
+    LinePreview: '[se buf=0 storage="seB008"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana079.ks
+    LineNumber: 335
+    LinePreview: '[se buf=0 storage="seB008"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana079.ks
+    LineNumber: 353
+    LinePreview: '[se buf=0 storage="seB008"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana082.ks
+    LineNumber: 514
+    LinePreview: '[se buf=0 storage="seB008"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana084.ks
+    LineNumber: 209
+    LinePreview: '[se buf=0 storage="seB008"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana084.ks
+    LineNumber: 237
+    LinePreview: '[se buf=0 storage="seB008"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana101.ks
+    LineNumber: 662
+    LinePreview: '[se buf=0 storage="seB008"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana101.ks
+    LineNumber: 680
+    LinePreview: '[se buf=0 storage="seB008"]'
+- SE_Name: seB009
+  Used: false
+- SE_Name: seB010
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana011.ks
+    LineNumber: 27
+    LinePreview: '[se buf=0 storage="seB010"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana082.ks
+    LineNumber: 556
+    LinePreview: '[se buf=0 storage="seB010"]'
+- SE_Name: seB011
+  Used: false
+- SE_Name: seB012
+  Used: false
+- SE_Name: seB013
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 924
+    LinePreview: '[se buf=0 storage="seB013"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 1444
+    LinePreview: '[se buf=0 storage="seB013"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana004.ks
+    LineNumber: 40
+    LinePreview: '[se buf=0 storage="seB013"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana004.ks
+    LineNumber: 192
+    LinePreview: '[se buf=0 storage="seB013"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana007.ks
+    LineNumber: 52
+    LinePreview: '[se buf=0 storage="seB013"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana010.ks
+    LineNumber: 39
+    LinePreview: '[se buf=0 storage="seB013"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana033.ks
+    LineNumber: 836
+    LinePreview: '[se buf=0 storage="seB013"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana033.ks
+    LineNumber: 896
+    LinePreview: '[se buf=0 storage="seB013"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana056.ks
+    LineNumber: 220
+    LinePreview: '[se buf=0 storage="seB013"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana056.ks
+    LineNumber: 334
+    LinePreview: '[se buf=0 storage="seB013"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana101.ks
+    LineNumber: 879
+    LinePreview: '[se buf=1 storage="seB013"]'
+- SE_Name: seB014
+  Used: false
+- SE_Name: seB015
+  Used: false
+- SE_Name: seB016
+  Used: false
+- SE_Name: seB017
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana077.ks
+    LineNumber: 803
+    LinePreview: '[se buf=0 storage="seB017"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana079.ks
+    LineNumber: 365
+    LinePreview: '[se buf=0 storage="seB017"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana097.ks
+    LineNumber: 259
+    LinePreview: '[se buf=0 storage="seB017"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana101.ks
+    LineNumber: 1500
+    LinePreview: '[se buf=0 storage="seB017"]'
+- SE_Name: seB018
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana011.ks
+    LineNumber: 827
+    LinePreview: '[se buf=0 storage="seB018"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana040.ks
+    LineNumber: 470
+    LinePreview: '[se buf=0 storage="seB018"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana073.ks
+    LineNumber: 829
+    LinePreview: '[se buf=0 storage="seB018"]'
+- SE_Name: seB019
+  Used: false
+- SE_Name: seB020
+  Used: false
+- SE_Name: seB021
+  Used: false
+- SE_Name: seB022
+  Used: false
+- SE_Name: seB023
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana004.ks
+    LineNumber: 430
+    LinePreview: '[se buf=1 storage="seB023" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana007.ks
+    LineNumber: 336
+    LinePreview: '[se buf=1 storage="seB023" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana010.ks
+    LineNumber: 236
+    LinePreview: '[se buf=1 storage="seB023" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana033.ks
+    LineNumber: 367
+    LinePreview: '[se buf=0 storage="seB023" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana041.ks
+    LineNumber: 58
+    LinePreview: '[se buf=0 storage="seB023" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana062.ks
+    LineNumber: 427
+    LinePreview: '[se buf=0 storage="seB023"]'
+- SE_Name: seB023a
+  Used: false
+- SE_Name: seB024
+  Used: false
+- SE_Name: seB025
+  Used: false
+- SE_Name: seB026
+  Used: false
+- SE_Name: seB027
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana033.ks
+    LineNumber: 1068
+    LinePreview: '[se buf=0 storage="seB027"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana033.ks
+    LineNumber: 1103
+    LinePreview: '[se buf=0 storage="seB027"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana033.ks
+    LineNumber: 1105
+    LinePreview: '[se buf=1 storage="seB027"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana033.ks
+    LineNumber: 1117
+    LinePreview: '[se buf=0 storage="seB027"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana033.ks
+    LineNumber: 1140
+    LinePreview: '[se buf=0 storage="seB027"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana033.ks
+    LineNumber: 1143
+    LinePreview: '[se buf=1 storage="seB027"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana033.ks
+    LineNumber: 1146
+    LinePreview: '[se buf=0 storage="seB027"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana033.ks
+    LineNumber: 1161
+    LinePreview: '[se buf=0 storage="seB027"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana033.ks
+    LineNumber: 1164
+    LinePreview: '[se buf=1 storage="seB027"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana033.ks
+    LineNumber: 1167
+    LinePreview: '[se buf=0 storage="seB027"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana033.ks
+    LineNumber: 1170
+    LinePreview: '[se buf=1 storage="seB027"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana033.ks
+    LineNumber: 1223
+    LinePreview: ;[se buf=0 storage="seB027"]
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana077.ks
+    LineNumber: 779
+    LinePreview: ;[se buf=0 storage="seB027"]
+- SE_Name: seB028
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana033.ks
+    LineNumber: 1224
+    LinePreview: '[se buf=0 storage="seB028"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana048.ks
+    LineNumber: 202
+    LinePreview: '[se buf=0 storage="seB028"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana087.ks
+    LineNumber: 158
+    LinePreview: '[se buf=0 storage="seB028"]'
+- SE_Name: seB029
+  Used: false
+- SE_Name: seB030
+  Used: false
+- SE_Name: seB031
+  Used: false
+- SE_Name: seB032
+  Used: false
+- SE_Name: seB033
+  Used: false
+- SE_Name: seB034
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana077.ks
+    LineNumber: 781
+    LinePreview: '[se buf=1 storage="seB034"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana105.ks
+    LineNumber: 257
+    LinePreview: '[se buf=1 storage="seB034"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana900.ks
+    LineNumber: 120
+    LinePreview: '[se buf=1 storage="seB034"]'
+- SE_Name: seB035
+  Used: false
+- SE_Name: seB036
+  Used: false
+- SE_Name: seB037
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana121.ks
+    LineNumber: 829
+    LinePreview: '[se buf=0 storage="seB037"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana900.ks
+    LineNumber: 114
+    LinePreview: '[se buf=0 storage="seB037"]'
+- SE_Name: seB038
+  Used: false
+- SE_Name: seB039
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 1860
+    LinePreview: '[se buf=0 storage="seB039"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 1987
+    LinePreview: '[se buf=0 storage="seB039"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 2014
+    LinePreview: '[se buf=0 storage="seB039"]'
+- SE_Name: seB040
+  Used: false
+- SE_Name: seB041
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana033.ks
+    LineNumber: 1067
+    LinePreview: ;[se buf=0 storage="seB041"]
+- SE_Name: seB042
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana077.ks
+    LineNumber: 632
+    LinePreview: '[se buf=0 storage="seB042"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana079.ks
+    LineNumber: 260
+    LinePreview: '[se buf=0 storage="seB042"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana079.ks
+    LineNumber: 303
+    LinePreview: '[se buf=1 storage="seB042"]'
+- SE_Name: seB043
+  Used: false
+- SE_Name: seB044
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana040.ks
+    LineNumber: 750
+    LinePreview: '[se buf=0 storage="seB044"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana040.ks
+    LineNumber: 1299
+    LinePreview: '[se buf=0 storage="seB044"]'
+- SE_Name: seB045
+  Used: false
+- SE_Name: seB046
+  Used: false
+- SE_Name: seB047
+  Used: false
+- SE_Name: seB048
+  Used: false
+- SE_Name: seB049
+  Used: false
+- SE_Name: seB050
+  Used: false
+- SE_Name: seB051
+  Used: false
+- SE_Name: seB052
+  Used: false
+- SE_Name: seB053
+  Used: false
+- SE_Name: seB054
+  Used: false
+- SE_Name: seB055
+  Used: false
+- SE_Name: seB056
+  Used: false
+- SE_Name: seB057
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 86
+    LinePreview: ;[se buf=0 storage="seB057"]
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana084.ks
+    LineNumber: 195
+    LinePreview: '[se buf=0 storage="seB057"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\_arcana_macro.ks
+    LineNumber: 241
+    LinePreview: '[macro name=movie_Magic_エリュプシオン]		[eval exp="sf.movie01= 1"][se buf=0 storage="seB057"][movie_hensin0 * storage="BaleBullront.mpg"][wait time=300][endmacro]'
+- SE_Name: seB058
+  Used: false
+- SE_Name: seB059
+  Used: false
+- SE_Name: seB060
+  Used: false
+- SE_Name: seB061
+  Used: false
+- SE_Name: seB062
+  Used: false
+- SE_Name: seB063
+  Used: false
+- SE_Name: seB064
+  Used: false
+- SE_Name: seB065
+  Used: false
+- SE_Name: seB066
+  Used: false
+- SE_Name: seB067
+  Used: false
+- SE_Name: seB068
+  Used: false
+- SE_Name: seB069
+  Used: false
+- SE_Name: seB070
+  Used: false
+- SE_Name: seB071
+  Used: false
+- SE_Name: seB072
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana033.ks
+    LineNumber: 1034
+    LinePreview: '[se buf=0 storage="seB072"]'
+- SE_Name: seB073
+  Used: false
+- SE_Name: seB074
+  Used: false
+- SE_Name: seB075
+  Used: false
+- SE_Name: seB076
+  Used: false
+- SE_Name: seB077
+  Used: false
+- SE_Name: seB078
+  Used: false
+- SE_Name: seB079
+  Used: false
+- SE_Name: seB080
+  Used: false
+- SE_Name: seB081
+  Used: false
+- SE_Name: seB082
+  Used: false
+- SE_Name: seB083
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana092.ks
+    LineNumber: 1580
+    LinePreview: '[se buf=0 storage="seB083"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana092.ks
+    LineNumber: 1587
+    LinePreview: '[se buf=0 storage="seB083"]'
+- SE_Name: seB084
+  Used: false
+- SE_Name: seB085
+  Used: false
+- SE_Name: seB086
+  Used: false
+- SE_Name: seB087
+  Used: false
+- SE_Name: seB088
+  Used: false
+- SE_Name: seB089
+  Used: false
+- SE_Name: seB090
+  Used: false
+- SE_Name: seB091
+  Used: false
+- SE_Name: seB092
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana003.ks
+    LineNumber: 508
+    LinePreview: '[se buf=0 storage="seB092" v=60]'
+- SE_Name: seB092a
+  Used: false
+- SE_Name: seB093
+  Used: false
+- SE_Name: seB094
+  Used: false
+- SE_Name: seB095
+  Used: false
+- SE_Name: seB096
+  Used: false
+- SE_Name: seB097
+  Used: false
+- SE_Name: seB098
+  Used: false
+- SE_Name: seB099
+  Used: false
+- SE_Name: seB100
+  Used: false
+- SE_Name: seB101
+  Used: false
+- SE_Name: seB102
+  Used: false
+- SE_Name: seB103
+  Used: false
+- SE_Name: seB104
+  Used: false
+- SE_Name: seB105
+  Used: false
+- SE_Name: seB106
+  Used: false
+- SE_Name: seB107
+  Used: false
+- SE_Name: seB108
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana101.ks
+    LineNumber: 1056
+    LinePreview: '[se buf=0 storage="seB108"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana122.ks
+    LineNumber: 235
+    LinePreview: '[se buf=0 storage="seB108"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana125.ks
+    LineNumber: 164
+    LinePreview: '[se buf=0 storage="seB108"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana128.ks
+    LineNumber: 158
+    LinePreview: '[se buf=0 storage="seB108"]'
+- SE_Name: seB109
+  Used: false
+- SE_Name: seB110
+  Used: false
+- SE_Name: seB111
+  Used: false
+- SE_Name: seB112
+  Used: false
+- SE_Name: seB113
+  Used: false
+- SE_Name: seB114
+  Used: false
+- SE_Name: seB115
+  Used: false
+- SE_Name: seB116
+  Used: false
+- SE_Name: seB117
+  Used: false
+- SE_Name: seC001
+  Used: false
+- SE_Name: seC002
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana077.ks
+    LineNumber: 88
+    LinePreview: ;[se buf=0 storage="seC002"]
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana077.ks
+    LineNumber: 194
+    LinePreview: '[se buf=0 storage="seC002"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana116.ks
+    LineNumber: 84
+    LinePreview: ;[se buf=0 storage="seC002"]
+- SE_Name: seC003
+  Used: false
+- SE_Name: seC004
+  Used: false
+- SE_Name: seC005
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana017.ks
+    LineNumber: 32
+    LinePreview: '[se buf=0 storage="seC005"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana041.ks
+    LineNumber: 65
+    LinePreview: '[se buf=0 storage="seC005"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana069.ks
+    LineNumber: 200
+    LinePreview: '[se buf=0 storage="seC005"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana077.ks
+    LineNumber: 70
+    LinePreview: '[se buf=0 storage="seC005"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana116.ks
+    LineNumber: 73
+    LinePreview: '[se buf=0 storage="seC005"]'
+- SE_Name: seC006
+  Used: false
+- SE_Name: seC007
+  Used: false
+- SE_Name: seC008
+  Used: false
+- SE_Name: seC009
+  Used: false
+- SE_Name: seC010
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana088.ks
+    LineNumber: 164
+    LinePreview: '[se buf=1 storage="seC010"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana088.ks
+    LineNumber: 344
+    LinePreview: '[se buf=1 storage="seC010"]'
+- SE_Name: seC011
+  Used: false
+- SE_Name: seC012
+  Used: false
+- SE_Name: seC013
+  Used: false
+- SE_Name: seC014
+  Used: false
+- SE_Name: seC015
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana097.ks
+    LineNumber: 571
+    LinePreview: ;mm [se buf=0 storage="seC015"]
+- SE_Name: seC016
+  Used: false
+- SE_Name: seC017
+  Used: false
+- SE_Name: seC018
+  Used: false
+- SE_Name: seC019
+  Used: false
+- SE_Name: seC020
+  Used: false
+- SE_Name: seC021
+  Used: false
+- SE_Name: seC022
+  Used: false
+- SE_Name: seC023
+  Used: false
+- SE_Name: seC024
+  Used: false
+- SE_Name: seC025
+  Used: false
+- SE_Name: seC026
+  Used: false
+- SE_Name: seC027
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana002.ks
+    LineNumber: 72
+    LinePreview: '[se buf=0 storage="seC027"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana041.ks
+    LineNumber: 42
+    LinePreview: '[se buf=0 storage="seC027"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana041.ks
+    LineNumber: 194
+    LinePreview: '[se buf=0 storage="seC027"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana073.ks
+    LineNumber: 682
+    LinePreview: '[se buf=1 storage="seC027"]'
+- SE_Name: seC028
+  Used: false
+- SE_Name: seC029
+  Used: false
+- SE_Name: seC030
+  Used: false
+- SE_Name: seC031
+  Used: false
+- SE_Name: seC032
+  Used: false
+- SE_Name: seC033
+  Used: false
+- SE_Name: seC034
+  Used: false
+- SE_Name: seC035
+  Used: false
+- SE_Name: seC036
+  Used: false
+- SE_Name: seC037
+  Used: false
+- SE_Name: seC038
+  Used: false
+- SE_Name: seC039
+  Used: false
+- SE_Name: seC040
+  Used: false
+- SE_Name: seC041
+  Used: false
+- SE_Name: seC042
+  Used: false
+- SE_Name: seC043
+  Used: false
+- SE_Name: seC044
+  Used: false
+- SE_Name: seC045
+  Used: false
+- SE_Name: seC046
+  Used: false
+- SE_Name: seC047
+  Used: false
+- SE_Name: seC048
+  Used: false
+- SE_Name: seC049
+  Used: false
+- SE_Name: seC050
+  Used: false
+- SE_Name: seC051
+  Used: false
+- SE_Name: seC052
+  Used: false
+- SE_Name: seC053
+  Used: false
+- SE_Name: seC054
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana044.ks
+    LineNumber: 184
+    LinePreview: '[se buf1 storage="seC054"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana044.ks
+    LineNumber: 210
+    LinePreview: '[se buf1 storage="seC054"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana069.ks
+    LineNumber: 149
+    LinePreview: '[se buf1 storage="seC054"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana072.ks
+    LineNumber: 9
+    LinePreview: '[se buf1 storage="seC054"]'
+- SE_Name: seC055
+  Used: false
+- SE_Name: seC056
+  Used: false
+- SE_Name: seC057
+  Used: false
+- SE_Name: seC058
+  Used: false
+- SE_Name: seC058a
+  Used: false
+- SE_Name: seC059
+  Used: false
+- SE_Name: seC060
+  Used: false
+- SE_Name: seC061
+  Used: false
+- SE_Name: seC062
+  Used: false
+- SE_Name: seC063
+  Used: false
+- SE_Name: seC064
+  Used: false
+- SE_Name: seC065
+  Used: false
+- SE_Name: seC066
+  Used: false
+- SE_Name: seC067
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana082.ks
+    LineNumber: 398
+    LinePreview: '[se buf=0 storage="seC067a"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana082.ks
+    LineNumber: 465
+    LinePreview: '[se buf=0 storage="seC067a"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana083.ks
+    LineNumber: 391
+    LinePreview: '[se buf=0 storage="seC067a"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana083.ks
+    LineNumber: 585
+    LinePreview: '[se buf=0 storage="seC067"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana124.ks
+    LineNumber: 663
+    LinePreview: '[se buf=0 storage="seC067a"]'
+- SE_Name: seC067a
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana082.ks
+    LineNumber: 398
+    LinePreview: '[se buf=0 storage="seC067a"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana082.ks
+    LineNumber: 465
+    LinePreview: '[se buf=0 storage="seC067a"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana083.ks
+    LineNumber: 391
+    LinePreview: '[se buf=0 storage="seC067a"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana124.ks
+    LineNumber: 663
+    LinePreview: '[se buf=0 storage="seC067a"]'
+- SE_Name: seC068
+  Used: false
+- SE_Name: seC069
+  Used: false
+- SE_Name: seC070
+  Used: false
+- SE_Name: seC071
+  Used: false
+- SE_Name: seC072
+  Used: false
+- SE_Name: seC073
+  Used: false
+- SE_Name: seC074
+  Used: false
+- SE_Name: seC075
+  Used: false
+- SE_Name: seC076
+  Used: false
+- SE_Name: seC077
+  Used: false
+- SE_Name: seC078
+  Used: false
+- SE_Name: seC079
+  Used: false
+- SE_Name: seC079a
+  Used: false
+- SE_Name: seC080
+  Used: false
+- SE_Name: seC081
+  Used: false
+- SE_Name: seC082
+  Used: false
+- SE_Name: seC083
+  Used: false
+- SE_Name: seC084
+  Used: false
+- SE_Name: seC085
+  Used: false
+- SE_Name: seC086
+  Used: false
+- SE_Name: seC086a
+  Used: false
+- SE_Name: seC087
+  Used: false
+- SE_Name: seC088
+  Used: false
+- SE_Name: seC089
+  Used: false
+- SE_Name: seC090
+  Used: false
+- SE_Name: seC091
+  Used: false
+- SE_Name: seC092
+  Used: false
+- SE_Name: seC093
+  Used: false
+- SE_Name: seC094
+  Used: false
+- SE_Name: seC095
+  Used: false
+- SE_Name: seC095a
+  Used: false
+- SE_Name: seC096
+  Used: false
+- SE_Name: seC096a
+  Used: false
+- SE_Name: seD001
+  Used: false
+- SE_Name: seD002
+  Used: false
+- SE_Name: seD003
+  Used: false
+- SE_Name: seD004
+  Used: false
+- SE_Name: seD005
+  Used: false
+- SE_Name: seD006
+  Used: false
+- SE_Name: seD007
+  Used: false
+- SE_Name: seD008
+  Used: false
+- SE_Name: seD009
+  Used: false
+- SE_Name: seD010
+  Used: false
+- SE_Name: seD011
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana014.ks
+    LineNumber: 580
+    LinePreview: '[se buf=1 storage="seD011" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana040.ks
+    LineNumber: 1491
+    LinePreview: '[se buf=0 storage="seD011"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana063.ks
+    LineNumber: 831
+    LinePreview: '[se buf=1 storage="seD011" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana067.ks
+    LineNumber: 887
+    LinePreview: ;[se buf=0 storage="seD011"]
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana074.ks
+    LineNumber: 896
+    LinePreview: ;[se buf=0 storage="seD011"]
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana080.ks
+    LineNumber: 179
+    LinePreview: '[se buf=0 storage="seD011"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana080.ks
+    LineNumber: 465
+    LinePreview: '[se buf=0 storage="seD011"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana086.ks
+    LineNumber: 829
+    LinePreview: '[se buf=0 storage="seD011"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana092.ks
+    LineNumber: 723
+    LinePreview: '[se buf=0 storage="seD011"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana092.ks
+    LineNumber: 1707
+    LinePreview: '[se buf=0 storage="seD011"]'
+- SE_Name: seD012
+  Used: false
+- SE_Name: seD013
+  Used: false
+- SE_Name: seD014
+  Used: false
+- SE_Name: seD015
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana004.ks
+    LineNumber: 234
+    LinePreview: '[se buf=0 storage="seD015"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana007.ks
+    LineNumber: 175
+    LinePreview: '[se buf=0 storage="seD015"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana010.ks
+    LineNumber: 127
+    LinePreview: '[se buf=0 storage="seD015"]'
+- SE_Name: seD016
+  Used: false
+- SE_Name: seD017
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\title.ks
+    LineNumber: 366
+    LinePreview: ;	;;	[button graphic="bg_title_selbt_EST" target=*title_04 recthit=false exp="tf.menuitem = 0"  onenter="kag.process('','*onenter02')" onleave="kag.process('','*onleave02')" enterse="seD017"]
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\title.ks
+    LineNumber: 372
+    LinePreview: ;	;;	[button graphic="bg_title_selbt_RIG" target=*title_03 recthit=false exp="tf.menuitem = 0"  onenter="kag.process('','*onenter01')" onleave="kag.process('','*onleave01')" enterse="seD017"]
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_seFileDef.ks
+    LineNumber: 8
+    LinePreview: "[eval exp=\"sf.SE挿入_触手 = 'seD017'\"]"
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana005.ks
+    LineNumber: 333
+    LinePreview: '[se buf=0 storage="seD017"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana005.ks
+    LineNumber: 343
+    LinePreview: '[se buf=0 storage="seD017"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana005.ks
+    LineNumber: 349
+    LinePreview: '[se buf=0 storage="seD017"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana005.ks
+    LineNumber: 656
+    LinePreview: '[se buf=0 storage="seD017"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana008.ks
+    LineNumber: 111
+    LinePreview: '[se buf=0 storage="seD017"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana008.ks
+    LineNumber: 150
+    LinePreview: '[se buf=0 storage="seD017"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana008.ks
+    LineNumber: 172
+    LinePreview: '[se buf=0 storage="seD017"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana008.ks
+    LineNumber: 194
+    LinePreview: '[se buf=0 storage="seD017"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana008.ks
+    LineNumber: 618
+    LinePreview: '[se buf=0 storage="seD017"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana011.ks
+    LineNumber: 383
+    LinePreview: '[se buf=0 storage="seD017"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana011.ks
+    LineNumber: 420
+    LinePreview: '[se buf=0 storage="seD017"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana011.ks
+    LineNumber: 588
+    LinePreview: '[se buf=0 storage="seD017"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana011.ks
+    LineNumber: 784
+    LinePreview: '[se buf=0 storage="seD017"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana040.ks
+    LineNumber: 1321
+    LinePreview: '[se buf=0 storage="seD017"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana040.ks
+    LineNumber: 1450
+    LinePreview: '[se buf=0 storage="seD017"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana040.ks
+    LineNumber: 1462
+    LinePreview: '[se buf=0 storage="seD017"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana063.ks
+    LineNumber: 274
+    LinePreview: '[se buf=0 storage="seD017"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana063.ks
+    LineNumber: 533
+    LinePreview: '[se buf=0 storage="seD017"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana063.ks
+    LineNumber: 1178
+    LinePreview: '[se buf=1 storage="seD017"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana063.ks
+    LineNumber: 1591
+    LinePreview: '[se buf=0 storage="seD017"]'
+- SE_Name: seD018
+  Used: false
+- SE_Name: seD019
+  Used: false
+- SE_Name: seD020
+  Used: false
+- SE_Name: seD021
+  Used: false
+- SE_Name: seD022
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_seFileDef.ks
+    LineNumber: 33
+    LinePreview: "[eval exp=\"sf.SEハラボテ = 'seD022'\"]"
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana047.ks
+    LineNumber: 261
+    LinePreview: '[se buf=0 storage="seD022"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana076.ks
+    LineNumber: 132
+    LinePreview: '[se buf=0 storage="seD022"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana080.ks
+    LineNumber: 651
+    LinePreview: '[se buf=0 storage="seD022"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana086.ks
+    LineNumber: 679
+    LinePreview: '[se buf=0 storage="seD022"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana091.ks
+    LineNumber: 409
+    LinePreview: '[se buf=0 storage="seD022"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana092.ks
+    LineNumber: 1311
+    LinePreview: '[se buf=0 storage="seD022"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana093.ks
+    LineNumber: 93
+    LinePreview: '[se buf=0 storage="seD022"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana101.ks
+    LineNumber: 618
+    LinePreview: '[se buf=0 storage="seD022"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana101.ks
+    LineNumber: 1064
+    LinePreview: '[se buf=0 storage="seD022"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana108.ks
+    LineNumber: 65
+    LinePreview: '[se buf=0 storage="seD022"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana124.ks
+    LineNumber: 238
+    LinePreview: '[se buf=0 storage="seD022"]'
+- SE_Name: seD023
+  Used: false
+- SE_Name: seD024
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_seFileDef.ks
+    LineNumber: 7
+    LinePreview: "[eval exp=\"sf.SE触手ループ = 'seD024'\"]"
+- SE_Name: seD025
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana047.ks
+    LineNumber: 13
+    LinePreview: '[se buf=2 storage="seD025" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana080.ks
+    LineNumber: 588
+    LinePreview: '[se buf=2 storage="seD025" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana082.ks
+    LineNumber: 122
+    LinePreview: ;[se buf=2 storage="seD025" loop]
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana082.ks
+    LineNumber: 448
+    LinePreview: '[se buf=2 storage="seD025" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana086.ks
+    LineNumber: 279
+    LinePreview: '[se buf=1 storage="seD025" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana089.ks
+    LineNumber: 14
+    LinePreview: '[se buf=2 storage="seD025" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana092.ks
+    LineNumber: 29
+    LinePreview: '[se buf=1 storage="seD025" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana110.ks
+    LineNumber: 14
+    LinePreview: '[se buf=1 storage="seD025" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana110.ks
+    LineNumber: 475
+    LinePreview: '[se buf=1 storage="seD025" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana124.ks
+    LineNumber: 231
+    LinePreview: '[se buf=2 storage="seD025" loop]'
+- SE_Name: seD026
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana076.ks
+    LineNumber: 15
+    LinePreview: '[se buf=2 storage="seD026" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana082.ks
+    LineNumber: 325
+    LinePreview: '[se buf=2 storage="seD026" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana082.ks
+    LineNumber: 588
+    LinePreview: ;[se buf=2 storage="seD026" loop]
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana086.ks
+    LineNumber: 17
+    LinePreview: '[se buf=2 storage="seD026" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana086.ks
+    LineNumber: 483
+    LinePreview: '[se buf=2 storage="seD026" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana092.ks
+    LineNumber: 28
+    LinePreview: ;[se buf=2 storage="seD026" loop]
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana092.ks
+    LineNumber: 520
+    LinePreview: '[se buf=2 storage="seD026" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana092.ks
+    LineNumber: 967
+    LinePreview: '[se buf=2 storage="seD026" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana092.ks
+    LineNumber: 1407
+    LinePreview: '[se buf=2 storage="seD026" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana110.ks
+    LineNumber: 15
+    LinePreview: '[se buf=2 storage="seD026" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana110.ks
+    LineNumber: 565
+    LinePreview: '[se buf=2 storage="seD026" loop]'
+- SE_Name: seD027
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana077.ks
+    LineNumber: 430
+    LinePreview: '[se buf=0 storage="seD027"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana120.ks
+    LineNumber: 61
+    LinePreview: '[se buf=0 storage="seD027"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana123.ks
+    LineNumber: 89
+    LinePreview: '[se buf=0 storage="seD027"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\_arcana_macro.ks
+    LineNumber: 351
+    LinePreview: '[se buf=0 storage="seD027"]'
+- SE_Name: seE001
+  Used: false
+- SE_Name: seE002
+  Used: false
+- SE_Name: seE003
+  Used: false
+- SE_Name: seE004
+  Used: false
+- SE_Name: seE004a
+  Used: false
+- SE_Name: seE004b
+  Used: false
+- SE_Name: seE005
+  Used: false
+- SE_Name: seE006
+  Used: false
+- SE_Name: seE007
+  Used: false
+- SE_Name: seE008
+  Used: false
+- SE_Name: seE009
+  Used: false
+- SE_Name: seE010
+  Used: false
+- SE_Name: seE011
+  Used: false
+- SE_Name: seE012
+  Used: false
+- SE_Name: seE013
+  Used: false
+- SE_Name: seE014
+  Used: false
+- SE_Name: seE015
+  Used: false
+- SE_Name: seE016
+  Used: false
+- SE_Name: seE017
+  Used: false
+- SE_Name: seE018
+  Used: false
+- SE_Name: seF001
+  Used: false
+- SE_Name: seF002
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana075.ks
+    LineNumber: 174
+    LinePreview: '[se buf=0 storage="seF002"]'
+- SE_Name: seF003
+  Used: false
+- SE_Name: seF004
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana042.ks
+    LineNumber: 59
+    LinePreview: '[se buf=0 storage="seF004"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana042.ks
+    LineNumber: 73
+    LinePreview: '[se buf=0 storage="seF004"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana075.ks
+    LineNumber: 150
+    LinePreview: '[se buf=0 storage="seF004"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana075.ks
+    LineNumber: 180
+    LinePreview: '[se buf=1 storage="seF004"]'
+- SE_Name: seF005
+  Used: false
+- SE_Name: seF006
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana900.ks
+    LineNumber: 82
+    LinePreview: '[se buf=0 storage="seF006"]'
+- SE_Name: seF007
+  Used: false
+- SE_Name: seF008
+  Used: false
+- SE_Name: seF009
+  Used: false
+- SE_Name: seF010
+  Used: false
+- SE_Name: seF011
+  Used: false
+- SE_Name: seF012
+  Used: false
+- SE_Name: seF014
+  Used: false
+- SE_Name: seF015
+  Used: false
+- SE_Name: seF016
+  Used: false
+- SE_Name: seF017
+  Used: false
+- SE_Name: seF018
+  Used: false
+- SE_Name: seF019
+  Used: false
+- SE_Name: seF020
+  Used: false
+- SE_Name: seF021
+  Used: false
+- SE_Name: seF022
+  Used: false
+- SE_Name: seF023
+  Used: false
+- SE_Name: seF023a
+  Used: false
+- SE_Name: seG001
+  Used: false
+- SE_Name: seG002
+  Used: false
+- SE_Name: seG003
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana077.ks
+    LineNumber: 248
+    LinePreview: ;[se buf=0 storage="seG003"]
+- SE_Name: seG004
+  Used: false
+- SE_Name: seG005
+  Used: false
+- SE_Name: seG006
+  Used: false
+- SE_Name: seG007
+  Used: false
+- SE_Name: seG008
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana002.ks
+    LineNumber: 112
+    LinePreview: '[se buf=1 storage="seG008" loop]'
+- SE_Name: seG009
+  Used: false
+- SE_Name: seG010
+  Used: false
+- SE_Name: seG011
+  Used: false
+- SE_Name: seG012
+  Used: false
+- SE_Name: seG013
+  Used: false
+- SE_Name: seG014
+  Used: false
+- SE_Name: seG015
+  Used: false
+- SE_Name: seG016
+  Used: false
+- SE_Name: seG017
+  Used: false
+- SE_Name: seG017v
+  Used: false
+- SE_Name: seG018
+  Used: false
+- SE_Name: seG019
+  Used: false
+- SE_Name: seG020
+  Used: false
+- SE_Name: seG020a
+  Used: false
+- SE_Name: seJ001
+  Used: false
+- SE_Name: seJ002
+  Used: false
+- SE_Name: seJ003
+  Used: false
+- SE_Name: seJ004
+  Used: false
+- SE_Name: seJ005
+  Used: false
+- SE_Name: seJ006
+  Used: false
+- SE_Name: seJ007
+  Used: false
+- SE_Name: seJ008
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\_arcana_macro.ks
+    LineNumber: 243
+    LinePreview: '[macro name=movie_Magic_バレ・ブルロント]	[eval exp="sf.movie03= 1"][se buf=0 storage="seJ008"][movie_hensin0 * storage="BaleBullront.mpg"][wait time=300][endmacro]'
+- SE_Name: se_sex01
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\macro05_effect.ks
+    LineNumber: 296
+    LinePreview: '[se buf=0 storage=%se|se_sex01a]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_CharBuffer.ks
+    LineNumber: 62
+    LinePreview: ;	[eval exp="sf.ogg_se_H     = 'se_sex01a.ogg'"]
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_seFileDef.ks
+    LineNumber: 20
+    LinePreview: "[eval exp=\"sf.SE挿入_人 = 'se_sex01'\"]"
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_seFileDef.ks
+    LineNumber: 26
+    LinePreview: "[eval exp=\"sf.SE射精_中_人_短 = 'se_sex01b'\"]"
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_seFileDef.ks
+    LineNumber: 28
+    LinePreview: "[eval exp=\"sf.SE射精_中_人_長 = 'se_sex01c'\"]"
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana005.ks
+    LineNumber: 186
+    LinePreview: '[se buf=0 storage="se_sex01"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana005.ks
+    LineNumber: 225
+    LinePreview: '[se buf=0 storage="se_sex01"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana011.ks
+    LineNumber: 194
+    LinePreview: '[se buf=0 storage="se_sex01a"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana014.ks
+    LineNumber: 269
+    LinePreview: '[se buf=0 storage="se_sex01"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana014.ks
+    LineNumber: 356
+    LinePreview: '[se buf=0 storage="se_sex01"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana014.ks
+    LineNumber: 393
+    LinePreview: '[se buf=0 storage="se_sex01"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana014.ks
+    LineNumber: 533
+    LinePreview: '[se buf=0 storage="se_sex01"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana040.ks
+    LineNumber: 253
+    LinePreview: '[se buf=0 storage="se_sex01"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana040.ks
+    LineNumber: 609
+    LinePreview: '[se buf=0 storage="se_sex01"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana040.ks
+    LineNumber: 706
+    LinePreview: '[se buf=0 storage="se_sex01"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana051.ks
+    LineNumber: 1042
+    LinePreview: '[se buf=0 storage="se_sex01"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana059.ks
+    LineNumber: 548
+    LinePreview: '[se buf=0 storage="se_sex01"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana059.ks
+    LineNumber: 559
+    LinePreview: '[se buf=0 storage="se_sex01"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana063.ks
+    LineNumber: 672
+    LinePreview: '[se buf=0 storage="se_sex01"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana063.ks
+    LineNumber: 730
+    LinePreview: '[se buf=0 storage="se_sex01a"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana076.ks
+    LineNumber: 330
+    LinePreview: '[se buf=0 storage="se_sex01"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana076.ks
+    LineNumber: 340
+    LinePreview: '[se buf=0 storage="se_sex01"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana076.ks
+    LineNumber: 367
+    LinePreview: '[se buf=0 storage="se_sex01a"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana076.ks
+    LineNumber: 397
+    LinePreview: '[se buf=0 storage="se_sex01"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana076.ks
+    LineNumber: 873
+    LinePreview: '[se buf=0 storage="se_sex01"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana107.ks
+    LineNumber: 807
+    LinePreview: '[se buf=0 storage="se_sex01"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana107.ks
+    LineNumber: 822
+    LinePreview: '[se buf=0 storage="se_sex01"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana113.ks
+    LineNumber: 643
+    LinePreview: '[se buf=0 storage="se_sex01"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana115.ks
+    LineNumber: 848
+    LinePreview: '[se buf=0 storage="se_sex01"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana117.ks
+    LineNumber: 683
+    LinePreview: '[se buf=0 storage="se_sex01"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana119.ks
+    LineNumber: 598
+    LinePreview: '[se buf=0 storage="se_sex01"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana121.ks
+    LineNumber: 1288
+    LinePreview: '[se buf=0 storage="se_sex01"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana121.ks
+    LineNumber: 1312
+    LinePreview: '[se buf=0 storage="se_sex01"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana121.ks
+    LineNumber: 1325
+    LinePreview: '[se buf=0 storage="se_sex01"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana124.ks
+    LineNumber: 1100
+    LinePreview: '[se buf=0 storage="se_sex01"]'
+- SE_Name: se_sex01a
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\macro05_effect.ks
+    LineNumber: 296
+    LinePreview: '[se buf=0 storage=%se|se_sex01a]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_CharBuffer.ks
+    LineNumber: 62
+    LinePreview: ;	[eval exp="sf.ogg_se_H     = 'se_sex01a.ogg'"]
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana011.ks
+    LineNumber: 194
+    LinePreview: '[se buf=0 storage="se_sex01a"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana063.ks
+    LineNumber: 730
+    LinePreview: '[se buf=0 storage="se_sex01a"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana076.ks
+    LineNumber: 367
+    LinePreview: '[se buf=0 storage="se_sex01a"]'
+- SE_Name: se_sex01b
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_seFileDef.ks
+    LineNumber: 26
+    LinePreview: "[eval exp=\"sf.SE射精_中_人_短 = 'se_sex01b'\"]"
+- SE_Name: se_sex01c
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_seFileDef.ks
+    LineNumber: 28
+    LinePreview: "[eval exp=\"sf.SE射精_中_人_長 = 'se_sex01c'\"]"
+- SE_Name: se_sex02
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana005.ks
+    LineNumber: 196
+    LinePreview: '[se buf=1 storage="se_sex02" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana005.ks
+    LineNumber: 292
+    LinePreview: '[se buf=1 storage="se_sex02" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana008.ks
+    LineNumber: 121
+    LinePreview: '[se buf=1 storage="se_sex02" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana008.ks
+    LineNumber: 622
+    LinePreview: '[se buf=1 storage="se_sex02" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana011.ks
+    LineNumber: 387
+    LinePreview: '[se buf=1 storage="se_sex02" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana011.ks
+    LineNumber: 739
+    LinePreview: '[se buf=1 storage="se_sex02" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana014.ks
+    LineNumber: 313
+    LinePreview: '[se buf=1 storage="se_sex02" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana040.ks
+    LineNumber: 1324
+    LinePreview: '[se buf=1 storage="se_sex02" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana067.ks
+    LineNumber: 647
+    LinePreview: '[se buf=1 storage="se_sex02" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana121.ks
+    LineNumber: 262
+    LinePreview: '[se buf=1 storage="se_sex02" loop]'
+- SE_Name: se_sex03
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_CharBuffer.ks
+    LineNumber: 63
+    LinePreview: ;	[eval exp="sf.ogg_se_HLoop = 'se_sex03.ogg'"]
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_seFileDef.ks
+    LineNumber: 12
+    LinePreview: "[eval exp=\"sf.SEピストン_人外 = 'se_sex03b'\"]"
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_seFileDef.ks
+    LineNumber: 22
+    LinePreview: "[eval exp=\"sf.SEピストン_人_遅 = 'se_sex03a'\"]"
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_seFileDef.ks
+    LineNumber: 23
+    LinePreview: "[eval exp=\"sf.SEピストン_人_速 = 'se_sex03'\"]"
+- SE_Name: se_sex03a
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_seFileDef.ks
+    LineNumber: 22
+    LinePreview: "[eval exp=\"sf.SEピストン_人_遅 = 'se_sex03a'\"]"
+- SE_Name: se_sex03b
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_others\_sys_seFileDef.ks
+    LineNumber: 12
+    LinePreview: "[eval exp=\"sf.SEピストン_人外 = 'se_sex03b'\"]"
+- SE_Name: se_sex04
+  Used: false
+- SE_Name: se_sex04a
+  Used: false
+- SE_Name: se_sexPaizuri_Handjob2
+  Used: false
+- SE_Name: se_sexPaizuri_Handjob3
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana040.ks
+    LineNumber: 147
+    LinePreview: '[se buf=1 storage="se_sexPaizuri_Handjob3" loop]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana040.ks
+    LineNumber: 1110
+    LinePreview: '[se buf=1 storage="se_sexPaizuri_Handjob3" loop]'
+- SE_Name: se_sexSquirt
+  Used: true
+  Usages:
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana051.ks
+    LineNumber: 473
+    LinePreview: '[se buf=0 storage="se_sexSquirt"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana121.ks
+    LineNumber: 569
+    LinePreview: '[se buf=0 storage="se_sexSquirt"]'
+  - ScriptFile: C:\Games\Chaos-R\01 - Prepped\Sacred Angel - Arcana Rouge - English Translation\translation\k_scenario\arcana121.ks
+    LineNumber: 600
+    LinePreview: '[se buf=0 storage="se_sexSquirt"]'
+

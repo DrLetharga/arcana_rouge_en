@@ -1,0 +1,8 @@
+Filename,Scene Type,Time of Day,Mood,Suggested Tags,Notes,Script File,Index
+bg017c.png,Playground (Residential),Night,"Tense, Mysterious","{emote:serious}, {emote:uneasy}, {emote:tense}",Aoi enters park at night and spots a mysterious girl; unsettling silence.,arcana054.ks,296
+bg017c.png,Playground (Residential),Night,"Surreal, Disoriented","{effect:hamon}, {emote:confused}, {emote:fear}",Ripple distortion effect is triggered as Aoi tries to approach the girl.,arcana054.ks,314
+bg017c.png,Playground (Residential),Night,Emotional Collapse,"{emote:broken}, {emote:sad}, {emote:serious}",Aoi collapses emotionally after confrontation; leads into scene fade.,arcana054.ks,402
+bg017c.png,Playground (Residential),Night,"Tense, Anticipatory","{emote:serious}, {emote:tense}","Kakuen appears in a quiet, dimly lit park; foreshadowing imminent action.",arcana056.ks,12
+bg017c.png,Playground (Residential),Night,"Focused, Internal","{emote:serious}, {emote:calm}",Narrative shifts to protagonist's inner monologue in the same park scene.,arcana056.ks,418
+bg017c.png,Playground (Residential),Night,"Setup, Confrontation","{emote:tense}, {emote:alert}",Used in early part of confrontation involving Kakuen and Mizuchi.,arcana081.ks,8
+bg017c.png,Playground (Residential),Night,"Combat, Urgency","{emote:urgent}, {emote:serious}, {emote:action}",Scene erupts into battle; Mizuchi shouts for allies to move.,arcana081.ks,163

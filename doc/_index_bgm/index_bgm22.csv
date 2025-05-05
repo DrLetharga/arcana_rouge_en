@@ -1,0 +1,14 @@
+KS File,BGM File,Start Line,End Line,Looping,Duration,Tone Tags,Notes,Stop Trigger
+arcana003.ks,BGM01.ogg,95,2131,True,108.0,{tone:threat}{tone:ritual},"Kakuen and Mizuchi appear together for the first time, boasting about the weakness of the girls and preparing a coordinated attack. The atmosphere is tense, with looming dread as monsters swarm the heroines.",[bgm002]
+arcana004.ks,BGM01.ogg,265,414,True,108.0,{tone:threat}{tone:ritual},"「力がみなぎってくる……先生、ありがと！」[pcms] 「またあの力か！　じゃが、一人であれば……」[pcms]",n/a
+arcana007.ks,BGM01.ogg,227,326,True,108.0,{tone:ritual},"「あ……魔法力が回復して……これなら！」[pcms] 「な、なにっ！？　回復しただと？　しかも、さっきよりやばそうな気配……」[pcms]",n/a
+arcana010.ks,BGM01.ogg,139,208,True,108.0,{tone:threat}{tone:ritual},"「せんせー、ありがとう。後で治してあげるから待ってて」[pcms] 「なッ……またその力かよ？　けど、たった一人だけなら！」[pcms]",n/a
+arcana024.ks,BGM01.ogg,12,111,True,108.0,{tone:ritual},"「殺してやる……人間どもも、魔法少女もっ！」[pcms] 「そんなこと……絶対させないっ！」[pcms]",n/a
+arcana026.ks,BGM01.ogg,10,111,True,108.0,{tone:ritual},"「殺してやる……人間どもも、魔法少女もっ！」[pcms] 「そんなこと……させませんっ！」[pcms]",n/a
+arcana028.ks,BGM01.ogg,10,111,True,108.0,{tone:ritual},"「殺してやる……魔法少女も、人間も、全部な！」[pcms] 「ふざけんな！　こっちは本気だ！」[pcms]",n/a
+arcana033.ks,BGM01.ogg,444,548,True,108.0,{tone:ritual}{tone:tense},"「早く逃げろって！　ここはアタシがなんとかするから！」[pcms] 「無茶しすぎだよ、アオイちゃん……」[pcms]",n/a
+arcana048.ks,BGM01.ogg,249,341,True,108.0,{tone:ritual},"「うう……こわい……」[pcms] 「泣くな！　今は戦うしかないんだ！」[pcms]",n/a
+arcana056.ks,BGM01.ogg,269,377,True,108.0,{tone:threat}{tone:ritual},"「よくも……私の友達を……」[pcms] 「その怒り、力に変えろ！」[pcms]",n/a
+arcana064.ks,BGM01.ogg,331,429,True,108.0,{tone:ritual}{tone:tense},"「お願い……誰か助けて……」[pcms] 「アタシがついてる、大丈夫！」[pcms]",n/a
+arcana101.ks,BGM01.ogg,408,499,True,108.0,{tone:tense},"「落ち着いて、アタシたちはまだやれる！」[pcms] 「やるっきゃない、でしょ！」[pcms]",n/a
+arcana108.ks,BGM01.ogg,299,396,True,108.0,{tone:ritual},"「あの力がまた……でも負けないっ！」[pcms] 「しっかりしろ！　アタシたちなら乗り越えられる！」[pcms]",n/a

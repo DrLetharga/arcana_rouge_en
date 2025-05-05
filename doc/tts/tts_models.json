@@ -1,0 +1,85 @@
+{
+  "akane": {
+    "model_id": "akane_clean",
+    "gagged_model_id": "akane_gagged",
+    "vocal_traits": [
+      "high-pitched",
+      "breathy",
+      "heroic",
+      "emotionally earnest"
+    ],
+    "languages": [
+      "ja",
+      "en"
+    ],
+    "emotions": [
+      "cry",
+      "climax"
+    ],
+    "internal_monologue_model_id": "akane_internal",
+    "narration_model_id": "akane_narration"
+  },
+  "mia": {
+    "model_id": "mia_clean",
+    "gagged_model_id": "mia_gagged",
+    "vocal_traits": [
+      "bubbly",
+      "energetic",
+      "teasing",
+      "foreign-accented"
+    ],
+    "languages": [
+      "ja",
+      "en",
+      "fr"
+    ],
+    "emotions": [
+      "beg",
+      "cry",
+      "climax"
+    ],
+    "internal_monologue_model_id": "mia_internal",
+    "narration_model_id": "mia_narration"
+  },
+  "aoi": {
+    "model_id": "aoi_clean",
+    "gagged_model_id": "aoi_gagged",
+    "vocal_traits": [
+      "quiet",
+      "emotionally fragile",
+      "soft-spoken"
+    ],
+    "languages": [
+      "ja",
+      "en"
+    ],
+    "emotions": [
+      "cry",
+      "climax",
+      "apologetic"
+    ],
+    "internal_monologue_model_id": "aoi_internal",
+    "narration_model_id": "aoi_narration"
+  },
+  "mei": {
+    "model_id": "mei_clean",
+    "gagged_model_id": "mei_gagged",
+    "vocal_traits": [
+      "cool",
+      "detached",
+      "sultry",
+      "confident"
+    ],
+    "languages": [
+      "ja",
+      "en"
+    ],
+    "emotions": [
+      "climax",
+      "taunt",
+      "command"
+    ],
+    "internal_monologue_model_id": "mei_internal",
+    "narration_model_id": "mei_narration"
+  }
+}

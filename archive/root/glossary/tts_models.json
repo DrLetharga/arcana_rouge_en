@@ -1,0 +1,77 @@
+{
+  "akane": {
+    "model_id": "akane_clean",
+    "gagged_model_id": "akane_gagged",
+    "vocal_traits": [
+      "high-pitched",
+      "breathy",
+      "heroic",
+      "emotionally earnest"
+    ],
+    "languages": [
+      "ja",
+      "en"
+    ],
+    "emotions": [
+      "cry",
+      "climax"
+    ]
+  },
+  "mia": {
+    "model_id": "mia_clean",
+    "gagged_model_id": "mia_gagged",
+    "vocal_traits": [
+      "bubbly",
+      "energetic",
+      "teasing",
+      "foreign-accented"
+    ],
+    "languages": [
+      "ja",
+      "en",
+      "fr"
+    ],
+    "emotions": [
+      "beg",
+      "cry",
+      "climax"
+    ]
+  },
+  "aoi": {
+    "model_id": "aoi_clean",
+    "gagged_model_id": "aoi_gagged",
+    "vocal_traits": [
+      "quiet",
+      "emotionally fragile",
+      "soft-spoken"
+    ],
+    "languages": [
+      "ja",
+      "en"
+    ],
+    "emotions": [
+      "cry",
+      "climax",
+      "apologetic"
+    ]
+  },
+  "mei": {
+    "model_id": "mei_clean",
+    "gagged_model_id": "mei_gagged",
+    "vocal_traits": [
+      "cool",
+      "detached",
+      "sultry",
+      "confident"
+    ],
+    "languages": [
+      "ja",
+      "en"
+    ],
+    "emotions": [
+      "climax",
+      "taunt",
+      "command"
+    ]
+  }
+}

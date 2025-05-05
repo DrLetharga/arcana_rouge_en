@@ -1,0 +1,2327 @@
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+//	// 文字表示速度（厳密にはウェイト）を変更
+//	function chspeed_func(pos)
+//	{
+//		kag.userChSpeed = pos;
+//	//コンフィグに入った瞬間は飛ばさない
+//	if (config_RGB == true)
+//		{
+//		kag.callExtraConductor("system_config_srd.ks", "*text_draw");
+//		}
+//	}
+//
+//	// 既読文字表示速度（厳密にはウェイト）を変更
+//	function ch2speed_func(pos)
+//	{
+//		kag.userCh2ndSpeed = pos;
+//	//コンフィグに入った瞬間は飛ばさない
+//	if (config_RGB == true)
+//		{
+//		kag.callExtraConductor("system_config_srd.ks", "*text_draw");
+//		}
+//	}
+//
+//↑のスタイターを1個にまとめる
+// 文字表示速度、既読文字表示速度（厳密にはウェイト）を変更
+function chspeed_func(pos)
+	{
+	kag.userChSpeed = pos;
+	kag.userCh2ndSpeed = pos;
+	}
+
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+//	// 改行ウェイトを変更
+//	function linewait_func(pos)
+//	{
+//		kag.autoModeLineWait = pos;
+//	}
+//
+	// 改ページウェイトを変更
+	function pagewait_func(pos)
+	{
+		kag.autoModePageWait = pos;
+	}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+	// ウィンドウ濃度を変更
+	function win_opa_func(pos)
+	{
+
+		sf.graphicframe_opacity = pos;
+		// メッセージウィンドウのフリをさせる
+		var i = sf.conf_fakemessage;
+		kag.fore.layers[i].setSizeToImageSize(tf.sys_samplewin_w,tf.sys_samplewin_h); 
+		kag.fore.layers[i].opacity = sf.graphicframe_opacity;
+		kag.fore.layers[i].setPos(tf.sys_samplewin_x,tf.sys_samplewin_y);
+		kag.fore.layers[i].visible = true;
+		kag.fore.layers[i].loadImages(%[storage:'window_cnf.png']);
+		//選択肢でsel01のレイヤが同じでindexが書き換わってるので戻す処理追加　2017/12/26
+		//ホントは変数でやっておかないと今後調整したときに危ない気がする
+		//レイヤ11
+		//kag.fore.layers[i].absolute = 12000;
+		kag.fore.layers[i].absolute = sf.conf_fakemessage * 1000 + 1000;
+	}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+	// 既読テキストカラーRGBを変更 1本でRGBを変化させてみる
+	// 完璧にできたけど白黒が選べない。白と黒のスライダー追加したら結局3本だからやめよう……。
+	function kidoku_RGB_func(pos)
+	{
+
+	//    0   255   510   765   1020   1275
+	//R 255   255     0     0      0    255
+	//G   0   255   255   255      0      0
+	//B   0     0     0   255    255      0
+
+	if(pos == 0 ||pos == 1530)
+	{
+			sf.kidoku_R = 255;
+			sf.kidoku_G = 0;
+			sf.kidoku_B = 0;
+	}
+	else if(pos <= 255)
+	{
+	//Gをどれだけプラスするか算出 
+	var Gp = pos;
+			sf.kidoku_R = 255;
+			sf.kidoku_G = Gp;
+			sf.kidoku_B = 0;
+	}
+	else if(pos <= 510)
+	{
+	//Rをどれだけマイナスするか算出 
+	//スライダの長さからR分をマイナスし、マイナスの値算出の為に更に255マイナスする。
+	//値がマイナスになるから-1かける。
+	var Rsubtraction = (pos-255-255) * -1;
+
+			sf.kidoku_R = Rsubtraction;
+			sf.kidoku_G = 255;
+			sf.kidoku_B = 0;
+	}
+	else if(pos <= 765)
+	{
+	//Bをどれだけプラスするか算出 
+	//スライダの長さからRG分をマイナス
+	var Bp = (pos-510);
+			sf.kidoku_R = 0;
+			sf.kidoku_G = 255;
+			sf.kidoku_B = Bp;
+	}
+	else if(pos <= 1020)
+	{
+	//Gをどれだけマイナスするか算出 
+	//スライダの長さからRG分をマイナスし、マイナスの値算出の為に更に255マイナスする。
+	//値がマイナスになるから-1かける。
+	var Gsubtraction = (pos-765-255) * -1;
+			sf.kidoku_R = 0;
+			sf.kidoku_G = Gsubtraction;
+			sf.kidoku_B = 255;
+	}
+	else if(pos <= 1275)
+	{
+	//Rをどれだけプラスするか算出 
+	//スライダの長さからRGB分をマイナス
+	var Rp = (pos-1020);
+			sf.kidoku_R = Rp;
+			sf.kidoku_G = 0;
+			sf.kidoku_B = 255;
+	}
+	else if(pos <= 1530)
+	{
+	//Bをどれだけマイナスするか算出 
+	//スライダの長さからRGBR分をマイナスし、マイナスの値算出の為に更に255マイナスする。
+	//値がマイナスになるから-1かける。
+	var Bsubtraction = (pos-1275-255) * -1;
+			sf.kidoku_R = 255;
+			sf.kidoku_G = 0;
+			sf.kidoku_B = Bsubtraction;
+	}
+
+		sf.kidoku_RGB = '0x%02x%02x%02x'.sprintf(sf.kidoku_R, sf.kidoku_G, sf.kidoku_B);
+
+		//エッジカラー算出のためもう一回すぷりんと
+		sf.kidoku_Edgecolor = '0x%02x%02x%02x'.sprintf(sf.kidoku_R/2, sf.kidoku_G/2, sf.kidoku_B/2);
+
+	//コンフィグに入った瞬間は飛ばさない
+	if (config_RGB == true)
+		{
+		kag.callExtraConductor("system_config_srd.ks", "*text_draw");
+		}
+
+	}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+	// 既読テキストエッジカラーRGBを変更 1本でRGBを変化させてみる
+	function kidoku_edgeRGB_func(pos)
+	{
+
+	//    0   255   510   765   1020   1275
+	//R 255   255     0     0      0    255
+	//G   0   255   255   255      0      0
+	//B   0     0     0   255    255      0
+
+	if(pos == 0 ||pos == 1530)
+	{
+			sf.kidoku_edgeR = 255;
+			sf.kidoku_edgeG = 0;
+			sf.kidoku_edgeB = 0;
+	}
+	else if(pos <= 255)
+	{
+	//Gをどれだけプラスするか算出 
+	var Gp = pos;
+			sf.kidoku_edgeR = 255;
+			sf.kidoku_edgeG = Gp;
+			sf.kidoku_edgeB = 0;
+	}
+	else if(pos <= 510)
+	{
+	//Rをどれだけマイナスするか算出 
+	//スライダの長さからR分をマイナスし、マイナスの値算出の為に更に255マイナスする。
+	//値がマイナスになるから-1かける。
+	var Rsubtraction = (pos-255-255) * -1;
+
+			sf.kidoku_edgeR = Rsubtraction;
+			sf.kidoku_edgeG = 255;
+			sf.kidoku_edgeB = 0;
+	}
+	else if(pos <= 765)
+	{
+	//Bをどれだけプラスするか算出 
+	//スライダの長さからRG分をマイナス
+	var Bp = (pos-510);
+			sf.kidoku_edgeR = 0;
+			sf.kidoku_edgeG = 255;
+			sf.kidoku_edgeB = Bp;
+	}
+	else if(pos <= 1020)
+	{
+	//Gをどれだけマイナスするか算出 
+	//スライダの長さからRG分をマイナスし、マイナスの値算出の為に更に255マイナスする。
+	//値がマイナスになるから-1かける。
+	var Gsubtraction = (pos-765-255) * -1;
+			sf.kidoku_edgeR = 0;
+			sf.kidoku_edgeG = Gsubtraction;
+			sf.kidoku_edgeB = 255;
+	}
+	else if(pos <= 1275)
+	{
+	//Rをどれだけプラスするか算出 
+	//スライダの長さからRGB分をマイナス
+	var Rp = (pos-1020);
+			sf.kidoku_edgeR = Rp;
+			sf.kidoku_edgeG = 0;
+			sf.kidoku_edgeB = 255;
+	}
+	else if(pos <= 1530)
+	{
+	//Bをどれだけマイナスするか算出 
+	//スライダの長さからRGBR分をマイナスし、マイナスの値算出の為に更に255マイナスする。
+	//値がマイナスになるから-1かける。
+	var Bsubtraction = (pos-1275-255) * -1;
+			sf.kidoku_edgeR = 255;
+			sf.kidoku_edgeG = 0;
+			sf.kidoku_edgeB = Bsubtraction;
+	}
+
+		//エッジカラー算出のためもう一回すぷりんと
+		sf.kidoku_Edgecolor = '0x%02x%02x%02x'.sprintf(sf.kidoku_edgeR, sf.kidoku_edgeG, sf.kidoku_edgeB);
+
+	//コンフィグに入った瞬間は飛ばさない
+	if (config_RGB == true)
+		{
+		kag.callExtraConductor("system_config_srd.ks", "*text_draw");
+		}
+
+	//スライダー3つ全部表示したらトゥルー
+	config_RGB = true;
+	}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+	// 既読テキストカラーRを変更
+	function kidoku_R_func(pos)
+	{
+		sf.kidoku_R = pos;
+		sf.kidoku_RGB = '0x%02x%02x%02x'.sprintf(sf.kidoku_R, sf.kidoku_G, sf.kidoku_B);
+//		//エッジカラー算出のためもう一回すぷりんと
+//		sf.kidoku_Edgecolor = '0x%02x%02x%02x'.sprintf(sf.kidoku_R/2, sf.kidoku_G/2, sf.kidoku_B/2);
+//		//白ならエッジ黒に、黒ならエッジ白に決め打ち
+//		if(sf.kidoku_RGB == '0xffffff')
+//			{
+//			sf.kidoku_Edgecolor = '0x3333FF';
+//			}
+//		else if(sf.kidoku_RGB == '0x000000')
+//			{
+//			sf.kidoku_Edgecolor = '0xffffff';
+//			}
+
+	//コンフィグに入った瞬間は飛ばさない
+	if (config_RGB == true)
+		{
+		kag.callExtraConductor("system_config_srd.ks", "*text_draw");
+		}
+	}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+	// 既読テキストカラーGを変更
+	function kidoku_G_func(pos)
+	{
+		sf.kidoku_G = pos;
+		sf.kidoku_RGB = '0x%02x%02x%02x'.sprintf(sf.kidoku_R, sf.kidoku_G, sf.kidoku_B);
+//		//エッジカラー算出のためもう一回すぷりんと
+//		sf.kidoku_Edgecolor = '0x%02x%02x%02x'.sprintf(sf.kidoku_R/2, sf.kidoku_G/2, sf.kidoku_B/2);
+//		//白ならエッジ黒に、黒ならエッジ白に決め打ち
+//		if(sf.kidoku_RGB == '0xffffff')
+//			{
+//			sf.kidoku_Edgecolor = '0x3333FF';
+//			}
+//		else if(sf.kidoku_RGB == '0x000000')
+//			{
+//			sf.kidoku_Edgecolor = '0xffffff';
+//			}
+
+	//コンフィグに入った瞬間は飛ばさない
+	if (config_RGB == true)
+		{
+		kag.callExtraConductor("system_config_srd.ks", "*text_draw");
+		}
+	}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+	// 既読テキストカラーBを変更
+	function kidoku_B_func(pos)
+	{
+		sf.kidoku_B = pos;
+		sf.kidoku_RGB = '0x%02x%02x%02x'.sprintf(sf.kidoku_R, sf.kidoku_G, sf.kidoku_B);
+//		//エッジカラー算出のためもう一回すぷりんと
+//		sf.kidoku_Edgecolor = '0x%02x%02x%02x'.sprintf(sf.kidoku_R/2, sf.kidoku_G/2, sf.kidoku_B/2);
+//		//白ならエッジ黒に、黒ならエッジ白に決め打ち
+//		if(sf.kidoku_RGB == '0xffffff')
+//			{
+//			sf.kidoku_Edgecolor = '0x3333FF';
+//			}
+//		else if(sf.kidoku_RGB == '0x000000')
+//			{
+//			sf.kidoku_Edgecolor = '0xffffff';
+//			}
+	//コンフィグに入った瞬間は飛ばさない
+	if (config_RGB == true)
+		{
+		kag.callExtraConductor("system_config_srd.ks", "*text_draw");
+		}
+	//スライダー3つ全部表示したらトゥルー
+	//	config_RGB = true;
+
+	}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+	// 既読テキストエッジカラーRを変更
+	function kidoku_edgeR_func(pos)
+	{
+		sf.kidoku_edgeR = pos;
+		//エッジカラー算出
+		sf.kidoku_Edgecolor = '0x%02x%02x%02x'.sprintf(sf.kidoku_edgeR, sf.kidoku_edgeG, sf.kidoku_edgeB);
+
+	//コンフィグに入った瞬間は飛ばさない
+	if (config_RGB == true)
+		{
+		kag.callExtraConductor("system_config_srd.ks", "*text_draw");
+		}
+	}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+	// 既読テキストエッジカラーGを変更
+	function kidoku_edgeG_func(pos)
+	{
+		sf.kidoku_edgeG = pos;
+		//エッジカラー算出
+		sf.kidoku_Edgecolor = '0x%02x%02x%02x'.sprintf(sf.kidoku_edgeR, sf.kidoku_edgeG, sf.kidoku_edgeB);
+
+	//コンフィグに入った瞬間は飛ばさない
+	if (config_RGB == true)
+		{
+		kag.callExtraConductor("system_config_srd.ks", "*text_draw");
+		}
+	}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+	// 既読テキストエッジカラーBを変更
+	function kidoku_edgeB_func(pos)
+	{
+		sf.kidoku_edgeB = pos;
+		//エッジカラー算出
+		sf.kidoku_Edgecolor = '0x%02x%02x%02x'.sprintf(sf.kidoku_edgeR, sf.kidoku_edgeG, sf.kidoku_edgeB);
+
+	//コンフィグに入った瞬間は飛ばさない
+	if (config_RGB == true)
+		{
+		kag.callExtraConductor("system_config_srd.ks", "*text_draw");
+		}
+	//スライダー3つ全部表示したらトゥルー
+		config_RGB = true;
+	}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+// メッセージウィンドウ濃度を変更 うまく動作してないから使わない
+//function frameOpacity_func(pos)
+//{
+//	kag.fore.layers[tf.frame_layer].opacity = pos;
+//}
+
+////	// 全音量を変更
+////	function mastervolume_func(pos)
+////	{
+////	//	var mastervolume;
+////		var dic = %["gvolume"=>pos];
+////
+////	//	var configfirst = false;
+////	//m　これここで宣言したら毎回falseになってるじゃないか！
+////	//m　first.ksでconfigfirsを宣言している。初回起動時は[15]のみ取得して表示。
+//////m 無いな。そもそもこの動作なんだ？マスターボリュームの設定を考えてたのか
+////
+////		kag.se[15].setOptions(dic);
+////		//初回だったら以下のバッファは弄らない。
+////		if(configfirst == true)
+////			{
+////			kag.bgm.setOptions(dic);
+////			kag.se[0].setOptions;
+////			kag.se[1].setOptions(dic);
+////			kag.se[2].setOptions(dic);
+////			kag.se[3].setOptions(dic);
+////
+////			kag.se[4].setOptions(dic);
+////			kag.se[5].setOptions(dic);
+////			kag.se[6].setOptions(dic);
+////			kag.se[7].setOptions(dic);
+////			kag.se[8].setOptions(dic);
+////			kag.se[9].setOptions(dic);
+////			kag.se[10].setOptions(dic);
+////			kag.se[11].setOptions(dic);
+////			kag.se[12].setOptions(dic);
+////			}
+////		//判定フラグをオンに。
+////		configfirst = true;
+////
+////		sf.masterSOUSA = 1;
+////		invalidate dic;
+////
+////	}
+
+
+//kag.se[15].volume2を掛けてから計算したらうまくいきそうなんだが。
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+// BGM大域音量を変更
+function bgmvolume_func(pos)
+{
+	var dic = %["gvolume"=>pos];
+
+	kag.bgm.setOptions(dic);
+
+	//ダミー用のフラグに現在の値を保存しておく。
+	sf.dummy_bgmopt=kag.bgm.currentBuffer.volume2;
+	invalidate dic;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+// 全効果音バッファ大域音量を変更
+function sevolume_func(pos)
+{
+
+	if(config_se == true)
+	{
+//これ0で鳴らしたらゲーム中に0でループさせてたの止まっちゃうか
+//コンフィグ専用のバッファでならそう
+	kag.se[sf.SE_sys_buf].play(%[storage:'seA075.ogg',loop:false]);
+	}
+
+	var dic = %["gvolume"=>pos];
+//	for(var i = 0; i < kag.numSEBuffers; i++)
+//		kag.se[i].setOptions(dic);
+	kag.se[0].setOptions(dic);
+	kag.se[1].setOptions(dic);
+	kag.se[2].setOptions(dic);
+	kag.se[3].setOptions(dic);
+	//クイックセーブロード用SEのバッファ
+	kag.se[sf.SE_sys_buf].setOptions(dic);
+
+	//ダミー用のフラグに現在の値を保存しておく。
+	sf.dummy_seopt0=kag.se[0].volume2;
+	sf.dummy_seopt1=kag.se[1].volume2;
+	sf.dummy_seopt2=kag.se[2].volume2;
+	sf.dummy_seopt3=kag.se[3].volume2;
+	//クイックセーブロード用SEのバッファ
+	sf.dummy_seopt13=kag.se[sf.SE_sys_buf].volume2;
+	invalidate dic;
+
+	//判定フラグをオンに。
+	config_se = true;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+	// 全ボイスバッファ大域音量を変更
+////	function chvolumeALLvolume_func(pos)
+////	{
+////		var dic = %["gvolume"=>pos];
+////		kag.se[14].setOptions(dic);
+////
+////		//初回だったら以下のバッファは弄らない。
+////		if(configfirst2 == true)
+////		{
+////		kag.se[4].setOptions(dic);
+////		kag.se[6].setOptions(dic);
+////		kag.se[8].setOptions(dic);
+////		kag.se[10].setOptions(dic);
+////	//	kag.se[12].setOptions(dic);
+////		}
+////		//判定フラグをオンに。
+////		configfirst2 = true;
+////
+////		//ダミー用のフラグに現在の値を保存しておく。
+////		sf.dummy_seopt12=kag.se[14].volume2;
+////		invalidate dic;
+////	}
+////
+////
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+//old		// 全ループボイスバッファ大域音量を変更
+//old		function chvolumeALL_loopvolume_func(pos)
+//old		{
+//old
+//old		if(config_loop01 == true)
+//old		{
+//old		kag.se[5].play(%[storage:'chara01_loop.ogg',loop:false]);
+//old		}
+//old
+//old			var dic = %["gvolume"=>pos];
+//old			kag.se[5].setOptions(dic);
+//old			kag.se[7].setOptions(dic);
+//old			kag.se[9].setOptions(dic);
+//old		//	kag.se[11].setOptions(dic);
+//old		//	kag.se[13].setOptions(dic);
+//old
+//old			//ダミー用のフラグに現在の値を保存しておく。
+//old			sf.dummy_seopt5=kag.se[5].volume2;
+//old			sf.dummy_seopt7=kag.se[7].volume2;
+//old		//	sf.dummy_seopt9=kag.se[9].volume2;
+//old		//	sf.dummy_seopt11=kag.se[11].volume2;
+//old			invalidate dic;
+//old
+//old		//判定フラグをオンに。
+//old		config_loop01 = true;
+//old
+//old
+//old		}
+//old
+//old	//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+//old
+//old	// ボイスバッファ大域音量を変更
+//old	function sevolume_func04(pos)
+//old	{
+//old
+//old		if(config_chvolume01 == true)
+//old		{
+//old	//	kag.se[4].play(%[storage:sf.addgameID+'chara01.ogg',loop:false]);
+//old		//バッファ固定したからボイスファイルはキメ打ちじゃないとだめか
+//old
+//old
+//old			//アルテアならこっち
+//old			if(sf.gameNo == 1)
+//old			{
+//old			kag.se[4].play(%[storage:'ALT_chara01.ogg',loop:false]);
+//old			}
+//old			//ビアンカならこっち
+//old			else if(sf.gameNo == 2)
+//old			{
+//old			kag.se[4].play(%[storage:'BIA_chara03.ogg',loop:false]);
+//old			}
+//old			//フェイルセーフ
+//old			else
+//old			{
+//old			kag.se[4].play(%[storage:'ALT_chara01.ogg',loop:false]);
+//old			}
+//old
+//old
+//old		kag.se[6].stop();
+//old		kag.se[8].stop();
+//old		kag.se[10].stop();
+//old		kag.se[12].stop();
+//old	//	kag.se[14].stop();
+//old	//	kag.se[16].stop();
+//old		}
+//old
+//old		var dic = %["gvolume"=>pos];
+//old		kag.se[4].setOptions(dic);
+//old		//ダミー用のフラグに現在の値を保存しておく。
+//old		sf.dummy_seopt4=kag.se[4].volume2;
+//old		invalidate dic;
+//old
+//old		//判定フラグをオンに。
+//old		config_chvolume01 = true;
+//old	}
+//old
+//old	//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+//old
+//old	// ボイスバッファ大域音量を変更
+//old	function sevolume_func05(pos)
+//old	{
+//old		if(config_loop01 == true)
+//old		{
+//old		kag.se[5].play(%[storage:'chara01_loop.ogg',loop:false]);
+//old		}
+//old
+//old		var dic = %["gvolume"=>pos];
+//old		kag.se[5].setOptions(dic);
+//old		//ダミー用のフラグに現在の値を保存しておく。
+//old		sf.dummy_seopt5=kag.se[5].volume2;
+//old		invalidate dic;
+//old
+//old		//判定フラグをオンに。
+//old		config_loop01 = true;
+//old	}
+//old
+//old	//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+//old
+//old	// ボイスバッファ大域音量を変更
+//old	function sevolume_func06(pos)
+//old	{
+//old		if(config_chvolume02 == true)
+//old		{
+//old		kag.se[6].play(%[storage:'ALT_chara02.ogg',loop:false]);
+//old		kag.se[4].stop();
+//old		//kag.se[6].stop();
+//old		kag.se[8].stop();
+//old		kag.se[10].stop();
+//old		kag.se[12].stop();
+//old	//	kag.se[14].stop();
+//old	//	kag.se[16].stop();
+//old		}
+//old
+//old		var dic = %["gvolume"=>pos];
+//old		kag.se[6].setOptions(dic);
+//old		//ダミー用のフラグに現在の値を保存しておく。
+//old		sf.dummy_seopt6=kag.se[6].volume2;
+//old
+//old
+//old		invalidate dic;
+//old
+//old		//判定フラグをオンに。
+//old		config_chvolume02 = true;
+//old
+//old	}
+//old
+//old	//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+//old
+//old	// ボイスバッファ大域音量を変更
+//old	function sevolume_func07(pos)
+//old	{
+//old		if(config_loop02 == true)
+//old		{
+//old		kag.se[7].play(%[storage:'chara02_loop.ogg',loop:false]);
+//old		}
+//old
+//old		var dic = %["gvolume"=>pos];
+//old		kag.se[7].setOptions(dic);
+//old		//ダミー用のフラグに現在の値を保存しておく。
+//old		sf.dummy_seopt7=kag.se[7].volume2;
+//old		invalidate dic;
+//old
+//old		//判定フラグをオンに。
+//old		config_loop02 = true;
+//old
+//old	}
+//old
+//old	//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+//old
+//old	// ボイスバッファ大域音量を変更
+//old	function sevolume_func08(pos)
+//old	{
+//old		if(config_chvolume03 == true)
+//old		{
+//old		kag.se[8].play(%[storage:'ALT_chara03.ogg',loop:false]);
+//old		kag.se[4].stop();
+//old		kag.se[6].stop();
+//old		//kag.se[8].stop();
+//old		kag.se[10].stop();
+//old		kag.se[12].stop();
+//old	//	kag.se[14].stop();
+//old	//	kag.se[16].stop();
+//old		}
+//old
+//old		var dic = %["gvolume"=>pos];
+//old		kag.se[8].setOptions(dic);
+//old		//ダミー用のフラグに現在の値を保存しておく。
+//old		sf.dummy_seopt8=kag.se[8].volume2;
+//old		invalidate dic;
+//old
+//old
+//old		//判定フラグをオンに。
+//old		config_chvolume03 = true;
+//old
+//old	}
+//old
+//old		// ボイスバッファ大域音量を変更
+//old		function sevolume_func09(pos)
+//old		{
+//old			var dic = %["gvolume"=>pos];
+//old			kag.se[9].setOptions(dic);
+//old			//ダミー用のフラグに現在の値を保存しておく。
+//old			sf.dummy_seopt9=kag.se[9].volume2;
+//old			invalidate dic;
+//old		}
+//old
+//old	//	// ボイスバッファ大域音量を変更
+//old	//	function sevolume_func10(pos)
+//old	//	{
+//old	//		var dic = %["gvolume"=>pos];
+//old	//		kag.se[10].setOptions(dic);
+//old	//		//ダミー用のフラグに現在の値を保存しておく。
+//old	//		sf.dummy_seopt10=kag.se[10].volume2;
+//old	//		invalidate dic;
+//old	//	}
+//old
+//old	//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+//old
+//old	function sevolume_func10(pos)
+//old	{
+//old
+//old		if(config_chvolume04 == true)
+//old		{
+//old
+//old			//アルテアならこっち
+//old			if(sf.gameNo == 1)
+//old			{
+//old			kag.se[10].play(%[storage:'ALT_chara04.ogg',loop:false]);
+//old			}
+//old			//ビアンカならこっち
+//old			else if(sf.gameNo == 2)
+//old			{
+//old			kag.se[10].play(%[storage:'BIA_chara01.ogg',loop:false]);
+//old			}
+//old			//フェイルセーフ
+//old			else
+//old			{
+//old			kag.se[10].play(%[storage:'BIA_chara01.ogg',loop:false]);
+//old			}
+//old
+//old		kag.se[4].stop();
+//old		kag.se[6].stop();
+//old		kag.se[8].stop();
+//old		//kag.se[10].stop();
+//old		kag.se[12].stop();
+//old	//	kag.se[14].stop();
+//old	//	kag.se[16].stop();
+//old		}
+//old
+//old		var dic = %["gvolume"=>pos];
+//old		kag.se[10].setOptions(dic);
+//old		//ダミー用のフラグに現在の値を保存しておく。
+//old		sf.dummy_seopt10=kag.se[10].volume2;
+//old		invalidate dic;
+//old
+//old		//判定フラグをオンに。
+//old		config_chvolume04 = true;
+//old	}
+//old
+//old		// ボイスバッファ大域音量を変更
+//old		function sevolume_func11(pos)
+//old		{
+//old			var dic = %["gvolume"=>pos];
+//old			kag.se[11].setOptions(dic);
+//old			//ダミー用のフラグに現在の値を保存しておく。
+//old			sf.dummy_seopt11=kag.se[11].volume2;
+//old			invalidate dic;
+//old		}
+//old
+//old	//	// ボイスバッファ大域音量を変更
+//old	//	function sevolume_func12(pos)
+//old	//	{
+//old	//		var dic = %["gvolume"=>pos];
+//old	//		kag.se[12].setOptions(dic);
+//old	//		//ダミー用のフラグに現在の値を保存しておく。
+//old	//		sf.dummy_seopt12=kag.se[12].volume2;
+//old	//		invalidate dic;
+//old	//	}
+//old
+//old	//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+//old
+//old	function sevolume_func12(pos)
+//old	{
+//old
+//old	//モブなのでボイス再生は無し やっぱ怖いからテスト用にならすか
+//old		if(config_chvolume05 == true)
+//old		{
+//old		kag.se[12].play(%[storage:'BIA_chara02.ogg',loop:false]);
+//old		kag.se[4].stop();
+//old		kag.se[6].stop();
+//old		kag.se[8].stop();
+//old		kag.se[10].stop();
+//old		//kag.se[12].stop();
+//old	//	kag.se[14].stop();
+//old	//	kag.se[16].stop();
+//old		}
+//old
+//old		var dic = %["gvolume"=>pos];
+//old		kag.se[12].setOptions(dic);
+//old		//ダミー用のフラグに現在の値を保存しておく。
+//old		sf.dummy_seopt12=kag.se[12].volume2;
+//old		invalidate dic;
+//old
+//old		//判定フラグをオンに。
+//old		config_chvolume05 = true;
+//old	}
+//old
+//old	//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+//old
+//old	//mm キャラ増えて必要ならコメントアウト外す。その際は、このファイルの末端にあるfunction dummy_seoptも
+//old	//	function sevolume_func14(pos)
+//old	//	{
+//old	//
+//old	//	//モブなのでボイス再生は無し やっぱ怖いからテスト用にならすか
+//old	//		if(config_chvolume06 == true)
+//old	//		{
+//old	//	//無音だから鳴らさなくていいのでは
+//old	//	//	kag.se[14].play(%[storage:sf.addgameID+'chara06.ogg',loop:false]);
+//old	//		kag.se[4].stop();
+//old	//		kag.se[6].stop();
+//old	//		kag.se[8].stop();
+//old	//		kag.se[10].stop();
+//old	//		kag.se[12].stop();
+//old	//	//	kag.se[14].stop();
+//old	//		kag.se[16].stop();
+//old	//		kag.se[18].stop();
+//old	//		}
+//old	//
+//old	//		var dic = %["gvolume"=>pos];
+//old	//		kag.se[14].setOptions(dic);
+//old	//		//ダミー用のフラグに現在の値を保存しておく。
+//old	//		sf.dummy_seopt14=kag.se[14].volume2;
+//old	//		invalidate dic;
+//old	//
+//old	//		//判定フラグをオンに。
+//old	//		config_chvolume06 = true;
+//old	//	}
+//old	//
+//old	//
+//old	//	function sevolume_func16(pos)
+//old	//	{
+//old	//
+//old	//	//モブなのでボイス再生は無し やっぱ怖いからテスト用にならすか
+//old	//		if(config_chvolume07 == true)
+//old	//		{
+//old	//	//無音だから鳴らさなくていいのでは
+//old	//	//	kag.se[16].play(%[storage:sf.addgameID+'chara07.ogg',loop:false]);
+//old	//		kag.se[4].stop();
+//old	//		kag.se[6].stop();
+//old	//		kag.se[8].stop();
+//old	//		kag.se[10].stop();
+//old	//		kag.se[12].stop();
+//old	//		kag.se[14].stop();
+//old	//	//	kag.se[16].stop();
+//old	//		kag.se[18].stop();
+//old	//		}
+//old	//
+//old	//		var dic = %["gvolume"=>pos];
+//old	//		kag.se[16].setOptions(dic);
+//old	//		//ダミー用のフラグに現在の値を保存しておく。
+//old	//		sf.dummy_seopt16=kag.se[16].volume2;
+//old	//		invalidate dic;
+//old	//
+//old	//		//判定フラグをオンに。
+//old	//		config_chvolume07 = true;
+//old	//	}
+//old	//
+//old	//	function sevolume_func18(pos)
+//old	//	{
+//old	//		if(config_chvolume08 == true)
+//old	//		{
+//old	//		kag.se[18].play(%[storage:sf.addgameID+'chara08.ogg',loop:false]);
+//old	//		kag.se[4].stop();
+//old	//		kag.se[6].stop();
+//old	//		kag.se[8].stop();
+//old	//		kag.se[10].stop();
+//old	//		kag.se[12].stop();
+//old	//		kag.se[14].stop();
+//old	//		kag.se[16].stop();
+//old	//	//	kag.se[18].stop();
+//old	//		}
+//old	//
+//old	//		var dic = %["gvolume"=>pos];
+//old	//		kag.se[18].setOptions(dic);
+//old	//		//ダミー用のフラグに現在の値を保存しておく。
+//old	//		sf.dummy_seopt18=kag.se[18].volume2;
+//old	//		invalidate dic;
+//old	//
+//old	//		//判定フラグをオンに。
+//old	//		config_chvolume08 = true;
+//old	//	}
+//old
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function dummy_bgmopt(pos)
+{
+	sf.dummy_bgmopt=pos;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function dummy_seopt0(pos)
+{
+	sf.dummy_seopt0=pos;
+	sf.dummy_seopt1=pos;
+	sf.dummy_seopt2=pos;
+	sf.dummy_seopt3=pos;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+//	function dummy_seopt5(pos)
+//	{
+//		sf.dummy_seopt5=pos;
+//		sf.dummy_seopt7=pos;
+//		sf.dummy_seopt9=pos;
+//		sf.dummy_seopt11=pos;
+//	}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+//old
+//old	function dummy_seopt4(pos)
+//old	{
+//old		sf.dummy_seopt4=pos;
+//old	}
+//old
+//old	//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+//old
+//old	function dummy_seopt5(pos)
+//old	{
+//old		sf.dummy_seopt5=pos;
+//old	}
+//old
+//old	//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+//old
+//old	function dummy_seopt6(pos)
+//old	{
+//old		sf.dummy_seopt6=pos;
+//old	}
+//old
+//old	//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+//old
+//old	function dummy_seopt7(pos)
+//old	{
+//old		sf.dummy_seopt7=pos;
+//old	}
+//old
+//old	//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+//old
+//old	function dummy_seopt8(pos)
+//old	{
+//old		sf.dummy_seopt8=pos;
+//old	}
+//old
+//old	//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+//old
+//old	function dummy_seopt10(pos)
+//old	{
+//old		sf.dummy_seopt10=pos;
+//old	}
+//old
+//old	//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+//old
+//old	function dummy_seopt12(pos)
+//old	{
+//old		sf.dummy_seopt12=pos;
+//old	}
+//old
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+//クイックセーブロード用SEのバッファ
+function dummy_seopt13(pos)
+{
+	sf.dummy_seopt13=pos;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+//old
+//old	function dummy_seopt14(pos)
+//old	{
+//old		sf.dummy_seopt14=pos;
+//old	}
+//old
+//old	//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+//old
+//old	//mm キャラ増えて必要ならコメントアウト外す。
+//old	//	function dummy_seopt16(pos)
+//old	//	{
+//old	//		sf.dummy_seopt16=pos;
+//old	//
+//old	//	}
+//old	//
+//old	//	function dummy_seopt18(pos)
+//old	//	{
+//old	//		sf.dummy_seopt18=pos;
+//old	//
+//old	//	}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+//ここから下がバッファを変数でやるバージョン
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+// ボイスバッファ大域音量を変更
+function sevolume_func_chara01(pos)
+{
+
+	if(config_chvolume01 == true)
+	{
+	kag.se[sf.chara01_buf].play(%[storage:sf.ogg_chara01,loop:false]);
+	kag.se[sf.SE_sys_confsrd_buf].stop();
+
+//	if (sf.bt_num_chara01 != void)
+//	kag.se[sf.chara01_buf].stop();
+	if (sf.bt_num_chara02 != void)
+	kag.se[sf.chara02_buf].stop();
+	if (sf.bt_num_chara03 != void)
+	kag.se[sf.chara03_buf].stop();
+	if (sf.bt_num_chara04 != void)
+	kag.se[sf.chara04_buf].stop();
+	if (sf.bt_num_chara05 != void)
+	kag.se[sf.chara05_buf].stop();
+	if (sf.bt_num_chara06 != void)
+	kag.se[sf.chara06_buf].stop();
+	if (sf.bt_num_chara07 != void)
+	kag.se[sf.chara07_buf].stop();
+	if (sf.bt_num_chara08 != void)
+	kag.se[sf.chara08_buf].stop();
+	if (sf.bt_num_chara09 != void)
+	kag.se[sf.chara09_buf].stop();
+	if (sf.bt_num_chara10 != void)
+	kag.se[sf.chara10_buf].stop();
+	if (sf.bt_num_chara11 != void)
+	kag.se[sf.chara11_buf].stop();
+	if (sf.bt_num_chara12 != void)
+	kag.se[sf.chara12_buf].stop();
+	if (sf.bt_num_chara13 != void)
+	kag.se[sf.chara13_buf].stop();
+	if (sf.bt_num_chara14 != void)
+	kag.se[sf.chara14_buf].stop();
+	if (sf.bt_num_chara15 != void)
+	kag.se[sf.chara15_buf].stop();
+	if (sf.bt_num_chara16 != void)
+	kag.se[sf.chara16_buf].stop();
+	if (sf.bt_num_chara01L != void)
+	kag.se[sf.SE_sys_confsrd_buf].stop();
+	}
+
+	var dic = %["gvolume"=>pos];
+	kag.se[sf.chara01_buf].setOptions(dic);
+	//ダミー用のフラグに現在の値を保存しておく。
+	sf.dummy_seopt_chara01=kag.se[sf.chara01_buf].volume2;
+	invalidate dic;
+
+	//判定フラグをオンに。
+	config_chvolume01 = true;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function sevolume_func_chara02(pos)
+{
+
+	if(config_chvolume02 == true)
+	{
+	kag.se[sf.chara02_buf].play(%[storage:sf.ogg_chara02,loop:false]);
+	kag.se[sf.SE_sys_confsrd_buf].stop();
+	if (sf.bt_num_chara01 != void)
+	kag.se[sf.chara01_buf].stop();
+//	if (sf.bt_num_chara02 != void)
+//	kag.se[sf.chara02_buf].stop();
+	if (sf.bt_num_chara03 != void)
+	kag.se[sf.chara03_buf].stop();
+	if (sf.bt_num_chara04 != void)
+	kag.se[sf.chara04_buf].stop();
+	if (sf.bt_num_chara05 != void)
+	kag.se[sf.chara05_buf].stop();
+	if (sf.bt_num_chara06 != void)
+	kag.se[sf.chara06_buf].stop();
+	if (sf.bt_num_chara07 != void)
+	kag.se[sf.chara07_buf].stop();
+	if (sf.bt_num_chara08 != void)
+	kag.se[sf.chara08_buf].stop();
+	if (sf.bt_num_chara09 != void)
+	kag.se[sf.chara09_buf].stop();
+	if (sf.bt_num_chara10 != void)
+	kag.se[sf.chara10_buf].stop();
+	if (sf.bt_num_chara11 != void)
+	kag.se[sf.chara11_buf].stop();
+	if (sf.bt_num_chara12 != void)
+	kag.se[sf.chara12_buf].stop();
+	if (sf.bt_num_chara13 != void)
+	kag.se[sf.chara13_buf].stop();
+	if (sf.bt_num_chara14 != void)
+	kag.se[sf.chara14_buf].stop();
+	if (sf.bt_num_chara15 != void)
+	kag.se[sf.chara15_buf].stop();
+	if (sf.bt_num_chara16 != void)
+	kag.se[sf.chara16_buf].stop();
+	if (sf.bt_num_chara01L != void)
+	kag.se[sf.SE_sys_confsrd_buf].stop();
+	}
+
+	var dic = %["gvolume"=>pos];
+	kag.se[sf.chara02_buf].setOptions(dic);
+	//ダミー用のフラグに現在の値を保存しておく。
+	sf.dummy_seopt_chara02=kag.se[sf.chara02_buf].volume2;
+	invalidate dic;
+
+	//判定フラグをオンに。
+	config_chvolume02 = true;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function sevolume_func_chara03(pos)
+{
+
+	if(config_chvolume03 == true)
+	{
+	kag.se[sf.chara03_buf].play(%[storage:sf.ogg_chara03,loop:false]);
+	kag.se[sf.SE_sys_confsrd_buf].stop();
+
+	if (sf.bt_num_chara01 != void)
+	kag.se[sf.chara01_buf].stop();
+	if (sf.bt_num_chara02 != void)
+	kag.se[sf.chara02_buf].stop();
+//	if (sf.bt_num_chara03 != void)
+//	kag.se[sf.chara03_buf].stop();
+	if (sf.bt_num_chara04 != void)
+	kag.se[sf.chara04_buf].stop();
+	if (sf.bt_num_chara05 != void)
+	kag.se[sf.chara05_buf].stop();
+	if (sf.bt_num_chara06 != void)
+	kag.se[sf.chara06_buf].stop();
+	if (sf.bt_num_chara07 != void)
+	kag.se[sf.chara07_buf].stop();
+	if (sf.bt_num_chara08 != void)
+	kag.se[sf.chara08_buf].stop();
+	if (sf.bt_num_chara09 != void)
+	kag.se[sf.chara09_buf].stop();
+	if (sf.bt_num_chara10 != void)
+	kag.se[sf.chara10_buf].stop();
+	if (sf.bt_num_chara11 != void)
+	kag.se[sf.chara11_buf].stop();
+	if (sf.bt_num_chara12 != void)
+	kag.se[sf.chara12_buf].stop();
+	if (sf.bt_num_chara13 != void)
+	kag.se[sf.chara13_buf].stop();
+	if (sf.bt_num_chara14 != void)
+	kag.se[sf.chara14_buf].stop();
+	if (sf.bt_num_chara15 != void)
+	kag.se[sf.chara15_buf].stop();
+	if (sf.bt_num_chara16 != void)
+	kag.se[sf.chara16_buf].stop();
+	if (sf.bt_num_chara01L != void)
+	kag.se[sf.SE_sys_confsrd_buf].stop();
+	}
+
+	var dic = %["gvolume"=>pos];
+	kag.se[sf.chara03_buf].setOptions(dic);
+	//ダミー用のフラグに現在の値を保存しておく。
+	sf.dummy_seopt_chara03=kag.se[sf.chara03_buf].volume2;
+	invalidate dic;
+
+	//判定フラグをオンに。
+	config_chvolume03 = true;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function sevolume_func_chara04(pos)
+{
+
+	if(config_chvolume04 == true)
+	{
+	kag.se[sf.chara04_buf].play(%[storage:sf.ogg_chara04,loop:false]);
+	kag.se[sf.SE_sys_confsrd_buf].stop();
+
+	if (sf.bt_num_chara01 != void)
+	kag.se[sf.chara01_buf].stop();
+	if (sf.bt_num_chara02 != void)
+	kag.se[sf.chara02_buf].stop();
+	if (sf.bt_num_chara03 != void)
+	kag.se[sf.chara03_buf].stop();
+//	if (sf.bt_num_chara04 != void)
+//	kag.se[sf.chara04_buf].stop();
+	if (sf.bt_num_chara05 != void)
+	kag.se[sf.chara05_buf].stop();
+	if (sf.bt_num_chara06 != void)
+	kag.se[sf.chara06_buf].stop();
+	if (sf.bt_num_chara07 != void)
+	kag.se[sf.chara07_buf].stop();
+	if (sf.bt_num_chara08 != void)
+	kag.se[sf.chara08_buf].stop();
+	if (sf.bt_num_chara09 != void)
+	kag.se[sf.chara09_buf].stop();
+	if (sf.bt_num_chara10 != void)
+	kag.se[sf.chara10_buf].stop();
+	if (sf.bt_num_chara11 != void)
+	kag.se[sf.chara11_buf].stop();
+	if (sf.bt_num_chara12 != void)
+	kag.se[sf.chara12_buf].stop();
+	if (sf.bt_num_chara13 != void)
+	kag.se[sf.chara13_buf].stop();
+	if (sf.bt_num_chara14 != void)
+	kag.se[sf.chara14_buf].stop();
+	if (sf.bt_num_chara15 != void)
+	kag.se[sf.chara15_buf].stop();
+	if (sf.bt_num_chara16 != void)
+	kag.se[sf.chara16_buf].stop();
+	if (sf.bt_num_chara01L != void)
+	kag.se[sf.SE_sys_confsrd_buf].stop();
+	}
+
+	var dic = %["gvolume"=>pos];
+	kag.se[sf.chara04_buf].setOptions(dic);
+	//ダミー用のフラグに現在の値を保存しておく。
+	sf.dummy_seopt_chara04=kag.se[sf.chara04_buf].volume2;
+	invalidate dic;
+
+	//判定フラグをオンに。
+	config_chvolume04 = true;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function sevolume_func_chara05(pos)
+{
+
+	if(config_chvolume05 == true)
+	{
+	kag.se[sf.chara05_buf].play(%[storage:sf.ogg_chara05,loop:false]);
+
+	if (sf.bt_num_chara01 != void)
+	kag.se[sf.chara01_buf].stop();
+	if (sf.bt_num_chara02 != void)
+	kag.se[sf.chara02_buf].stop();
+	if (sf.bt_num_chara03 != void)
+	kag.se[sf.chara03_buf].stop();
+	if (sf.bt_num_chara04 != void)
+	kag.se[sf.chara04_buf].stop();
+//	if (sf.bt_num_chara05 != void)
+//	kag.se[sf.chara05_buf].stop();
+	if (sf.bt_num_chara06 != void)
+	kag.se[sf.chara06_buf].stop();
+	if (sf.bt_num_chara07 != void)
+	kag.se[sf.chara07_buf].stop();
+	if (sf.bt_num_chara08 != void)
+	kag.se[sf.chara08_buf].stop();
+	if (sf.bt_num_chara09 != void)
+	kag.se[sf.chara09_buf].stop();
+	if (sf.bt_num_chara10 != void)
+	kag.se[sf.chara10_buf].stop();
+	if (sf.bt_num_chara11 != void)
+	kag.se[sf.chara11_buf].stop();
+	if (sf.bt_num_chara12 != void)
+	kag.se[sf.chara12_buf].stop();
+	if (sf.bt_num_chara13 != void)
+	kag.se[sf.chara13_buf].stop();
+	if (sf.bt_num_chara14 != void)
+	kag.se[sf.chara14_buf].stop();
+	if (sf.bt_num_chara15 != void)
+	kag.se[sf.chara15_buf].stop();
+	if (sf.bt_num_chara16 != void)
+	kag.se[sf.chara16_buf].stop();
+	}
+
+	var dic = %["gvolume"=>pos];
+	kag.se[sf.chara05_buf].setOptions(dic);
+	//ダミー用のフラグに現在の値を保存しておく。
+	sf.dummy_seopt_chara05=kag.se[sf.chara05_buf].volume2;
+	invalidate dic;
+
+	//判定フラグをオンに。
+	config_chvolume05 = true;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function sevolume_func_chara06(pos)
+{
+
+	if(config_chvolume06 == true)
+	{
+	kag.se[sf.chara06_buf].play(%[storage:sf.ogg_chara06,loop:false]);
+
+//		//3ならこっち
+//		if(sf.gameNo == 3)
+//		{
+//		kag.se[sf.chara06_buf].play(%[storage:sf.ogg_chara06,loop:false]);
+//		}
+//		//4ならこっち
+//		else if(sf.gameNo == 4)
+//		{
+//		kag.se[sf.chara06_buf].play(%[storage:sf.ogg_chara06_2,loop:false]);
+//		}
+//		//フェイルセーフ
+//		else
+//		{
+//		kag.se[sf.chara06_buf].play(%[storage:sf.ogg_chara06,loop:false]);
+//		}
+
+	if (sf.bt_num_chara01 != void)
+	kag.se[sf.chara01_buf].stop();
+	if (sf.bt_num_chara02 != void)
+	kag.se[sf.chara02_buf].stop();
+	if (sf.bt_num_chara03 != void)
+	kag.se[sf.chara03_buf].stop();
+	if (sf.bt_num_chara04 != void)
+	kag.se[sf.chara04_buf].stop();
+	if (sf.bt_num_chara05 != void)
+	kag.se[sf.chara05_buf].stop();
+//	if (sf.bt_num_chara06 != void)
+//	kag.se[sf.chara06_buf].stop();
+	if (sf.bt_num_chara07 != void)
+	kag.se[sf.chara07_buf].stop();
+	if (sf.bt_num_chara08 != void)
+	kag.se[sf.chara08_buf].stop();
+	if (sf.bt_num_chara09 != void)
+	kag.se[sf.chara09_buf].stop();
+	if (sf.bt_num_chara10 != void)
+	kag.se[sf.chara10_buf].stop();
+	if (sf.bt_num_chara11 != void)
+	kag.se[sf.chara11_buf].stop();
+	if (sf.bt_num_chara12 != void)
+	kag.se[sf.chara12_buf].stop();
+	if (sf.bt_num_chara13 != void)
+	kag.se[sf.chara13_buf].stop();
+	if (sf.bt_num_chara14 != void)
+	kag.se[sf.chara14_buf].stop();
+	if (sf.bt_num_chara15 != void)
+	kag.se[sf.chara15_buf].stop();
+	if (sf.bt_num_chara16 != void)
+	kag.se[sf.chara16_buf].stop();
+	}
+
+	var dic = %["gvolume"=>pos];
+	kag.se[sf.chara06_buf].setOptions(dic);
+	//ダミー用のフラグに現在の値を保存しておく。
+	sf.dummy_seopt_chara06=kag.se[sf.chara06_buf].volume2;
+	invalidate dic;
+
+	//判定フラグをオンに。
+	config_chvolume06 = true;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function sevolume_func_chara07(pos)
+{
+
+	if(config_chvolume07 == true)
+	{
+	kag.se[sf.chara07_buf].play(%[storage:sf.ogg_chara07,loop:false]);
+
+//		//3ならこっち
+//		if(sf.gameNo == 3)
+//		{
+//		kag.se[sf.chara07_buf].play(%[storage:sf.ogg_chara07,loop:false]);
+//		}
+//		//4ならこっち
+//		else if(sf.gameNo == 4)
+//		{
+//		kag.se[sf.chara07_buf].play(%[storage:sf.ogg_chara07_2,loop:false]);
+//		}
+//		//フェイルセーフ
+//		else
+//		{
+//		kag.se[sf.chara07_buf].play(%[storage:sf.ogg_chara07,loop:false]);
+//		}
+
+	if (sf.bt_num_chara01 != void)
+	kag.se[sf.chara01_buf].stop();
+	if (sf.bt_num_chara02 != void)
+	kag.se[sf.chara02_buf].stop();
+	if (sf.bt_num_chara03 != void)
+	kag.se[sf.chara03_buf].stop();
+	if (sf.bt_num_chara04 != void)
+	kag.se[sf.chara04_buf].stop();
+	if (sf.bt_num_chara05 != void)
+	kag.se[sf.chara05_buf].stop();
+	if (sf.bt_num_chara06 != void)
+	kag.se[sf.chara06_buf].stop();
+//	if (sf.bt_num_chara07 != void)
+//	kag.se[sf.chara07_buf].stop();
+	if (sf.bt_num_chara08 != void)
+	kag.se[sf.chara08_buf].stop();
+	if (sf.bt_num_chara09 != void)
+	kag.se[sf.chara09_buf].stop();
+	if (sf.bt_num_chara10 != void)
+	kag.se[sf.chara10_buf].stop();
+	if (sf.bt_num_chara11 != void)
+	kag.se[sf.chara11_buf].stop();
+	if (sf.bt_num_chara12 != void)
+	kag.se[sf.chara12_buf].stop();
+	if (sf.bt_num_chara13 != void)
+	kag.se[sf.chara13_buf].stop();
+	if (sf.bt_num_chara14 != void)
+	kag.se[sf.chara14_buf].stop();
+	if (sf.bt_num_chara15 != void)
+	kag.se[sf.chara15_buf].stop();
+	if (sf.bt_num_chara16 != void)
+	kag.se[sf.chara16_buf].stop();
+	}
+
+	var dic = %["gvolume"=>pos];
+	kag.se[sf.chara07_buf].setOptions(dic);
+	//ダミー用のフラグに現在の値を保存しておく。
+	sf.dummy_seopt_chara07=kag.se[sf.chara07_buf].volume2;
+	invalidate dic;
+
+	//判定フラグをオンに。
+	config_chvolume07 = true;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function sevolume_func_chara08(pos)
+{
+
+	if(config_chvolume08 == true)
+	{
+	kag.se[sf.chara08_buf].play(%[storage:sf.ogg_chara08,loop:false]);
+
+//		//3ならこっち
+//		if(sf.gameNo == 3)
+//		{
+//		kag.se[sf.chara08_buf].play(%[storage:sf.ogg_chara08,loop:false]);
+//		}
+//		//4ならこっち
+//		else if(sf.gameNo == 4)
+//		{
+//		kag.se[sf.chara08_buf].play(%[storage:sf.ogg_chara08_2,loop:false]);
+//		}
+//		//フェイルセーフ
+//		else
+//		{
+//		kag.se[sf.chara08_buf].play(%[storage:sf.ogg_chara08,loop:false]);
+//		}
+
+
+	if (sf.bt_num_chara01 != void)
+	kag.se[sf.chara01_buf].stop();
+	if (sf.bt_num_chara02 != void)
+	kag.se[sf.chara02_buf].stop();
+	if (sf.bt_num_chara03 != void)
+	kag.se[sf.chara03_buf].stop();
+	if (sf.bt_num_chara04 != void)
+	kag.se[sf.chara04_buf].stop();
+	if (sf.bt_num_chara05 != void)
+	kag.se[sf.chara05_buf].stop();
+	if (sf.bt_num_chara06 != void)
+	kag.se[sf.chara06_buf].stop();
+	if (sf.bt_num_chara07 != void)
+	kag.se[sf.chara07_buf].stop();
+//	if (sf.bt_num_chara08 != void)
+//	kag.se[sf.chara08_buf].stop();
+	if (sf.bt_num_chara09 != void)
+	kag.se[sf.chara09_buf].stop();
+	if (sf.bt_num_chara10 != void)
+	kag.se[sf.chara10_buf].stop();
+	if (sf.bt_num_chara11 != void)
+	kag.se[sf.chara11_buf].stop();
+	if (sf.bt_num_chara12 != void)
+	kag.se[sf.chara12_buf].stop();
+	if (sf.bt_num_chara13 != void)
+	kag.se[sf.chara13_buf].stop();
+	if (sf.bt_num_chara14 != void)
+	kag.se[sf.chara14_buf].stop();
+	if (sf.bt_num_chara15 != void)
+	kag.se[sf.chara15_buf].stop();
+	if (sf.bt_num_chara16 != void)
+	kag.se[sf.chara16_buf].stop();
+	}
+
+	var dic = %["gvolume"=>pos];
+	kag.se[sf.chara08_buf].setOptions(dic);
+	//ダミー用のフラグに現在の値を保存しておく。
+	sf.dummy_seopt_chara08=kag.se[sf.chara08_buf].volume2;
+	invalidate dic;
+
+	//判定フラグをオンに。
+	config_chvolume08 = true;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function sevolume_func_chara09(pos)
+{
+
+	if(config_chvolume09 == true)
+	{
+	kag.se[sf.chara09_buf].play(%[storage:sf.ogg_chara09,loop:false]);
+
+//		//3ならこっち
+//		if(sf.gameNo == 3)
+//		{
+//		kag.se[sf.chara09_buf].play(%[storage:sf.ogg_chara09,loop:false]);
+//		}
+//		//4ならこっち
+//		else if(sf.gameNo == 4)
+//		{
+//		kag.se[sf.chara09_buf].play(%[storage:sf.ogg_chara09_2,loop:false]);
+//		}
+//		//フェイルセーフ
+//		else
+//		{
+//		kag.se[sf.chara09_buf].play(%[storage:sf.ogg_chara09,loop:false]);
+//		}
+
+	if (sf.bt_num_chara01 != void)
+	kag.se[sf.chara01_buf].stop();
+	if (sf.bt_num_chara02 != void)
+	kag.se[sf.chara02_buf].stop();
+	if (sf.bt_num_chara03 != void)
+	kag.se[sf.chara03_buf].stop();
+	if (sf.bt_num_chara04 != void)
+	kag.se[sf.chara04_buf].stop();
+	if (sf.bt_num_chara05 != void)
+	kag.se[sf.chara05_buf].stop();
+	if (sf.bt_num_chara06 != void)
+	kag.se[sf.chara06_buf].stop();
+	if (sf.bt_num_chara07 != void)
+	kag.se[sf.chara07_buf].stop();
+	if (sf.bt_num_chara08 != void)
+	kag.se[sf.chara08_buf].stop();
+//	if (sf.bt_num_chara09 != void)
+//	kag.se[sf.chara09_buf].stop();
+	if (sf.bt_num_chara10 != void)
+	kag.se[sf.chara10_buf].stop();
+	if (sf.bt_num_chara11 != void)
+	kag.se[sf.chara11_buf].stop();
+	if (sf.bt_num_chara12 != void)
+	kag.se[sf.chara12_buf].stop();
+	if (sf.bt_num_chara13 != void)
+	kag.se[sf.chara13_buf].stop();
+	if (sf.bt_num_chara14 != void)
+	kag.se[sf.chara14_buf].stop();
+	if (sf.bt_num_chara15 != void)
+	kag.se[sf.chara15_buf].stop();
+	if (sf.bt_num_chara16 != void)
+	kag.se[sf.chara16_buf].stop();
+	}
+
+	var dic = %["gvolume"=>pos];
+	kag.se[sf.chara09_buf].setOptions(dic);
+	//ダミー用のフラグに現在の値を保存しておく。
+	sf.dummy_seopt_chara09=kag.se[sf.chara09_buf].volume2;
+	invalidate dic;
+
+	//判定フラグをオンに。
+	config_chvolume09 = true;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function sevolume_func_chara10(pos)
+{
+
+	if(config_chvolume10 == true)
+	{
+	kag.se[sf.chara10_buf].play(%[storage:sf.ogg_chara10,loop:false]);
+	if (sf.bt_num_chara01 != void)
+	kag.se[sf.chara01_buf].stop();
+	if (sf.bt_num_chara02 != void)
+	kag.se[sf.chara02_buf].stop();
+	if (sf.bt_num_chara03 != void)
+	kag.se[sf.chara03_buf].stop();
+	if (sf.bt_num_chara04 != void)
+	kag.se[sf.chara04_buf].stop();
+	if (sf.bt_num_chara05 != void)
+	kag.se[sf.chara05_buf].stop();
+	if (sf.bt_num_chara06 != void)
+	kag.se[sf.chara06_buf].stop();
+	if (sf.bt_num_chara07 != void)
+	kag.se[sf.chara07_buf].stop();
+	if (sf.bt_num_chara08 != void)
+	kag.se[sf.chara08_buf].stop();
+	if (sf.bt_num_chara09 != void)
+	kag.se[sf.chara09_buf].stop();
+//	if (sf.bt_num_chara10 != void)
+//	kag.se[sf.chara10_buf].stop();
+	if (sf.bt_num_chara11 != void)
+	kag.se[sf.chara11_buf].stop();
+	if (sf.bt_num_chara12 != void)
+	kag.se[sf.chara12_buf].stop();
+	if (sf.bt_num_chara13 != void)
+	kag.se[sf.chara13_buf].stop();
+	if (sf.bt_num_chara14 != void)
+	kag.se[sf.chara14_buf].stop();
+	if (sf.bt_num_chara15 != void)
+	kag.se[sf.chara15_buf].stop();
+	if (sf.bt_num_chara16 != void)
+	kag.se[sf.chara16_buf].stop();
+	}
+
+	var dic = %["gvolume"=>pos];
+	kag.se[sf.chara10_buf].setOptions(dic);
+	//ダミー用のフラグに現在の値を保存しておく。
+	sf.dummy_seopt_chara10=kag.se[sf.chara10_buf].volume2;
+	invalidate dic;
+
+	//判定フラグをオンに。
+	config_chvolume10 = true;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function sevolume_func_chara11(pos)
+{
+
+	if(config_chvolume11 == true)
+	{
+	kag.se[sf.chara11_buf].play(%[storage:sf.ogg_chara11,loop:false]);
+	if (sf.bt_num_chara01 != void)
+	kag.se[sf.chara01_buf].stop();
+	if (sf.bt_num_chara02 != void)
+	kag.se[sf.chara02_buf].stop();
+	if (sf.bt_num_chara03 != void)
+	kag.se[sf.chara03_buf].stop();
+	if (sf.bt_num_chara04 != void)
+	kag.se[sf.chara04_buf].stop();
+	if (sf.bt_num_chara05 != void)
+	kag.se[sf.chara05_buf].stop();
+	if (sf.bt_num_chara06 != void)
+	kag.se[sf.chara06_buf].stop();
+	if (sf.bt_num_chara07 != void)
+	kag.se[sf.chara07_buf].stop();
+	if (sf.bt_num_chara08 != void)
+	kag.se[sf.chara08_buf].stop();
+	if (sf.bt_num_chara09 != void)
+	kag.se[sf.chara09_buf].stop();
+	if (sf.bt_num_chara10 != void)
+	kag.se[sf.chara10_buf].stop();
+//	if (sf.bt_num_chara11 != void)
+//	kag.se[sf.chara11_buf].stop();
+	if (sf.bt_num_chara12 != void)
+	kag.se[sf.chara12_buf].stop();
+	if (sf.bt_num_chara13 != void)
+	kag.se[sf.chara13_buf].stop();
+	if (sf.bt_num_chara14 != void)
+	kag.se[sf.chara14_buf].stop();
+	if (sf.bt_num_chara15 != void)
+	kag.se[sf.chara15_buf].stop();
+	if (sf.bt_num_chara16 != void)
+	kag.se[sf.chara16_buf].stop();
+	}
+
+	var dic = %["gvolume"=>pos];
+	kag.se[sf.chara11_buf].setOptions(dic);
+	//ダミー用のフラグに現在の値を保存しておく。
+	sf.dummy_seopt_chara11=kag.se[sf.chara11_buf].volume2;
+	invalidate dic;
+
+	//判定フラグをオンに。
+	config_chvolume11 = true;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function sevolume_func_chara12(pos)
+{
+
+	if(config_chvolume12 == true)
+	{
+	kag.se[sf.chara12_buf].play(%[storage:sf.ogg_chara12,loop:false]);
+	if (sf.bt_num_chara01 != void)
+	kag.se[sf.chara01_buf].stop();
+	if (sf.bt_num_chara02 != void)
+	kag.se[sf.chara02_buf].stop();
+	if (sf.bt_num_chara03 != void)
+	kag.se[sf.chara03_buf].stop();
+	if (sf.bt_num_chara04 != void)
+	kag.se[sf.chara04_buf].stop();
+	if (sf.bt_num_chara05 != void)
+	kag.se[sf.chara05_buf].stop();
+	if (sf.bt_num_chara06 != void)
+	kag.se[sf.chara06_buf].stop();
+	if (sf.bt_num_chara07 != void)
+	kag.se[sf.chara07_buf].stop();
+	if (sf.bt_num_chara08 != void)
+	kag.se[sf.chara08_buf].stop();
+	if (sf.bt_num_chara09 != void)
+	kag.se[sf.chara09_buf].stop();
+	if (sf.bt_num_chara10 != void)
+	kag.se[sf.chara10_buf].stop();
+	if (sf.bt_num_chara11 != void)
+	kag.se[sf.chara11_buf].stop();
+//	if (sf.bt_num_chara12 != void)
+//	kag.se[sf.chara12_buf].stop();
+	if (sf.bt_num_chara13 != void)
+	kag.se[sf.chara13_buf].stop();
+	if (sf.bt_num_chara14 != void)
+	kag.se[sf.chara14_buf].stop();
+	if (sf.bt_num_chara15 != void)
+	kag.se[sf.chara15_buf].stop();
+	if (sf.bt_num_chara16 != void)
+	kag.se[sf.chara16_buf].stop();
+	}
+
+	var dic = %["gvolume"=>pos];
+	kag.se[sf.chara12_buf].setOptions(dic);
+	//ダミー用のフラグに現在の値を保存しておく。
+	sf.dummy_seopt_chara12=kag.se[sf.chara12_buf].volume2;
+	invalidate dic;
+
+	//判定フラグをオンに。
+	config_chvolume12 = true;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function sevolume_func_chara13(pos)
+{
+
+	if(config_chvolume13 == true)
+	{
+//	kag.se[sf.chara13_buf].play(%[storage:sf.ogg_chara13,loop:false]);
+	if (sf.bt_num_chara01 != void)
+	kag.se[sf.chara01_buf].stop();
+	if (sf.bt_num_chara02 != void)
+	kag.se[sf.chara02_buf].stop();
+	if (sf.bt_num_chara03 != void)
+	kag.se[sf.chara03_buf].stop();
+	if (sf.bt_num_chara04 != void)
+	kag.se[sf.chara04_buf].stop();
+	if (sf.bt_num_chara05 != void)
+	kag.se[sf.chara05_buf].stop();
+	if (sf.bt_num_chara06 != void)
+	kag.se[sf.chara06_buf].stop();
+	if (sf.bt_num_chara07 != void)
+	kag.se[sf.chara07_buf].stop();
+	if (sf.bt_num_chara08 != void)
+	kag.se[sf.chara08_buf].stop();
+	if (sf.bt_num_chara09 != void)
+	kag.se[sf.chara09_buf].stop();
+	if (sf.bt_num_chara10 != void)
+	kag.se[sf.chara10_buf].stop();
+	if (sf.bt_num_chara11 != void)
+	kag.se[sf.chara11_buf].stop();
+	if (sf.bt_num_chara12 != void)
+	kag.se[sf.chara12_buf].stop();
+//	if (sf.bt_num_chara13 != void)
+//	kag.se[sf.chara13_buf].stop();
+	if (sf.bt_num_chara14 != void)
+	kag.se[sf.chara14_buf].stop();
+	if (sf.bt_num_chara15 != void)
+	kag.se[sf.chara15_buf].stop();
+	if (sf.bt_num_chara16 != void)
+	kag.se[sf.chara16_buf].stop();
+	}
+
+	var dic = %["gvolume"=>pos];
+	kag.se[sf.chara13_buf].setOptions(dic);
+	//ダミー用のフラグに現在の値を保存しておく。
+	sf.dummy_seopt_chara13=kag.se[sf.chara13_buf].volume2;
+	invalidate dic;
+
+	//判定フラグをオンに。
+	config_chvolume13 = true;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function sevolume_func_chara14(pos)
+{
+
+	if(config_chvolume14 == true)
+	{
+//	kag.se[sf.chara14_buf].play(%[storage:sf.ogg_chara14,loop:false]);
+	if (sf.bt_num_chara01 != void)
+	kag.se[sf.chara01_buf].stop();
+	if (sf.bt_num_chara02 != void)
+	kag.se[sf.chara02_buf].stop();
+	if (sf.bt_num_chara03 != void)
+	kag.se[sf.chara03_buf].stop();
+	if (sf.bt_num_chara04 != void)
+	kag.se[sf.chara04_buf].stop();
+	if (sf.bt_num_chara05 != void)
+	kag.se[sf.chara05_buf].stop();
+	if (sf.bt_num_chara06 != void)
+	kag.se[sf.chara06_buf].stop();
+	if (sf.bt_num_chara07 != void)
+	kag.se[sf.chara07_buf].stop();
+	if (sf.bt_num_chara08 != void)
+	kag.se[sf.chara08_buf].stop();
+	if (sf.bt_num_chara09 != void)
+	kag.se[sf.chara09_buf].stop();
+	if (sf.bt_num_chara10 != void)
+	kag.se[sf.chara10_buf].stop();
+	if (sf.bt_num_chara11 != void)
+	kag.se[sf.chara11_buf].stop();
+	if (sf.bt_num_chara12 != void)
+	kag.se[sf.chara12_buf].stop();
+	if (sf.bt_num_chara13 != void)
+	kag.se[sf.chara13_buf].stop();
+//	if (sf.bt_num_chara14 != void)
+//	kag.se[sf.chara14_buf].stop();
+	if (sf.bt_num_chara15 != void)
+	kag.se[sf.chara15_buf].stop();
+	if (sf.bt_num_chara16 != void)
+	kag.se[sf.chara16_buf].stop();
+	}
+
+	var dic = %["gvolume"=>pos];
+	kag.se[sf.chara14_buf].setOptions(dic);
+	//ダミー用のフラグに現在の値を保存しておく。
+	sf.dummy_seopt_chara14=kag.se[sf.chara14_buf].volume2;
+	invalidate dic;
+
+	//判定フラグをオンに。
+	config_chvolume14 = true;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function sevolume_func_chara15(pos)
+{
+
+	if(config_chvolume15 == true)
+	{
+//	kag.se[sf.chara15_buf].play(%[storage:sf.ogg_chara15,loop:false]);
+	if (sf.bt_num_chara01 != void)
+	kag.se[sf.chara01_buf].stop();
+	if (sf.bt_num_chara02 != void)
+	kag.se[sf.chara02_buf].stop();
+	if (sf.bt_num_chara03 != void)
+	kag.se[sf.chara03_buf].stop();
+	if (sf.bt_num_chara04 != void)
+	kag.se[sf.chara04_buf].stop();
+	if (sf.bt_num_chara05 != void)
+	kag.se[sf.chara05_buf].stop();
+	if (sf.bt_num_chara06 != void)
+	kag.se[sf.chara06_buf].stop();
+	if (sf.bt_num_chara07 != void)
+	kag.se[sf.chara07_buf].stop();
+	if (sf.bt_num_chara08 != void)
+	kag.se[sf.chara08_buf].stop();
+	if (sf.bt_num_chara09 != void)
+	kag.se[sf.chara09_buf].stop();
+	if (sf.bt_num_chara10 != void)
+	kag.se[sf.chara10_buf].stop();
+	if (sf.bt_num_chara11 != void)
+	kag.se[sf.chara11_buf].stop();
+	if (sf.bt_num_chara12 != void)
+	kag.se[sf.chara12_buf].stop();
+	if (sf.bt_num_chara13 != void)
+	kag.se[sf.chara13_buf].stop();
+	if (sf.bt_num_chara14 != void)
+	kag.se[sf.chara14_buf].stop();
+//	if (sf.bt_num_chara15 != void)
+//	kag.se[sf.chara15_buf].stop();
+	if (sf.bt_num_chara16 != void)
+	kag.se[sf.chara16_buf].stop();
+	}
+
+	var dic = %["gvolume"=>pos];
+	kag.se[sf.chara15_buf].setOptions(dic);
+	//ダミー用のフラグに現在の値を保存しておく。
+	sf.dummy_seopt_chara15=kag.se[sf.chara15_buf].volume2;
+	invalidate dic;
+
+	//判定フラグをオンに。
+	config_chvolume15 = true;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function sevolume_func_chara16(pos)
+{
+
+	if(config_chvolume16 == true)
+	{
+//	kag.se[sf.chara16_buf].play(%[storage:sf.ogg_chara16,loop:false]);
+	if (sf.bt_num_chara01 != void)
+	kag.se[sf.chara01_buf].stop();
+	if (sf.bt_num_chara02 != void)
+	kag.se[sf.chara02_buf].stop();
+	if (sf.bt_num_chara03 != void)
+	kag.se[sf.chara03_buf].stop();
+	if (sf.bt_num_chara04 != void)
+	kag.se[sf.chara04_buf].stop();
+	if (sf.bt_num_chara05 != void)
+	kag.se[sf.chara05_buf].stop();
+	if (sf.bt_num_chara06 != void)
+	kag.se[sf.chara06_buf].stop();
+	if (sf.bt_num_chara07 != void)
+	kag.se[sf.chara07_buf].stop();
+	if (sf.bt_num_chara08 != void)
+	kag.se[sf.chara08_buf].stop();
+	if (sf.bt_num_chara09 != void)
+	kag.se[sf.chara09_buf].stop();
+	if (sf.bt_num_chara10 != void)
+	kag.se[sf.chara10_buf].stop();
+	if (sf.bt_num_chara11 != void)
+	kag.se[sf.chara11_buf].stop();
+	if (sf.bt_num_chara12 != void)
+	kag.se[sf.chara12_buf].stop();
+	if (sf.bt_num_chara13 != void)
+	kag.se[sf.chara13_buf].stop();
+	if (sf.bt_num_chara14 != void)
+	kag.se[sf.chara14_buf].stop();
+	if (sf.bt_num_chara15 != void)
+	kag.se[sf.chara15_buf].stop();
+//	if (sf.bt_num_chara16 != void)
+//	kag.se[sf.chara16_buf].stop();
+	}
+
+	var dic = %["gvolume"=>pos];
+	kag.se[sf.chara16_buf].setOptions(dic);
+	//ダミー用のフラグに現在の値を保存しておく。
+	sf.dummy_seopt_chara16=kag.se[sf.chara16_buf].volume2;
+	invalidate dic;
+
+	//判定フラグをオンに。
+	config_chvolume16 = true;
+}
+
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function dummy_seopt_chara01(pos)
+{
+	sf.dummy_seopt_chara01=pos;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function dummy_seopt_chara02(pos)
+{
+	sf.dummy_seopt_chara02=pos;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function dummy_seopt_chara03(pos)
+{
+	sf.dummy_seopt_chara03=pos;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function dummy_seopt_chara04(pos)
+{
+	sf.dummy_seopt_chara04=pos;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function dummy_seopt_chara05(pos)
+{
+	sf.dummy_seopt_chara05=pos;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function dummy_seopt_chara06(pos)
+{
+	sf.dummy_seopt_chara06=pos;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function dummy_seopt_chara07(pos)
+{
+	sf.dummy_seopt_chara07=pos;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function dummy_seopt_chara08(pos)
+{
+	sf.dummy_seopt_chara08=pos;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function dummy_seopt_chara08(pos)
+{
+	sf.dummy_seopt_chara08=pos;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function dummy_seopt_chara09(pos)
+{
+	sf.dummy_seopt_chara09=pos;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function dummy_seopt_chara10(pos)
+{
+	sf.dummy_seopt_chara10=pos;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function dummy_seopt_chara11(pos)
+{
+	sf.dummy_seopt_chara11=pos;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function dummy_seopt_chara12(pos)
+{
+	sf.dummy_seopt_chara12=pos;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function dummy_seopt_chara13(pos)
+{
+	sf.dummy_seopt_chara13=pos;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function dummy_seopt_chara14(pos)
+{
+	sf.dummy_seopt_chara14=pos;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function dummy_seopt_chara15(pos)
+{
+	sf.dummy_seopt_chara15=pos;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function dummy_seopt_chara16(pos)
+{
+	sf.dummy_seopt_chara16=pos;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+// ボイスバッファ大域音量を変更
+function sevolume_func_chara01L(pos)
+{
+
+	if(config_chvolume01L == true)
+	{
+//	kag.se[sf.chara01L_buf].play(%[storage:sf.ogg_chara01L,loop:false]);
+// ループだから実際のバッファでならすとまずいか。
+//画面のスペースないからBGV1本で4キャラ分にする
+	kag.se[sf.SE_sys_confsrd_buf].setOptions(%[volume:sf.dummy_seopt_chara01L]);
+//	kag.se[sf.SE_sys_confsrd_buf].setOptions(%[volume:sf.dummy_seopt_chara02L]);
+//	kag.se[sf.SE_sys_confsrd_buf].setOptions(%[volume:sf.dummy_seopt_chara03L]);
+//	kag.se[sf.SE_sys_confsrd_buf].setOptions(%[volume:sf.dummy_seopt_chara04L]);
+	kag.se[sf.SE_sys_confsrd_buf].play(%[storage:sf.ogg_chara01L,loop:false]);
+	if (sf.bt_num_chara01 != void)
+	kag.se[sf.chara01_buf].stop();
+	if (sf.bt_num_chara02 != void)
+	kag.se[sf.chara02_buf].stop();
+	if (sf.bt_num_chara03 != void)
+	kag.se[sf.chara03_buf].stop();
+	if (sf.bt_num_chara04 != void)
+	kag.se[sf.chara04_buf].stop();
+	if (sf.bt_num_chara05 != void)
+	kag.se[sf.chara05_buf].stop();
+	if (sf.bt_num_chara06 != void)
+	kag.se[sf.chara06_buf].stop();
+	if (sf.bt_num_chara07 != void)
+	kag.se[sf.chara07_buf].stop();
+	if (sf.bt_num_chara08 != void)
+	kag.se[sf.chara08_buf].stop();
+	if (sf.bt_num_chara09 != void)
+	kag.se[sf.chara09_buf].stop();
+	if (sf.bt_num_chara10 != void)
+	kag.se[sf.chara10_buf].stop();
+	if (sf.bt_num_chara11 != void)
+	kag.se[sf.chara11_buf].stop();
+	if (sf.bt_num_chara12 != void)
+	kag.se[sf.chara12_buf].stop();
+	if (sf.bt_num_chara13 != void)
+	kag.se[sf.chara13_buf].stop();
+	if (sf.bt_num_chara14 != void)
+	kag.se[sf.chara14_buf].stop();
+	if (sf.bt_num_chara15 != void)
+	kag.se[sf.chara15_buf].stop();
+	if (sf.bt_num_chara16 != void)
+	kag.se[sf.chara16_buf].stop();
+//	if (sf.bt_num_chara01L != void)
+//	kag.se[sf.chara01L_buf].stop();
+	if (sf.bt_num_chara02L != void)
+	kag.se[sf.chara02L_buf].stop();
+	if (sf.bt_num_chara03L != void)
+	kag.se[sf.chara03L_buf].stop();
+	if (sf.bt_num_chara04L != void)
+	kag.se[sf.chara04L_buf].stop();
+	}
+
+	var dic = %["gvolume"=>pos];
+	kag.se[sf.chara01L_buf].setOptions(dic);
+	kag.se[sf.chara02L_buf].setOptions(dic);
+	kag.se[sf.chara03L_buf].setOptions(dic);
+	kag.se[sf.chara04L_buf].setOptions(dic);
+	kag.se[sf.SE_sys_confsrd_buf].setOptions(dic);
+	//ダミー用のフラグに現在の値を保存しておく。
+	sf.dummy_seopt_chara01L=kag.se[sf.chara01L_buf].volume2;
+	sf.dummy_seopt_chara02L=kag.se[sf.chara02L_buf].volume2;
+	sf.dummy_seopt_chara03L=kag.se[sf.chara03L_buf].volume2;
+	sf.dummy_seopt_chara04L=kag.se[sf.chara04L_buf].volume2;
+	invalidate dic;
+
+	//判定フラグをオンに。
+	config_chvolume01L = true;
+}
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+// ボイスバッファ大域音量を変更
+function sevolume_func_chara02L(pos)
+{
+
+	if(config_chvolume02L == true)
+	{
+//	kag.se[sf.chara02L_buf].play(%[storage:sf.ogg_chara02L,loop:false]);
+// ループだから実際のバッファでならすとまずいか。
+	kag.se[sf.SE_sys_confsrd_buf].setOptions(%[volume:sf.dummy_seopt_chara02L]);
+	kag.se[sf.SE_sys_confsrd_buf].play(%[storage:sf.ogg_chara02L,loop:false]);
+	if (sf.bt_num_chara01 != void)
+	kag.se[sf.chara01_buf].stop();
+	if (sf.bt_num_chara02 != void)
+	kag.se[sf.chara02_buf].stop();
+	if (sf.bt_num_chara03 != void)
+	kag.se[sf.chara03_buf].stop();
+	if (sf.bt_num_chara04 != void)
+	kag.se[sf.chara04_buf].stop();
+	if (sf.bt_num_chara05 != void)
+	kag.se[sf.chara05_buf].stop();
+	if (sf.bt_num_chara06 != void)
+	kag.se[sf.chara06_buf].stop();
+	if (sf.bt_num_chara07 != void)
+	kag.se[sf.chara07_buf].stop();
+	if (sf.bt_num_chara08 != void)
+	kag.se[sf.chara08_buf].stop();
+	if (sf.bt_num_chara09 != void)
+	kag.se[sf.chara09_buf].stop();
+	if (sf.bt_num_chara10 != void)
+	kag.se[sf.chara10_buf].stop();
+	if (sf.bt_num_chara11 != void)
+	kag.se[sf.chara11_buf].stop();
+	if (sf.bt_num_chara12 != void)
+	kag.se[sf.chara12_buf].stop();
+	if (sf.bt_num_chara13 != void)
+	kag.se[sf.chara13_buf].stop();
+	if (sf.bt_num_chara14 != void)
+	kag.se[sf.chara14_buf].stop();
+	if (sf.bt_num_chara15 != void)
+	kag.se[sf.chara15_buf].stop();
+	if (sf.bt_num_chara16 != void)
+	kag.se[sf.chara16_buf].stop();
+	if (sf.bt_num_chara01L != void)
+	kag.se[sf.chara01L_buf].stop();
+//	if (sf.bt_num_chara02L != void)
+//	kag.se[sf.chara02L_buf].stop();
+	if (sf.bt_num_chara03L != void)
+	kag.se[sf.chara03L_buf].stop();
+	if (sf.bt_num_chara04L != void)
+	kag.se[sf.chara04L_buf].stop();
+	}
+
+	var dic = %["gvolume"=>pos];
+	kag.se[sf.chara02L_buf].setOptions(dic);
+	kag.se[sf.SE_sys_confsrd_buf].setOptions(dic);
+	//ダミー用のフラグに現在の値を保存しておく。
+	sf.dummy_seopt_chara02L=kag.se[sf.chara02L_buf].volume2;
+	invalidate dic;
+
+	//判定フラグをオンに。
+	config_chvolume02L = true;
+}
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+// ボイスバッファ大域音量を変更
+function sevolume_func_chara03L(pos)
+{
+
+	if(config_chvolume03L == true)
+	{
+//	kag.se[sf.chara03L_buf].play(%[storage:sf.ogg_chara03L,loop:false]);
+// ループだから実際のバッファでならすとまずいか。
+	kag.se[sf.SE_sys_confsrd_buf].setOptions(%[volume:sf.dummy_seopt_chara03L]);
+	kag.se[sf.SE_sys_confsrd_buf].play(%[storage:sf.ogg_chara03L,loop:false]);
+	if (sf.bt_num_chara01 != void)
+	kag.se[sf.chara01_buf].stop();
+	if (sf.bt_num_chara02 != void)
+	kag.se[sf.chara02_buf].stop();
+	if (sf.bt_num_chara03 != void)
+	kag.se[sf.chara03_buf].stop();
+	if (sf.bt_num_chara04 != void)
+	kag.se[sf.chara04_buf].stop();
+	if (sf.bt_num_chara05 != void)
+	kag.se[sf.chara05_buf].stop();
+	if (sf.bt_num_chara06 != void)
+	kag.se[sf.chara06_buf].stop();
+	if (sf.bt_num_chara07 != void)
+	kag.se[sf.chara07_buf].stop();
+	if (sf.bt_num_chara08 != void)
+	kag.se[sf.chara08_buf].stop();
+	if (sf.bt_num_chara09 != void)
+	kag.se[sf.chara09_buf].stop();
+	if (sf.bt_num_chara10 != void)
+	kag.se[sf.chara10_buf].stop();
+	if (sf.bt_num_chara11 != void)
+	kag.se[sf.chara11_buf].stop();
+	if (sf.bt_num_chara12 != void)
+	kag.se[sf.chara12_buf].stop();
+	if (sf.bt_num_chara13 != void)
+	kag.se[sf.chara13_buf].stop();
+	if (sf.bt_num_chara14 != void)
+	kag.se[sf.chara14_buf].stop();
+	if (sf.bt_num_chara15 != void)
+	kag.se[sf.chara15_buf].stop();
+	if (sf.bt_num_chara16 != void)
+	kag.se[sf.chara16_buf].stop();
+	if (sf.bt_num_chara01L != void)
+	kag.se[sf.chara01L_buf].stop();
+	if (sf.bt_num_chara02L != void)
+	kag.se[sf.chara02L_buf].stop();
+//	if (sf.bt_num_chara03L != void)
+//	kag.se[sf.chara03L_buf].stop();
+	if (sf.bt_num_chara04L != void)
+	kag.se[sf.chara04L_buf].stop();
+	}
+
+	var dic = %["gvolume"=>pos];
+	kag.se[sf.chara03L_buf].setOptions(dic);
+	kag.se[sf.SE_sys_confsrd_buf].setOptions(dic);
+	//ダミー用のフラグに現在の値を保存しておく。
+	sf.dummy_seopt_chara03L=kag.se[sf.chara03L_buf].volume2;
+	invalidate dic;
+
+	//判定フラグをオンに。
+	config_chvolume03L = true;
+}
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+// ボイスバッファ大域音量を変更
+function sevolume_func_chara04L(pos)
+{
+
+	if(config_chvolume04L == true)
+	{
+//	kag.se[sf.chara04L_buf].play(%[storage:sf.ogg_chara04L,loop:false]);
+// ループだから実際のバッファでならすとまずいか。
+	kag.se[sf.SE_sys_confsrd_buf].setOptions(%[volume:sf.dummy_seopt_chara04L]);
+	kag.se[sf.SE_sys_confsrd_buf].play(%[storage:sf.ogg_chara04L,loop:false]);
+	if (sf.bt_num_chara01 != void)
+	kag.se[sf.chara01_buf].stop();
+	if (sf.bt_num_chara02 != void)
+	kag.se[sf.chara02_buf].stop();
+	if (sf.bt_num_chara03 != void)
+	kag.se[sf.chara03_buf].stop();
+	if (sf.bt_num_chara04 != void)
+	kag.se[sf.chara04_buf].stop();
+	if (sf.bt_num_chara05 != void)
+	kag.se[sf.chara05_buf].stop();
+	if (sf.bt_num_chara06 != void)
+	kag.se[sf.chara06_buf].stop();
+	if (sf.bt_num_chara07 != void)
+	kag.se[sf.chara07_buf].stop();
+	if (sf.bt_num_chara08 != void)
+	kag.se[sf.chara08_buf].stop();
+	if (sf.bt_num_chara09 != void)
+	kag.se[sf.chara09_buf].stop();
+	if (sf.bt_num_chara10 != void)
+	kag.se[sf.chara10_buf].stop();
+	if (sf.bt_num_chara11 != void)
+	kag.se[sf.chara11_buf].stop();
+	if (sf.bt_num_chara12 != void)
+	kag.se[sf.chara12_buf].stop();
+	if (sf.bt_num_chara13 != void)
+	kag.se[sf.chara13_buf].stop();
+	if (sf.bt_num_chara14 != void)
+	kag.se[sf.chara14_buf].stop();
+	if (sf.bt_num_chara15 != void)
+	kag.se[sf.chara15_buf].stop();
+	if (sf.bt_num_chara16 != void)
+	kag.se[sf.chara16_buf].stop();
+	if (sf.bt_num_chara01L != void)
+	kag.se[sf.chara01L_buf].stop();
+	if (sf.bt_num_chara02L != void)
+	kag.se[sf.chara02L_buf].stop();
+	if (sf.bt_num_chara03L != void)
+	kag.se[sf.chara03L_buf].stop();
+//	if (sf.bt_num_chara04L != void)
+//	kag.se[sf.chara04L_buf].stop();
+	}
+
+	var dic = %["gvolume"=>pos];
+	kag.se[sf.chara04L_buf].setOptions(dic);
+	kag.se[sf.SE_sys_confsrd_buf].setOptions(dic);
+	//ダミー用のフラグに現在の値を保存しておく。
+	sf.dummy_seopt_chara03L=kag.se[sf.chara04L_buf].volume2;
+	invalidate dic;
+
+	//判定フラグをオンに。
+	config_chvolume04L = true;
+}
+
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function dummy_seopt_chara01L(pos)
+{
+	sf.dummy_seopt_chara01L=pos;
+	//ダミーでも判定フラグをオンか
+	config_chvolume01L = true;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function dummy_seopt_chara02L(pos)
+{
+	sf.dummy_seopt_chara02L=pos;
+	//ダミーでも判定フラグをオンか
+	config_chvolume02L = true;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function dummy_seopt_chara03L(pos)
+{
+	sf.dummy_seopt_chara03L=pos;
+	//ダミーでも判定フラグをオンか
+	config_chvolume03L = true;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+function dummy_seopt_chara04L(pos)
+{
+	sf.dummy_seopt_chara04L=pos;
+	//ダミーでも判定フラグをオンか
+	config_chvolume04L = true;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==

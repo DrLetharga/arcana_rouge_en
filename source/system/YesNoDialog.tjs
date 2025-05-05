@@ -1,0 +1,286 @@
+// YesNoDialog.tjs - はい/いいえを選択するダイアログボックス
+
+//
+// ■確認ダイアログボックス改造版
+//
+// ◎不定形の確認ダイアログボックスを表示する
+//     ‐ダイアログボックス本体、はい/いいえボタンにはαチャンネルつき画像を用いる
+//     ‐ダイアログボックス本体の画像は不透明度１以上の箇所がくり抜かれた形で表示される
+//     ‐ダイアログボックスにボーダーは付かない
+// ◎メッセージ、タイトルバーキャプションはセンタリングされる
+// ◎メッセージは各種マージン（dialogMessageLeft～dialogMessageHeight）内に
+//   収まるよう改行される。この領域に収まらないほど長いメッセージを指定した場合、
+//   メッセージが途中で切れるので注意
+// ◎タイトルバーキャプションにはメッセージのような改行処理を施していない。タイトルバー
+//   キャプションの文字列の長さには注意すること（はみ出る）
+// ◎各種パラメータは、Config_YesNoDialog.tjsのYesNoDialogWindow_config()で変更できる
+// ◎その他、改造のポイントは☆を含むコメントを参照のこと
+//
+
+class YesNoDialogWindow extends Window
+{
+	var yesButton; // [はい] ボタン
+	var noButton; // [いいえ] ボタン
+
+	var result = false; // no:false yes:true
+
+	// 以下は定数として扱う：Config_YesNoDialog.tjsのYesNoDialogWindow_config()で変更できる
+	var dialogImage = "dialog_base.png";			// ダイアログボックス本体の画像ファイル
+
+	var dialogYesButtonImage = "dialog_bt_yes.png";	// ［はい］ボタンの画像ファイル
+	var dialogYesButtonLeft = 85;					// 同、Ｘ座標（ピクセル）
+	var dialogYesButtonTop = 156;					// 同、Ｙ座標（ピクセル）
+
+	var dialogNoButtonImage = "dialog_bt_no.png";	// ［いいえ］ボタンの画像ファイル
+	var dialogNoButtonLeft = 210;					// 同、Ｘ座標（ピクセル）
+	var dialogNoButtonTop = 156;					// 同、Ｙ座標（ピクセル）
+
+	var dialogFontHeight = 18;						// メッセージのフォント高さ（ピクセル）
+	var dialogFontFace = "ＭＳ Ｐゴシック";			// メッセージのフォント
+	var dialogFontBold = false;						// メッセージを太字にする場合はtrue
+	var dialogFontColor = clBtnText;				// メッセージの色（0xRRGGBB形式/色定数）
+	var dialogShadowLevel = 0;						// 影の不透明度（0:影なし）
+	var dialogShadowColor = 0x000000;				// 影の色（0xRRGGBB形式/色定数）
+	var dialogShadowWidth = 0;						// 影の幅（0:シャープ～ぼける）
+	var dialogShadowOffsetX = 0;					// 影の位置のＸ座標（0:真下）
+	var dialogShadowOffsetY = 0;					// 同、Ｙ座標（0:真下）
+
+	var dialogMessageLeft = 37;						// メッセージ描画領域の左上隅Ｘ座標（ピクセル）
+	var dialogMessageTop = 63;						// 同、Ｙ座標（ピクセル）
+	var dialogMessageWidth = 400 - 37*2;			// メッセージ描画領域の最大横幅（ピクセル）
+	var dialogMessageHeight = 210 - 63 - 75;		// 同、高さ（ピクセル）
+
+	var dialogCaptionFontHeight = 18;				// タイトルバーキャプションのフォント高さ（ピクセル）
+	var dialogCaptionTop = 18;						// 同、Ｙ座標（ピクセル）
+
+	//mm やめ　GameBlackout();//mm ゲーム画面を暗くする
+
+	function YesNoDialogWindow(message, cap)
+	{
+		super.Window();
+
+		if (typeof global.YesNoDialogWindow_config != "undefined")
+			(YesNoDialogWindow_config incontextof this)();		// パラメータを設定
+
+		// メインウィンドウから cursor**** の情報をとってくる
+		if(global.Window.mainWindow !== null &&
+			typeof global.Window.mainWindow.cursorDefault != "undefined")
+			this.cursorDefault = global.Window.mainWindow.cursorDefault;
+		if(global.Window.mainWindow !== null &&
+			typeof global.Window.mainWindow.cursorPointed != "undefined")
+			this.cursorPointed = global.Window.mainWindow.cursorPointed;
+
+		// 外見の調整
+		borderStyle = bsNone;	// ウィンドウのボーダーをなくす
+		innerSunken = false;	// クライアント領域の外見をフラットに（凹ませない）
+		// caption = cap;		// ←ウィンドウのボーダーをなくしたため、現在は無意味なコード
+
+		// プライマリレイヤの作成
+		add(new Layer(this, null));
+
+		primaryLayer.loadImages(dialogImage);	// ダイアログボックスの画像ファイルを読み込み
+		primaryLayer.setSizeToImageSize();		// レイヤのサイズを画像ファイルのそれに合わせる
+		setMaskRegion();						// ウィンドウを不定形にする
+
+		// プライマリのマウスカーソルを設定
+		if(typeof this.cursorDefault !== "undefined")
+			primaryLayer.cursor = cursorDefault;
+
+		setInnerSize(primaryLayer.width, primaryLayer.height);
+
+		// ウィンドウ位置の調整
+		if(global.Window.mainWindow !== null && global.Window.mainWindow isvalid)
+		{
+			var win = global.Window.mainWindow;
+			var l, t;
+			l = ((win.width - width)>>1) + win.left;
+			t = ((win.height - height)>>1) + win.top;
+			if(l < 0) l = 0;
+			if(t < 0) t = 0;
+			if(l + width > System.screenWidth) l = System.screenWidth - width;
+			if(t + height > System.screenHeight) t = System.screenHeight - height;
+			setPos(l, t);
+		}
+		else
+		{
+			setPos((System.screenWidth - width)>>1, (System.screenHeight - height)>>1);
+		}
+
+		// メッセージの描画
+		primaryLayer.font.height = dialogFontHeight;	// フォント高さを設定
+		primaryLayer.font.face = dialogFontFace;		// フォントを設定
+		primaryLayer.font.bold = dialogFontBold;		// 太字にする場合はtrueを設定する
+		var lines = getLines(message);		// メッセージを領域内に収まるよう分割する
+		var y = dialogMessageTop;
+		for (var i = 0; i < lines.count; i++) {		// 分割したメッセージを一行ずつ描画する
+			var th = primaryLayer.font.getTextHeight(lines[i]);
+			if (y+th > dialogMessageTop+dialogMessageHeight) {
+				// primaryLayer.hint = message;		// ☆ヒントにメッセージを表示させる
+				Debug.notice("YesNoDialogWindow.YesNoDialogWindow(): 表示するメッセージが長すぎます");
+				break;
+			}
+			var x = dialogMessageLeft + (dialogMessageWidth - primaryLayer.font.getTextWidth(lines[i])) \ 2;
+			primaryLayer.drawText(x, y, lines[i], dialogFontColor, 255, true,
+				dialogShadowLevel, dialogShadowColor, dialogShadowWidth, dialogShadowOffsetX, dialogShadowOffsetY);
+			y += th;
+		}
+		invalidate lines;
+
+		// キャプションの描画
+		primaryLayer.font.height = dialogCaptionFontHeight;	// フォント高さを設定
+		var caption_left = (primaryLayer.width - primaryLayer.font.getTextWidth(cap)) \ 2;
+		primaryLayer.drawText(caption_left, dialogCaptionTop, cap, dialogFontColor, 255, true,
+			dialogShadowLevel, dialogShadowColor, dialogShadowWidth, dialogShadowOffsetX, dialogShadowOffsetY);
+
+		// Yesボタン
+		add(yesButton = new ButtonLayer(this, primaryLayer));
+		with (yesButton) {
+			.loadImages(dialogYesButtonImage);
+			.top = dialogYesButtonTop;
+			.left = dialogYesButtonLeft;
+			.hitThreshold = 64;
+			.visible = true;
+		}
+
+		// Noボタン
+		add(noButton = new ButtonLayer(this, primaryLayer));
+		with (noButton) {
+			.loadImages(dialogNoButtonImage);
+			.top = dialogNoButtonTop;
+			.left = dialogNoButtonLeft;
+			.hitThreshold = 64;
+			.visible = true;
+		}
+	}
+
+	function finalize()
+	{
+		super.finalize(...);
+	}
+
+	function action(ev)
+	{
+		// action
+		if(ev.type == "onClick")
+		{
+			if(ev.target == yesButton)
+			{
+				result = true;
+				//mm やめ　unGameBlackout();//mm ゲーム画面を暗くする解除
+				close();
+			}
+			else if(ev.target == noButton)
+			{
+				result = false;
+				//mm やめ　unGameBlackout();//mm ゲーム画面を暗くする解除
+				close();
+			}
+		}
+		else if(ev.type == "onKeyDown" && ev.target === this)
+		{
+			// パッド入力に対応する処理
+			switch(ev.key)
+			{
+			case VK_PADLEFT:
+				yesButton.focus();
+				break;
+			case VK_PADRIGHT:
+				noButton.focus();
+				break;
+			case VK_PAD1:
+				if(focusedLayer == yesButton)
+				{
+					result = true;
+					//mm やめ　unGameBlackout();//mm ゲーム画面を暗くする解除
+					close();
+				}
+				else if(focusedLayer == noButton)
+				{
+					result = false;
+					//mm やめ　unGameBlackout();//mm ゲーム画面を暗くする解除
+					close();
+				}
+				break;
+			case VK_PAD2:
+				result = false;
+				//mm やめ　unGameBlackout();//mm ゲーム画面を暗くする解除
+				close();
+				break;
+			}
+		}
+	}
+
+	function onKeyDown(key, shift)
+	{
+		super.onKeyDown(...);
+		if(key == VK_ESCAPE)
+		{
+			// ESC キーが押された
+			// 「いいえ」として処理
+			result = false;
+			//mm やめ　unGameBlackout();//mm ゲーム画面を暗くする解除
+			close();
+		}
+	}
+
+	function getLines(message)
+	{
+		// ↓あまり効率的なコードではないので、気になる場合は修正すると良い
+		var lines = new Array();
+		var remainder = message.length;		// 残りの文字数
+		var start = 0;						// 行頭のインデックス
+		var num = 1;						// message_widthに納まる文字数
+		while (remainder > 0) {
+			// 幅dialogMessageWidthピクセルに納まる文字数を調べる
+			for (var i = 1; i <= remainder; i++) {
+				if (primaryLayer.font.getTextWidth(message.substr(start,i)) <= dialogMessageWidth)
+					num = i;
+				else
+					break;
+			}
+			// message[start]～message[start+num]までの文字列を抜き出し、配列に登録
+			lines.add( message.substr(start,num) );
+			// 行頭のインデックス、残りの文字数を更新
+			start += num;
+			remainder -= num;
+		}
+		return lines;
+	}
+}
+
+// Yes か No かはっきりさせる関数
+function askYesNo(message, caption = "確認")
+{
+	var win = new YesNoDialogWindow(message, caption);
+	win.showModal();
+	var res = win.result;
+	invalidate win;
+	return res;
+}
+
+//	//mm ファンクション追加
+//	//ダイアログ表示中ゲーム画面を暗くする為に黒を透過で貼る
+//	function GameBlackout()
+//	{	
+//		with( kag.fore.layers[sf.layer_dialog_yesno])
+//		{
+//		.loadImages(%[storage:'effect_black.png']);
+//		.visible = true;
+//		.left = 0;
+//		.top  = 0;
+//		.opacity = 180;
+//		.absolute = 1007000;
+//		}
+//	}
+//
+//	//ダイアログ表示中ゲーム画面を暗くする為に黒を消去。freeイメージもしたいんだけどな
+//	function unGameBlackout()
+//	{
+//		var l = sf.layer_dialog_yesno;
+//		with( kag.fore.layers[sf.layer_dialog_yesno])
+//		{
+//		.visible = false;
+//		.opacity = 255;
+//		.absolute = sf.layer_dialog_yesno * 1000 + 1000;
+//		}
+//	}

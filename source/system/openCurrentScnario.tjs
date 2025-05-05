@@ -1,0 +1,76 @@
+//★和人　miw10コマンドラインを追記。
+//★和人　ショートカットをALT+Eに変更
+
+Plugins.link("biscrat_debug.dll");
+
+// 現在のシナリオファイルを開くメニューを作成
+with (kag.openScenariFileMenuItem = new MenuItem(kag, "scenario")) {
+	.shortcut = "ALT+E";
+	.onClick = function() {
+		var file = kag.conductor.curStorage;
+		if (!Storages.isExistentStorage(file)) { return; }
+		var targetPath = System.getExecutablePath(Storages.extractStorageExt(file));
+		var success = false;
+		file = "\"" + Storages.getLocalName(Storages.getPlacedPath(file)) + "\"";
+		switch (Storages.extractStorageName(targetPath).toLowerCase()) {	
+		case "sakura.exe":
+			success = System.shellExecute(targetPath, @"-Y=${kag.conductor.curLine} ${file}");
+			break;
+		case "hidemaru.exe":
+		case "vxeditor.exe":
+		case "k2e.exe":
+		case "apsaly.exe":
+		case "dana.exe":
+			success = System.shellExecute(targetPath, @"/j${kag.conductor.curLine} ${file}");
+			break;
+		case "terapad.exe":
+			success = System.shellExecute(targetPath, @"/jl=${kag.conductor.curLine} ${file}");
+			break;
+		case "miw.exe":
+			success = System.shellExecute(targetPath, @"/+${kag.conductor.curLine} ${file}");
+			break;
+		case "mkeditor.exe":
+			success = System.shellExecute(targetPath, @"/JL ${kag.conductor.curLine} ${file}");
+			break;
+		case "emeditor.exe":
+		case "mery.exe":
+			success = System.shellExecute(targetPath, @"/l ${kag.conductor.curLine} ${file}");
+			break;
+		case "peggy.exe":
+		case "peggypro.exe":
+		case "peggypad.exe":
+			success = System.shellExecute(targetPath, @"/l${kag.conductor.curLine} ${file}");
+			break;
+		case "ginnie.exe":
+		case "jcref.exe":
+		case "oedit.exe":
+		case "otbedit.exe":
+			success = System.shellExecute(targetPath, @"${file} /r${kag.conductor.curLine}");
+			break;
+		case "whinny.exe":
+			success = System.shellExecute(targetPath, @"${file}/${kag.conductor.curLine}");
+			break;
+		case "xyzzy.exe":
+			success = System.shellExecute(targetPath, @"${file} -go ${kag.conductor.curLine}");
+			break;
+		case "vivi.exe":
+			success = System.shellExecute(targetPath, @"${file} -line=${kag.conductor.curLine}");
+			break;
+		case "deuxeditor.exe":
+		case "deuxeditor2.exe":
+		case "noeditor.exe":
+		case "noeditor2.exe":
+		case "uneditor.exe":
+		case "uneditor2.exe":
+		case "ouieditor.exe":
+		case "ouieditor2.exe":
+			success = System.shellExecute(targetPath, @"/I=${file}=${kag.conductor.curLine}");
+			break;
+		}
+		if (!success) {
+			System.shellExecute(file);
+		}
+	};
+	kag.menu.add(kag.openScenariFileMenuItem);
+};
+

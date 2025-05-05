@@ -1,0 +1,29 @@
+[✓] All required metadata fields are present.
+
+--- Segment Type Counts ---
+segment_type
+verbal    335
+skip       17
+
+--- Intent Distribution ---
+intent
+dialogue    352
+
+--- Emotion Tags ---
+emotion
+neutral        267
+pleasure        36
+{tts:skip}      17
+beg              9
+forced_moan      8
+mocking          3
+apologetic       3
+climax           3
+shame            2
+fear             2
+broken           2
+
+--- Language Breakdown ---
+lang
+zh    250
+ja    102

@@ -1,0 +1,17 @@
+SE ID,Filename,Translation,Tags
+SE触手ループ,seD024,Tentacle Loop,['tentacle']
+SE挿入_触手,seD017,Insertion (Tentacle),"['tentacle', 'penetration']"
+SE触手伸びる,SE3301,Tentacle Extending,['tentacle']
+SEピストン_人外,se_sex03b,Piston (Monster),"['external', 'monster', 'thrust']"
+SE射精_中_人外_短,SE4154,Ejaculation - Internal - Monster - Short,"['climax', 'ejaculation', 'internal', 'external', 'monster', 'short']"
+SE射精_中_人外_長,SE4154_12,Ejaculation - Internal - Monster - Long,"['climax', 'ejaculation', 'internal', 'external', 'monster', 'long']"
+SE射精_外_人外_短,SE4163,Ejaculation - External - Monster - Short,"['climax', 'ejaculation', 'external', 'monster', 'short']"
+SE射精_外_人外_長,SE4163_10,Ejaculation - External - Monster - Long,"['climax', 'ejaculation', 'external', 'monster', 'long']"
+SE挿入_人,se_sex01,Insertion - Human,"['human', 'penetration']"
+SEピストン_人_遅,se_sex03a,Piston - Human - Slow,"['human', 'thrust']"
+SEピストン_人_速,se_sex03,Piston - Human - Fast,"['human', 'thrust']"
+SE射精_中_人_短,se_sex01b,Ejaculation - Internal - Human - Short,"['climax', 'ejaculation', 'internal', 'human', 'short']"
+SE射精_中_人_長,se_sex01c,Ejaculation - Internal - Human - Long,"['climax', 'ejaculation', 'internal', 'human', 'long']"
+SE射精_外_人_短,SE4160,Ejaculation - External - Human - Short,"['climax', 'ejaculation', 'external', 'human', 'short']"
+SE射精_外_人_長,SE4162_2,Ejaculation - External - Human - Long,"['climax', 'ejaculation', 'external', 'human', 'long']"
+SEハラボテ,seD022,Pregnant Belly,"['pregnancy', 'belly']"

@@ -1,0 +1,2564 @@
+[
+  {
+    "segment_id": "segment_001",
+    "start": "1.00",
+    "end": "1.88",
+    "text": "先生、いる?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_002",
+    "start": "3.72",
+    "end": "4.78",
+    "text": "入るよ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_003",
+    "start": "5.50",
+    "end": "6.92",
+    "text": "お邪魔しまーす",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_004",
+    "start": "8.08",
+    "end": "9.96",
+    "text": "起きてこなくていいから",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_005",
+    "start": "11.04",
+    "end": "12.80",
+    "text": "もう心配したよ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_006",
+    "start": "13.34",
+    "end": "15.08",
+    "text": "朝別の先生が来て",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_007",
+    "start": "15.62",
+    "end": "18.08",
+    "text": "今日担任の先生は風邪でお休みです",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_008",
+    "start": "18.08",
+    "end": "19.72",
+    "text": "なんて言うんだもん",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_009",
+    "start": "20.62",
+    "end": "22.64",
+    "text": "え、なんで来たのかって?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_010",
+    "start": "24.40",
+    "end": "27.94",
+    "text": "先生に何度も連絡したのに全然返事ないから",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_011",
+    "start": "27.94",
+    "end": "30.30",
+    "text": "だから直接家まで押しかけてきたの",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_012",
+    "start": "31.26",
+    "end": "33.46",
+    "text": "寝てるんだろうなーと思って",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_013",
+    "start": "34.74",
+    "end": "37.20",
+    "text": "先生、どうせお昼も食べてないんでしょ?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_014",
+    "start": "38.20",
+    "end": "39.10",
+    "text": "大丈夫だって",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_015",
+    "start": "39.10",
+    "end": "41.62",
+    "text": "変な料理食べさせたりしないから",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_016",
+    "start": "42.62",
+    "end": "45.42",
+    "text": "じゃーん!レトルトのおかゆだよ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_017",
+    "start": "45.86",
+    "end": "47.48",
+    "text": "これなら失敗しないでしょ?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_018",
+    "start": "50.50",
+    "end": "52.38",
+    "text": "先生、ちょっとバカにしたでしょ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_019",
+    "start": "52.98",
+    "end": "55.94",
+    "text": "私だって本当はちゃんと料理作ってあげたいけど",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_020",
+    "start": "56.38",
+    "end": "57.92",
+    "text": "失敗したら先生に言わないで",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_021",
+    "start": "57.92",
+    "end": "59.10",
+    "text": "先生が困るだろうし",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_022",
+    "start": "60.52",
+    "end": "64.72",
+    "text": "あ、あとスポーツドリンクとか栄養ドリンクも買ってきたから",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_023",
+    "start": "65.90",
+    "end": "67.20",
+    "text": "気が利くでしょ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_024",
+    "start": "68.24",
+    "end": "71.88",
+    "text": "レンチンする間水分補給して横になっててね",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_025",
+    "start": "72.82",
+    "end": "76.74",
+    "text": "えっと、耐熱容器は…と",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_026",
+    "start": "80.92",
+    "end": "82.02",
+    "text": "お待たせ先生",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_027",
+    "start": "82.88",
+    "end": "85.92",
+    "text": "いつかちゃんと手料理を振る舞ってあげるから",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_028",
+    "start": "87.44",
+    "end": "87.90",
+    "text": "それがいいよ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_029",
+    "start": "87.92",
+    "end": "88.10",
+    "text": "それじゃ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_030",
+    "start": "92.96",
+    "end": "94.74",
+    "text": "え、何してるって",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_031",
+    "start": "95.18",
+    "end": "97.00",
+    "text": "おかゆ冷ましてるんだよ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_032",
+    "start": "97.56",
+    "end": "99.62",
+    "text": "熱すぎると火傷しちゃうし",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_033",
+    "start": "100.54",
+    "end": "101.64",
+    "text": "ダメダメ!",
+    "emotion": "beg"
+  },
+  {
+    "segment_id": "segment_034",
+    "start": "102.14",
+    "end": "104.24",
+    "text": "先生は風邪ひいて寝込んでたんだから",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_035",
+    "start": "104.24",
+    "end": "106.30",
+    "text": "あんまり動かないほうがいいの",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_036",
+    "start": "107.80",
+    "end": "109.38",
+    "text": "はい、あーん",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_037",
+    "start": "111.36",
+    "end": "112.36",
+    "text": "美味しそう",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_038",
+    "start": "113.74",
+    "end": "116.14",
+    "text": "先生、早く元気になってね",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_039",
+    "start": "122.34",
+    "end": "128.04",
+    "text": "あ、あたし寝ちゃってた?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_040",
+    "start": "129.44",
+    "end": "131.72",
+    "text": "あ、先生起こしちゃいけないよね",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_041",
+    "start": "132.58",
+    "end": "135.04",
+    "text": "ぐっすり眠ってる",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_042",
+    "start": "136.22",
+    "end": "140.32",
+    "text": "熱は…下がってるみたい",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_043",
+    "start": "140.94",
+    "end": "141.74",
+    "text": "よかった",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_044",
+    "start": "143.72",
+    "end": "145.64",
+    "text": "あれ、これなんだろう",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_045",
+    "start": "145.64",
+    "end": "147.90",
+    "text": "布団の真ん中らへんが寝てるんだよ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_046",
+    "start": "147.92",
+    "end": "149.42",
+    "text": "なんか妙に盛り上がってる",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_047",
+    "start": "150.76",
+    "end": "152.66",
+    "text": "ちょっと失礼して",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_048",
+    "start": "153.50",
+    "end": "155.44",
+    "text": "あ、え、なに?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_049",
+    "start": "155.62",
+    "end": "157.30",
+    "text": "ズボンが膨らんじゃってる?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_050",
+    "start": "158.26",
+    "end": "160.58",
+    "text": "こ、これってもしかして",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_051",
+    "start": "161.56",
+    "end": "164.84",
+    "text": "おちんちんが大きくなってるのかな?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_052",
+    "start": "167.10",
+    "end": "171.80",
+    "text": "先生、夢の中でエッチな夢でも見てるのかな?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_053",
+    "start": "172.60",
+    "end": "173.94",
+    "text": "うう…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_054",
+    "start": "175.20",
+    "end": "177.06",
+    "text": "どんな夢見てるんだろう?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_055",
+    "start": "177.92",
+    "end": "178.98",
+    "text": "気になる",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_056",
+    "start": "180.58",
+    "end": "183.72",
+    "text": "そ、そういえば先生のおちんちん",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_057",
+    "start": "183.72",
+    "end": "186.54",
+    "text": "あんまりちゃんと見たことないんだよね",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_058",
+    "start": "187.46",
+    "end": "188.62",
+    "text": "恥ずかしいし",
+    "emotion": "beg"
+  },
+  {
+    "segment_id": "segment_059",
+    "start": "191.02",
+    "end": "192.62",
+    "text": "先生、寝てるよね?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_060",
+    "start": "193.72",
+    "end": "198.08",
+    "text": "ん、ん、こ、これはチャンスかも",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_061",
+    "start": "198.74",
+    "end": "201.62",
+    "text": "べ、別にエッチなことがしたいわけじゃなくて",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_062",
+    "start": "202.16",
+    "end": "204.06",
+    "text": "気になるから、だからね",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_063",
+    "start": "205.58",
+    "end": "207.80",
+    "text": "もう、誰に言い訳してるんだか?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_064",
+    "start": "207.80",
+    "end": "207.98",
+    "text": "っとか…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_065",
+    "start": "208.94",
+    "end": "211.98",
+    "text": "それじゃあ失礼しまーす",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_066",
+    "start": "214.04",
+    "end": "215.44",
+    "text": "あ、大っきい!",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_067",
+    "start": "216.00",
+    "end": "218.38",
+    "text": "それになんかビクビクしてる",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_068",
+    "start": "219.20",
+    "end": "220.08",
+    "text": "へえ…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_069",
+    "start": "220.08",
+    "end": "222.22",
+    "text": "おちんちんの下の方って",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_070",
+    "start": "222.22",
+    "end": "223.64",
+    "text": "こんなふうになってるんだ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_071",
+    "start": "224.58",
+    "end": "225.62",
+    "text": "そっか…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_072",
+    "start": "226.28",
+    "end": "228.30",
+    "text": "ここが下にあたって…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_073",
+    "start": "228.82",
+    "end": "229.42",
+    "text": "エッ!",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_074",
+    "start": "231.04",
+    "end": "232.96",
+    "text": "先生! 起きちゃったの!?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_075",
+    "start": "232.96",
+    "end": "233.66",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_076",
+    "start": "233.66",
+    "end": "236.60",
+    "text": "え、えっと、それはその、なんなるほど…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_077",
+    "start": "236.60",
+    "end": "236.90",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_078",
+    "start": "237.80",
+    "end": "240.26",
+    "text": "先生のおちんちんが大きくなってたから",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_079",
+    "start": "241.00",
+    "end": "242.80",
+    "text": "どうしてかなと…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_080",
+    "start": "244.36",
+    "end": "246.22",
+    "text": "生理現象?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_081",
+    "start": "247.10",
+    "end": "249.60",
+    "text": "男の人にもそういう日があるの?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_082",
+    "start": "250.54",
+    "end": "251.58",
+    "text": "え、違う?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_083",
+    "start": "252.68",
+    "end": "254.00",
+    "text": "そ、そうなんだ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_084",
+    "start": "255.52",
+    "end": "258.86",
+    "text": "そっか、男の人も大変なんだ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_085",
+    "start": "261.38",
+    "end": "262.42",
+    "text": "あの、先生",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_086",
+    "start": "263.50",
+    "end": "265.32",
+    "text": "これどうしたらいい?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_087",
+    "start": "265.32",
+    "end": "268.40",
+    "text": "このままだと辛いよね",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_088",
+    "start": "269.72",
+    "end": "270.54",
+    "text": "手で?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_089",
+    "start": "272.52",
+    "end": "273.40",
+    "text": "いいよ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_090",
+    "start": "274.34",
+    "end": "280.56",
+    "text": "それじゃ、やっぱり、凄く強いね",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_091",
+    "start": "281.32",
+    "end": "284.72",
+    "text": "風の熱がおちんちんに集まってるみたい",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_092",
+    "start": "286.26",
+    "end": "288.26",
+    "text": "いつもこんな感じなんだ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_093",
+    "start": "289.32",
+    "end": "293.86",
+    "text": "そっか、でも確かにそうかも",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_094",
+    "start": "293.86",
+    "end": "294.62",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_095",
+    "start": "297.82",
+    "end": "299.92",
+    "text": "どうすればいいのかな",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_096",
+    "start": "301.20",
+    "end": "305.62",
+    "text": "とりあえずこの先っぽの方を触ってみるとか",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_097",
+    "start": "307.20",
+    "end": "309.04",
+    "text": "痛かったら言ってね",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_098",
+    "start": "310.38",
+    "end": "314.50",
+    "text": "このあたりなんだかキノコみたいだよね",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_099",
+    "start": "315.36",
+    "end": "322.24",
+    "text": "そっかこんなに大きいのが私の中に入ったんだよね",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_100",
+    "start": "323.22",
+    "end": "325.78",
+    "text": "根元からこすればいいの",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_101",
+    "start": "327.40",
+    "end": "329.04",
+    "text": "うんやってみる",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_102",
+    "start": "330.42",
+    "end": "335.18",
+    "text": "そっと握って下から上に",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_103",
+    "start": "335.82",
+    "end": "337.50",
+    "text": "あびくんてんのった",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_104",
+    "start": "338.62",
+    "end": "341.76",
+    "text": "そっかこういうのが気持ちいいんだ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_105",
+    "start": "343.36",
+    "end": "347.34",
+    "text": "うんじゃあもっと気持ちよくしてあげるね",
+    "emotion": "beg"
+  },
+  {
+    "segment_id": "segment_106",
+    "start": "349.32",
+    "end": "350.36",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_107",
+    "start": "350.36",
+    "end": "352.20",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_108",
+    "start": "352.20",
+    "end": "352.96",
+    "text": "先生のおチンチ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_109",
+    "start": "352.96",
+    "end": "355.12",
+    "text": "大きくて固くて",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_110",
+    "start": "356.08",
+    "end": "359.02",
+    "text": "見てるとちょっとドキドキしてきちゃう",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_111",
+    "start": "360.40",
+    "end": "362.40",
+    "text": "それにこの頭のところ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_112",
+    "start": "363.42",
+    "end": "364.68",
+    "text": "柔らかいよね",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_113",
+    "start": "365.42",
+    "end": "368.32",
+    "text": "ぷにぷにしててちょっとかわいい",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_114",
+    "start": "369.46",
+    "end": "371.50",
+    "text": "先生くすぐったそうだね",
+    "emotion": "mocking"
+  },
+  {
+    "segment_id": "segment_115",
+    "start": "372.04",
+    "end": "376.68",
+    "text": "このあたりを撫でたりすると気持ちよかったりするの?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_116",
+    "start": "377.78",
+    "end": "379.56",
+    "text": "へえそうなんだ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_117",
+    "start": "380.62",
+    "end": "381.10",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_118",
+    "start": "381.10",
+    "end": "384.34",
+    "text": "ほんと不思議な形してるよね",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_119",
+    "start": "386.76",
+    "end": "387.98",
+    "text": "ツンツン",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_120",
+    "start": "389.48",
+    "end": "391.82",
+    "text": "あやっぱり気持ちいいんだ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_121",
+    "start": "391.82",
+    "end": "393.50",
+    "text": "ビクビクしてる",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_122",
+    "start": "393.50",
+    "end": "396.26",
+    "text": "あははごめんなさい",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_123",
+    "start": "396.26",
+    "end": "399.02",
+    "text": "別に遊ぼうと思ったわけじゃなくて",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_124",
+    "start": "399.02",
+    "end": "403.04",
+    "text": "淡いくてついつついてみたくなったというか",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_125",
+    "start": "404.60",
+    "end": "406.90",
+    "text": "うんちゃんと真面目にやるね",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_126",
+    "start": "408.44",
+    "end": "410.38",
+    "text": "こう輪っかを作って",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_127",
+    "start": "410.38",
+    "end": "413.40",
+    "text": "根元から先っぽに向けて",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_128",
+    "start": "414.44",
+    "end": "415.08",
+    "text": "ヘイ!",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_129",
+    "start": "416.04",
+    "end": "417.72",
+    "text": "あ先生大丈夫?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_130",
+    "start": "418.12",
+    "end": "420.06",
+    "text": "ごめんなさい痛かった?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_131",
+    "start": "421.22",
+    "end": "426.26",
+    "text": "え?すごく気持ちよかったから反応しただけ?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_132",
+    "start": "428.40",
+    "end": "429.94",
+    "text": "なんだそうだったんだ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_133",
+    "start": "429.94",
+    "end": "432.80",
+    "text": "急に跳ねるからびっくりしちゃった",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_134",
+    "start": "434.02",
+    "end": "438.28",
+    "text": "え?あたしがしてくれてるから気持ちいいって?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_135",
+    "start": "438.84",
+    "end": "439.96",
+    "text": "うぃもう",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_136",
+    "start": "442.46",
+    "end": "446.08",
+    "text": "でもそう言ってくれるのすごく嬉しい",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_137",
+    "start": "447.42",
+    "end": "451.04",
+    "text": "やっぱり好きな人が気持ちよくなってくれるのって",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_138",
+    "start": "451.62",
+    "end": "454.06",
+    "text": "すごく幸せな気分になれるから",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_139",
+    "start": "455.76",
+    "end": "457.46",
+    "text": "手が止まってたね",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_140",
+    "start": "458.02",
+    "end": "459.96",
+    "text": "それじゃ続けるね",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_141",
+    "start": "464.38",
+    "end": "469.70",
+    "text": "そういえばこの袋みたいなところも触った方がいいのかな?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_142",
+    "start": "471.72",
+    "end": "472.72",
+    "text": "うんじゃあ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_143",
+    "start": "474.98",
+    "end": "477.78",
+    "text": "あなんか玉みたいなのが入ってる",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_144",
+    "start": "479.30",
+    "end": "481.66",
+    "text": "うん優しく…だね",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_145",
+    "start": "482.92",
+    "end": "487.44",
+    "text": "へぇここはあんまり力を入れると痛いんだ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_146",
+    "start": "488.82",
+    "end": "490.76",
+    "text": "興味津々っていう",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_147",
+    "start": "491.72",
+    "end": "495.64",
+    "text": "だってこんなに間近で見ることなかなかないし",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_148",
+    "start": "495.64",
+    "end": "499.68",
+    "text": "あたしにはないから不思議だなって思っちゃうよ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_149",
+    "start": "501.12",
+    "end": "503.38",
+    "text": "いつでも見せてやるって…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_150",
+    "start": "504.70",
+    "end": "506.32",
+    "text": "もう先生のエッチ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_151",
+    "start": "506.32",
+    "end": "510.82",
+    "text": "別にずっと観察したいってわけじゃないし",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_152",
+    "start": "510.82",
+    "end": "515.00",
+    "text": "何より先生に気持ちよくなってほしいからこんなことしてるんだからね",
+    "emotion": "climax"
+  },
+  {
+    "segment_id": "segment_153",
+    "start": "516.26",
+    "end": "519.48",
+    "text": "別に先生とエッチするのが嫌ってことはないし",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_154",
+    "start": "519.48",
+    "end": "521.10",
+    "text": "むしろもっとしてほしい…",
+    "emotion": "climax"
+  },
+  {
+    "segment_id": "segment_155",
+    "start": "521.70",
+    "end": "523.62",
+    "text": "な、なんでもないから!",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_156",
+    "start": "525.22",
+    "end": "527.02",
+    "text": "あーあー聞こえなーい",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_157",
+    "start": "527.52",
+    "end": "528.90",
+    "text": "そんなこと言ってると",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_158",
+    "start": "528.90",
+    "end": "530.94",
+    "text": "この手でするのやめちゃうよ!",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_159",
+    "start": "532.36",
+    "end": "534.60",
+    "text": "ふふっ冗談だって",
+    "emotion": "mocking"
+  },
+  {
+    "segment_id": "segment_160",
+    "start": "534.60",
+    "end": "537.32",
+    "text": "あたしはそんな意地悪しないよ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_161",
+    "start": "537.98",
+    "end": "541.66",
+    "text": "ん、ん、ん、ん、んー",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_162",
+    "start": "544.70",
+    "end": "546.74",
+    "text": "あ、先っぽが濡れてきてる",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_163",
+    "start": "547.32",
+    "end": "550.10",
+    "text": "透明な液体が出てきてるけど…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_164",
+    "start": "550.96",
+    "end": "552.50",
+    "text": "これってなに?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_165",
+    "start": "554.82",
+    "end": "556.86",
+    "text": "あ、これが我慢汁なんだ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_166",
+    "start": "556.86",
+    "end": "559.96",
+    "text": "口に入れると苦いんだよね",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_167",
+    "start": "561.00",
+    "end": "563.68",
+    "text": "ううん、別に苦手じゃないよ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_168",
+    "start": "564.28",
+    "end": "567.80",
+    "text": "先生の我慢汁は苦いけど嫌いじゃないもの",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_169",
+    "start": "569.38",
+    "end": "573.72",
+    "text": "それに、先生が感じてくれてるのがわかって嬉しいかな",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_170",
+    "start": "574.54",
+    "end": "578.34",
+    "text": "ん、ん、ん、ん、んー",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_171",
+    "start": "581.40",
+    "end": "585.30",
+    "text": "あれ、先生おチンチンがさっきより大きくなってない?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_172",
+    "start": "585.30",
+    "end": "589.94",
+    "text": "はい、気がついたら指がつかなくなってるんだけど…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_173",
+    "start": "591.20",
+    "end": "593.36",
+    "text": "やっぱり大きくなってるんだ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_174",
+    "start": "594.36",
+    "end": "597.42",
+    "text": "すごいね、こんなに大きくなるんだ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_175",
+    "start": "599.02",
+    "end": "601.54",
+    "text": "じゃあ、もっと気持ちよくしてあげるね",
+    "emotion": "beg"
+  },
+  {
+    "segment_id": "segment_176",
+    "start": "602.12",
+    "end": "605.28",
+    "text": "ふ、ん、ん、ん、んー",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_177",
+    "start": "605.74",
+    "end": "609.96",
+    "text": "そういえば、この裏側も気持ちいいんだったよね",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_178",
+    "start": "611.50",
+    "end": "613.36",
+    "text": "この傘の裏も…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_179",
+    "start": "614.72",
+    "end": "617.54",
+    "text": "爪を立てないようにこすってあげると…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_180",
+    "start": "620.00",
+    "end": "623.24",
+    "text": "またびくんって、すごく気持ちよさそう",
+    "emotion": "moan"
+  },
+  {
+    "segment_id": "segment_181",
+    "start": "625.44",
+    "end": "627.44",
+    "text": "もう、そんなに跳ねたらダメじゃない",
+    "emotion": "beg"
+  },
+  {
+    "segment_id": "segment_182",
+    "start": "628.06",
+    "end": "631.28",
+    "text": "ちゃんとおとなしくしてないと爪が当たっちゃうんだから",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_183",
+    "start": "632.90",
+    "end": "634.94",
+    "text": "ふん、これで大丈夫",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_184",
+    "start": "635.70",
+    "end": "638.80",
+    "text": "しっかり握っておけば逃げられないものね",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_185",
+    "start": "640.76",
+    "end": "642.52",
+    "text": "ん、ん、んー…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_186",
+    "start": "643.56",
+    "end": "646.58",
+    "text": "我慢じる、どんどん溢れてくるね",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_187",
+    "start": "647.94",
+    "end": "651.70",
+    "text": "それにさっきより、おチンチンが激しく跳ねてるし",
+    "emotion": "climax"
+  },
+  {
+    "segment_id": "segment_188",
+    "start": "653.04",
+    "end": "654.80",
+    "text": "もう少しで行っちゃいそう",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_189",
+    "start": "656.62",
+    "end": "659.12",
+    "text": "うん、じゃあ、もっとしごいてあげるね",
+    "emotion": "beg"
+  },
+  {
+    "segment_id": "segment_190",
+    "start": "660.88",
+    "end": "662.66",
+    "text": "ん、ん、ん、んー",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_191",
+    "start": "663.74",
+    "end": "665.92",
+    "text": "びくびくって可愛い",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_192",
+    "start": "667.24",
+    "end": "669.66",
+    "text": "先生、もっと私の手で感じてね!",
+    "emotion": "beg"
+  },
+  {
+    "segment_id": "segment_193",
+    "start": "673.30",
+    "end": "676.52",
+    "text": "先生の我慢じるの匂いを嗅いでると…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_194",
+    "start": "677.08",
+    "end": "678.70",
+    "text": "私もちょっと…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_195",
+    "start": "679.52",
+    "end": "681.38",
+    "text": "うん、なんでもないよ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_196",
+    "start": "682.44",
+    "end": "686.08",
+    "text": "今は先生のおチンチンを慰めるのが先だからね",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_197",
+    "start": "686.66",
+    "end": "689.60",
+    "text": "うっしょ、うっしょっと…",
+    "emotion": "moan"
+  },
+  {
+    "segment_id": "segment_198",
+    "start": "690.50",
+    "end": "694.70",
+    "text": "ん、ん、んー…え、限界?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_199",
+    "start": "695.44",
+    "end": "697.70",
+    "text": "あ、あ、あ、あ、ぎゃあああああ!",
+    "emotion": "moan"
+  },
+  {
+    "segment_id": "segment_200",
+    "start": "697.70",
+    "end": "701.36",
+    "text": "あ、うっ、か、顔にかかっちゃった…",
+    "emotion": "moan"
+  },
+  {
+    "segment_id": "segment_201",
+    "start": "701.36",
+    "end": "708.36",
+    "text": "あ、あ、大丈夫、ちょっとびっくりしたけど平気",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_202",
+    "start": "709.66",
+    "end": "711.84",
+    "text": "これで先生も落ち着いて…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_203",
+    "start": "713.74",
+    "end": "716.44",
+    "text": "あれ、まだ大きいままなんだけど…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_204",
+    "start": "717.68",
+    "end": "721.40",
+    "text": "やっぱり手じゃ物足りなかったのかな…ごめんね",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_205",
+    "start": "722.56",
+    "end": "726.54",
+    "text": "え、そうじゃなくて…もっとしたい?",
+    "emotion": "beg"
+  },
+  {
+    "segment_id": "segment_206",
+    "start": "727.70",
+    "end": "730.36",
+    "text": "えっと、それってつまり…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_207",
+    "start": "731.28",
+    "end": "732.70",
+    "text": "体温ね…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_208",
+    "start": "733.40",
+    "end": "734.34",
+    "text": "はぁ…",
+    "emotion": "moan"
+  },
+  {
+    "segment_id": "segment_209",
+    "start": "736.56",
+    "end": "739.26",
+    "text": "先生、今日は風邪で休んでたのに",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_210",
+    "start": "739.26",
+    "end": "742.94",
+    "text": "そんな激しい運動して大丈夫なの?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_211",
+    "start": "743.88",
+    "end": "745.92",
+    "text": "私が奉仕すれば?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_212",
+    "start": "746.96",
+    "end": "749.28",
+    "text": "んー…でも…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_213",
+    "start": "749.28",
+    "end": "751.76",
+    "text": "やり方わからないし…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_214",
+    "start": "752.94",
+    "end": "754.92",
+    "text": "先生が教えてくれるの?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_215",
+    "start": "755.78",
+    "end": "756.76",
+    "text": "うーん…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_216",
+    "start": "757.70",
+    "end": "760.04",
+    "text": "じゃあ、頑張ってみようかな…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_217",
+    "start": "760.92",
+    "end": "764.00",
+    "text": "それで…まずはどうすればいいの?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_218",
+    "start": "765.50",
+    "end": "769.28",
+    "text": "ふむふむ…先生にまたがればいいんだ…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_219",
+    "start": "769.96",
+    "end": "772.12",
+    "text": "うっ、しょっと…",
+    "emotion": "moan"
+  },
+  {
+    "segment_id": "segment_220",
+    "start": "772.64",
+    "end": "774.88",
+    "text": "うぅ…それで次は?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_221",
+    "start": "776.18",
+    "end": "777.30",
+    "text": "あー、なるほど!",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_222",
+    "start": "777.72",
+    "end": "780.72",
+    "text": "私の方から先生のおちんちんを入れればいいんだ!",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_223",
+    "start": "781.30",
+    "end": "784.84",
+    "text": "ちょっと待ってね、パンツ脱ぐから…",
+    "emotion": "beg"
+  },
+  {
+    "segment_id": "segment_224",
+    "start": "784.84",
+    "end": "786.38",
+    "text": "うぅ…もう…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_225",
+    "start": "786.38",
+    "end": "787.62",
+    "text": "もう、ジロジロ見ちゃダメ!",
+    "emotion": "beg"
+  },
+  {
+    "segment_id": "segment_226",
+    "start": "789.76",
+    "end": "792.04",
+    "text": "それじゃ、入れるね…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_227",
+    "start": "792.04",
+    "end": "795.44",
+    "text": "う、うん…うまくできるかな…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_228",
+    "start": "795.44",
+    "end": "800.48",
+    "text": "えっと…ここに入れればいいから…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_229",
+    "start": "800.48",
+    "end": "803.00",
+    "text": "わぁ…先生暴れないのー!",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_230",
+    "start": "803.78",
+    "end": "807.96",
+    "text": "もう…気持ちいいからっておちんちんが逃げたら入れられないじゃない!",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_231",
+    "start": "808.46",
+    "end": "810.24",
+    "text": "我慢してじっとしてて!",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_232",
+    "start": "811.20",
+    "end": "814.40",
+    "text": "うん…これで大丈夫なはず…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_233",
+    "start": "816.34",
+    "end": "817.96",
+    "text": "ふぅ・・・それじゃ…行くよー",
+    "emotion": "moan"
+  },
+  {
+    "segment_id": "segment_234",
+    "start": "818.56",
+    "end": "822.14",
+    "text": "ん…うい…う、え…う…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_235",
+    "start": "822.14",
+    "end": "824.58",
+    "text": "う…うぅうぅうんっ!",
+    "emotion": "moan"
+  },
+  {
+    "segment_id": "segment_236",
+    "start": "825.82",
+    "end": "829.02",
+    "text": "ア゛ー…すこしずつ入ってきた…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_237",
+    "start": "829.50",
+    "end": "832.50",
+    "text": "はー…ン…うぅうぅ…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_238",
+    "start": "832.50",
+    "end": "835.70",
+    "text": "はう…あふっ…くうよし!",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_239",
+    "start": "837.18",
+    "end": "841.68",
+    "text": "はっ…く Derek先生のは、やっぱり大きいよ…",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_240",
+    "start": "842.52",
+    "end": "844.58",
+    "text": "寝元まで入らない",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_241",
+    "start": "848.26",
+    "end": "850.88",
+    "text": "ちょっとこの体勢つらいかも",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_242",
+    "start": "851.78",
+    "end": "853.88",
+    "text": "足が震えてきちゃった",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_243",
+    "start": "861.50",
+    "end": "864.02",
+    "text": "寝元まで入った",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_244",
+    "start": "871.18",
+    "end": "873.36",
+    "text": "先生ちょっと休憩させて",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_245",
+    "start": "874.92",
+    "end": "876.36",
+    "text": "腰抜けちゃって",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_246",
+    "start": "882.04",
+    "end": "882.48",
+    "text": "すごい",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_247",
+    "start": "883.66",
+    "end": "885.62",
+    "text": "じっとしてるだけなのに",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_248",
+    "start": "886.14",
+    "end": "888.40",
+    "text": "先生のおちんちんがびくんびくんして",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_249",
+    "start": "888.40",
+    "end": "891.24",
+    "text": "私の中をかき回してるみたい",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_250",
+    "start": "892.76",
+    "end": "893.88",
+    "text": "濡れてるって",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_251",
+    "start": "893.88",
+    "end": "894.00",
+    "text": "濡れてるって",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_252",
+    "start": "894.02",
+    "end": "898.02",
+    "text": "だって先生のおちんちんをいじったり",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_253",
+    "start": "898.52",
+    "end": "899.82",
+    "text": "匂いを嗅いでたら",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_254",
+    "start": "900.46",
+    "end": "903.02",
+    "text": "おまんこがうずいてきちゃったんだもん",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_255",
+    "start": "906.60",
+    "end": "908.32",
+    "text": "あれ腰が上がらない",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_256",
+    "start": "909.46",
+    "end": "912.24",
+    "text": "いつもはあんなに激しく動いてるのに",
+    "emotion": "climax"
+  },
+  {
+    "segment_id": "segment_257",
+    "start": "914.18",
+    "end": "916.92",
+    "text": "え私がきつく締め付けてるから",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_258",
+    "start": "918.26",
+    "end": "919.84",
+    "text": "そんなエッチじゃないもん",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_259",
+    "start": "920.28",
+    "end": "923.42",
+    "text": "きっと先生のおちんちんが大きすぎるからだよ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_260",
+    "start": "925.04",
+    "end": "925.52",
+    "text": "かっこよかった",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_261",
+    "start": "925.52",
+    "end": "925.70",
+    "text": "ううん",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_262",
+    "start": "925.70",
+    "end": "928.76",
+    "text": "言っててちょっと恥ずかしくなってきちゃった",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_263",
+    "start": "929.44",
+    "end": "931.54",
+    "text": "さっきから何言ってるんだろう",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_264",
+    "start": "932.92",
+    "end": "935.12",
+    "text": "も �せんせい",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_265",
+    "start": "935.12",
+    "end": "936.98",
+    "text": "かわいいって言うの禁止",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_266",
+    "start": "937.74",
+    "end": "938.88",
+    "text": "恥ずかしいし",
+    "emotion": "beg"
+  },
+  {
+    "segment_id": "segment_267",
+    "start": "938.88",
+    "end": "940.82",
+    "text": "うれしいけど",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_268",
+    "start": "941.94",
+    "end": "942.90",
+    "text": "とりあえず",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_269",
+    "start": "942.90",
+    "end": "945.42",
+    "text": "もう少し頑張ってみるね",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_270",
+    "start": "946.00",
+    "end": "951.42",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_271",
+    "start": "951.42",
+    "end": "952.56",
+    "text": "腰があがらない",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_272",
+    "start": "954.30",
+    "end": "958.40",
+    "text": "深呼吸して力を抜いてみたらいいの?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_273",
+    "start": "960.14",
+    "end": "961.68",
+    "text": "うんやってみる",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_274",
+    "start": "970.16",
+    "end": "971.12",
+    "text": "それじゃあ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_275",
+    "start": "973.04",
+    "end": "975.58",
+    "text": "さっきよりは動きやすいかも",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_276",
+    "start": "976.74",
+    "end": "977.70",
+    "text": "先生すごい",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_277",
+    "start": "978.86",
+    "end": "981.60",
+    "text": "じゃあこの調子で動いていくね",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_278",
+    "start": "987.18",
+    "end": "992.58",
+    "text": "少し擦れただけでびっくんできちゃってあまり動けないよ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_279",
+    "start": "993.68",
+    "end": "998.24",
+    "text": "体も内側から熱くなってきてちょっとふわふわするかも",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_280",
+    "start": "999.70",
+    "end": "1001.62",
+    "text": "でもそれが気持ちよくて",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_281",
+    "start": "1004.10",
+    "end": "1008.68",
+    "text": "先生を気持ちよくするためにしてるんだから休憩してちゃダメだよね",
+    "emotion": "beg"
+  },
+  {
+    "segment_id": "segment_282",
+    "start": "1009.78",
+    "end": "1011.24",
+    "text": "よし私頑張る",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_283",
+    "start": "1025.08",
+    "end": "1027.08",
+    "text": "少し慣れてきたかも",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_284",
+    "start": "1030.68",
+    "end": "1031.84",
+    "text": "なんか擦れて",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_285",
+    "start": "1033.14",
+    "end": "1034.34",
+    "text": "すごくいい",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_286",
+    "start": "1035.04",
+    "end": "1037.42",
+    "text": "いつもは先生にしてもらってるけど",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_287",
+    "start": "1037.42",
+    "end": "1040.38",
+    "text": "こうやって自分で動くのもいいかも",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_288",
+    "start": "1040.90",
+    "end": "1041.08",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_289",
+    "start": "1051.00",
+    "end": "1052.58",
+    "text": "先生気持ちいい?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_290",
+    "start": "1054.20",
+    "end": "1056.06",
+    "text": "そっかよかった",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_291",
+    "start": "1057.02",
+    "end": "1059.38",
+    "text": "私だけ気持ちよくなっちゃうなんて",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_292",
+    "start": "1059.38",
+    "end": "1061.08",
+    "text": "そんなの嫌だもん",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_293",
+    "start": "1067.76",
+    "end": "1071.58",
+    "text": "もっと激しく動けるようになってきたらいいな",
+    "emotion": "climax"
+  },
+  {
+    "segment_id": "segment_294",
+    "start": "1071.60",
+    "end": "1072.02",
+    "text": "なんかもう",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_295",
+    "start": "1073.14",
+    "end": "1075.88",
+    "text": "こんな風に腰を動かしてみたら",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_296",
+    "start": "1080.66",
+    "end": "1082.70",
+    "text": "先生ちょっと休憩させて",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_297",
+    "start": "1082.70",
+    "end": "1086.06",
+    "text": "すごく気持ちいいのがビリッときちゃって",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_298",
+    "start": "1088.40",
+    "end": "1089.70",
+    "text": "腰が抜けちゃって",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_299",
+    "start": "1093.30",
+    "end": "1095.28",
+    "text": "先生手を握ってもいい?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_300",
+    "start": "1096.24",
+    "end": "1099.34",
+    "text": "そうしたらもう少し頑張れる気がするから",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_301",
+    "start": "1100.10",
+    "end": "1100.54",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_302",
+    "start": "1101.84",
+    "end": "1102.32",
+    "text": "ありがとう",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_303",
+    "start": "1103.56",
+    "end": "1106.62",
+    "text": "先生の手大きくて温かいね",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_304",
+    "start": "1107.66",
+    "end": "1111.16",
+    "text": "先生の手を握ってるとすごく安心する",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_305",
+    "start": "1112.16",
+    "end": "1113.36",
+    "text": "いけそう",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_306",
+    "start": "1114.44",
+    "end": "1116.12",
+    "text": "また動いていくね",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_307",
+    "start": "1122.76",
+    "end": "1123.24",
+    "text": "すごい",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_308",
+    "start": "1127.18",
+    "end": "1129.18",
+    "text": "さっきよりジンジンきちゃう",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_309",
+    "start": "1129.18",
+    "end": "1129.84",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_310",
+    "start": "1129.84",
+    "end": "1130.24",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_311",
+    "start": "1130.24",
+    "end": "1130.54",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_312",
+    "start": "1130.54",
+    "end": "1130.86",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_313",
+    "start": "1130.86",
+    "end": "1131.06",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_314",
+    "start": "1131.06",
+    "end": "1131.32",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_315",
+    "start": "1131.32",
+    "end": "1131.36",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_316",
+    "start": "1133.44",
+    "end": "1134.62",
+    "text": "これいいよ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_317",
+    "start": "1135.76",
+    "end": "1138.98",
+    "text": "先生のおちんちんが奥を何度も突き上げてきて",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_318",
+    "start": "1147.44",
+    "end": "1148.28",
+    "text": "先生先生",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_319",
+    "start": "1149.96",
+    "end": "1152.66",
+    "text": "私どんどんいやらしい子になっちゃう",
+    "emotion": "beg"
+  },
+  {
+    "segment_id": "segment_320",
+    "start": "1158.44",
+    "end": "1160.08",
+    "text": "先生も動いて",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_321",
+    "start": "1160.08",
+    "end": "1160.98",
+    "text": "先生も動いて",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_322",
+    "start": "1160.98",
+    "end": "1161.44",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_323",
+    "start": "1165.88",
+    "end": "1167.30",
+    "text": "行ってくれ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_324",
+    "start": "1167.30",
+    "end": "1167.76",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_325",
+    "start": "1167.76",
+    "end": "1168.62",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_326",
+    "start": "1172.40",
+    "end": "1173.32",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_327",
+    "start": "1173.32",
+    "end": "1173.52",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_328",
+    "start": "1173.52",
+    "end": "1173.80",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_329",
+    "start": "1173.80",
+    "end": "1173.88",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_330",
+    "start": "1173.88",
+    "end": "1174.98",
+    "text": "良かった",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_331",
+    "start": "1174.98",
+    "end": "1179.40",
+    "text": "よかった",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_332",
+    "start": "1179.40",
+    "end": "1179.52",
+    "text": "そうやって",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_333",
+    "start": "1179.52",
+    "end": "1180.50",
+    "text": "サイクサич",
+    "emotion": "climax"
+  },
+  {
+    "segment_id": "segment_334",
+    "start": "1180.50",
+    "end": "1181.16",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_335",
+    "start": "1182.30",
+    "end": "1183.52",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_336",
+    "start": "1183.52",
+    "end": "1184.30",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_337",
+    "start": "1184.30",
+    "end": "1184.34",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_338",
+    "start": "1184.34",
+    "end": "1184.62",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_339",
+    "start": "1184.62",
+    "end": "1184.72",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_340",
+    "start": "1184.72",
+    "end": "1184.92",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_341",
+    "start": "1186.36",
+    "end": "1187.28",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_342",
+    "start": "1187.28",
+    "end": "1187.60",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_343",
+    "start": "1187.60",
+    "end": "1188.52",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_344",
+    "start": "1188.52",
+    "end": "1189.30",
+    "text": "",
+    "emotion": "{tts:skip}"
+  },
+  {
+    "segment_id": "segment_345",
+    "start": "1189.30",
+    "end": "1195.06",
+    "text": "はっはっはっはっはっはっ ギャァァァァァァァァァァァァァ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_346",
+    "start": "1198.04",
+    "end": "1203.02",
+    "text": "中に中に出てるー 熱いのたくさん",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_347",
+    "start": "1203.02",
+    "end": "1209.06",
+    "text": "はぁはぁはぁはぁはぁはぁはぁはぁはぁはぁはぁ すごいすごいの",
+    "emotion": "moan"
+  },
+  {
+    "segment_id": "segment_348",
+    "start": "1209.74",
+    "end": "1214.38",
+    "text": "また気持ちよくなってきちゃって うぁっううわぁぁぁ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_349",
+    "start": "1214.38",
+    "end": "1217.32",
+    "text": "また行く!行いちゃう!",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_350",
+    "start": "1233.96",
+    "end": "1236.10",
+    "text": "たくさん出たね",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_351",
+    "start": "1237.30",
+    "end": "1241.92",
+    "text": "私の中先生の性域でたぷんたぷんしてる",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_352",
+    "start": "1244.62",
+    "end": "1247.94",
+    "text": "暑くてすごく気持ちよかったよ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_353",
+    "start": "1249.38",
+    "end": "1254.82",
+    "text": "こうして繋がってると先生の気持ちがすごく伝わってくるみたいで",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_354",
+    "start": "1255.56",
+    "end": "1256.82",
+    "text": "嬉しくなるんだ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_355",
+    "start": "1263.36",
+    "end": "1265.96",
+    "text": "先生、ちょっと眠くなってきちゃった",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_356",
+    "start": "1268.28",
+    "end": "1271.38",
+    "text": "ね、このまま一緒に眠ってもいいかな?",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_357",
+    "start": "1272.88",
+    "end": "1276.66",
+    "text": "ほんと?やった!それじゃあ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_358",
+    "start": "1279.64",
+    "end": "1282.06",
+    "text": "先生のいい匂いがする",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_359",
+    "start": "1283.90",
+    "end": "1286.72",
+    "text": "私、先生の匂い好きだよ",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_360",
+    "start": "1286.72",
+    "end": "1291.48",
+    "text": "ねえ先生、もう一つお願いしていい?",
+    "emotion": "beg"
+  },
+  {
+    "segment_id": "segment_361",
+    "start": "1293.98",
+    "end": "1296.50",
+    "text": "じゃあ、ぎゅってして",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_362",
+    "start": "1298.52",
+    "end": "1299.20",
+    "text": "ありがとう",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_363",
+    "start": "1301.92",
+    "end": "1302.26",
+    "text": "ありがとう、先生",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_364",
+    "start": "1303.06",
+    "end": "1305.04",
+    "text": "それじゃあ、お返しに",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_365",
+    "start": "1308.94",
+    "end": "1310.40",
+    "text": "それじゃあ、先生",
+    "emotion": "neutral"
+  },
+  {
+    "segment_id": "segment_366",
+    "start": "1311.14",
+    "end": "1312.68",
+    "text": "おやすみなさい",
+    "emotion": "neutral"
+  }
+]

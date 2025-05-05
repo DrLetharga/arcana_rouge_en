@@ -1,0 +1,11 @@
+Filename,Scene Type,Time of Day,Mood,Suggested Tags,Notes,Script File,Index
+bg013c.png,City Plaza,Night,"Distorted, Surreal","{effect:hamon}, {emote:uneasy}, {emote:surprised}",Ripple effect overlays background; sudden sensory shift like diving into water.,arcana010.ks,26.0
+bg013c.png,City Plaza,Night,"Urgent, Escaping","{emote:tense}, {emote:serious}","After fleeing from a club, the mood is tense and uncertain.",arcana064.ks,553.0
+bg013c.png,City Plaza,Night,Combat Aftermath,"{emote:angry}, {emote:shame}, {emote:tense}",Aoi appears damaged and emotionally distressed after a magical confrontation.,arcana125.ks,8.0
+bg013c.png,City Plaza,Night,"Re-entry, Reset","{emote:serious}, {effect:flash}",Scene resumes after visual flash effect; enemy appears in plaza.,arcana125.ks,146.0
+bg013c.png,City Plaza,Night,"Reassertive, Struggling","{emote:tense}, {emote:anger}","Post-black screen, characters prepare to fight again.",arcana125.ks,166.0
+bg013c.png,City Plaza,Night,"Aftermath, Defiled","{emote:shame}, {emote:serious}, {emote:broken}",Mia appears in a broken state; post-conflict scene begins here.,arcana128.ks,8.0
+bg013c.png,City Plaza,Night,Visual Reset,"{effect:flash}, {emote:serious}",Scene follows white flash; characters reappear amid tension.,arcana128.ks,140.0
+bg013c.png,City Plaza,Night,"Reengaged, Furious","{emote:anger}, {emote:tense}",Characters show resilience and anger after magical retaliation.,arcana128.ks,160.0
+bg013c.png,City Plaza,Night,"Lonely, Heavy","{emote:sad}, {emote:serious}",Protagonist alone at night with emotional burden.,arcana812.ks,25.0
+bg014a.png,Tree-Lined Urban Sidewalk / Shopping District,Daytime,"Calm, Neutral, Public","{emote:calm}, {emote:neutral}","No script references found. May be unused or reserved for future/alternative scenes. Scene shows bright, well-lit sidewalk with shopfronts and trees, evoking a peaceful urban morning.",,

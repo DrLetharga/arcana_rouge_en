@@ -1,0 +1,195 @@
+﻿timestamp: 2025-04-22 08:00:04
+macro: [std_aka m ha p1 f01 ce]
+hash: 1629521723
+output: C:\Games\Chaos-R\01 - Prepped\arcana_rouge_en\tools\output\preview_1629521723.png
+duration: 0.65s
+layers: C:\Games\Chaos-R\01 - Prepped\arcana_rouge_en\source\g_std\ch01
+     body: ✅ ch01_m_base_a0_p1.png
+     face: ✅ ch01_m_face_a0_p1_010.png
+  addon01: ⛔ Not Expected
+  addon02: ⛔ Not Expected
+    semen: ⛔ Not Expected
+
+
+timestamp: 2025-04-22 08:00:05
+macro: [std_mei l mad p2 f12 eki ho rc]
+hash: 285605581
+output: C:\Games\Chaos-R\01 - Prepped\arcana_rouge_en\tools\output\preview_285605581.png
+duration: 0.82s
+layers: C:\Games\Chaos-R\01 - Prepped\arcana_rouge_en\source\g_std\ch04
+     body: ✅ ch04_l_base_g1_p2.png
+     face: ✅ ch04_l_face_j0_p2_121.png
+  addon01: ✅ ch04_l_face_f0_p2_add.png
+  addon02: ⛔ Not Expected
+    semen: ✅ ch04_l_face_a1_seieki_add1.png
+
+
+timestamp: 2025-04-22 08:00:05
+macro: [std_aoi s se p1 f03 le]
+hash: 2088498149
+output: C:\Games\Chaos-R\01 - Prepped\arcana_rouge_en\tools\output\preview_2088498149.png
+duration: 0.63s
+layers: C:\Games\Chaos-R\01 - Prepped\arcana_rouge_en\source\g_std\ch02
+     body: ✅ ch02_s_base_b0_p1.png
+     face: ✅ ch02_s_face_a0_p1_030.png
+  addon01: ⛔ Not Expected
+  addon02: ⛔ Not Expected
+    semen: ⛔ Not Expected
+
+
+timestamp: 2025-04-22 08:00:06
+macro: [std_mia xl ma p1 f10 hoho ri]
+hash: 1423637056
+output: C:\Games\Chaos-R\01 - Prepped\arcana_rouge_en\tools\output\preview_1423637056.png
+duration: 0.87s
+layers: C:\Games\Chaos-R\01 - Prepped\arcana_rouge_en\source\g_std\ch03
+     body: ✅ ch03_x_base_c0_p1.png
+     face: ✅ ch03_x_face_a0_p1_101.png
+  addon01: ⛔ Not Expected
+  addon02: ⛔ Not Expected
+    semen: ⛔ Not Expected
+
+
+timestamp: 2025-04-30 05:17:04
+macro: [std_aka m mad p1 f14 eki ce]
+hash: 1138791051
+output: C:\Games\Chaos-R\01 - Prepped\arcana_rouge_en\tools\output\preview_1138791051.png
+duration: 1.04s
+layers: C:\Games\Chaos-R\01 - Prepped\arcana_rouge_en\source\g_std\ch01
+     body: ✅ ch01_m_base_d1_p1.png
+     face: ✅ ch01_m_face_a1_p1_140.png
+  addon01: ⛔ Not Expected
+  addon02: ⛔ Not Expected
+    semen: ⛔ Not Expected
+
+
+timestamp: 2025-04-30 05:18:42
+macro: [std_aoi m mad p1 f10 eki ce]
+hash: 1705895709
+output: C:\Games\Chaos-R\01 - Prepped\arcana_rouge_en\tools\output\preview_1705895709.png
+duration: 0.64s
+layers: C:\Games\Chaos-R\01 - Prepped\arcana_rouge_en\source\g_std\ch02
+     body: ✅ ch02_m_base_d1_p1.png
+     face: ✅ ch02_m_face_a1_p1_100.png
+  addon01: ⛔ Not Expected
+  addon02: ⛔ Not Expected
+    semen: ⛔ Not Expected
+
+
+timestamp: 2025-04-30 05:22:44
+macro: [std_mia m mad p1 f08 eki ce]
+hash: 1956974652
+output: C:\Games\Chaos-R\01 - Prepped\arcana_rouge_en\tools\output\preview_1956974652.png
+duration: 0.63s
+layers: C:\Games\Chaos-R\01 - Prepped\arcana_rouge_en\source\g_std\ch03
+     body: ✅ ch03_m_base_d1_p1.png
+     face: ✅ ch03_m_face_a1_p1_080.png
+  addon01: ⛔ Not Expected
+  addon02: ⛔ Not Expected
+    semen: ⛔ Not Expected
+
+
+timestamp: 2025-04-30 05:25:05
+macro: [std_mia m mad p1 f08 eki ce]
+hash: 1956974652
+output: C:\Games\Chaos-R\01 - Prepped\arcana_rouge_en\tools\output\preview_1956974652.png
+duration: 0.77s
+layers: C:\Games\Chaos-R\01 - Prepped\arcana_rouge_en\source\g_std\ch03
+     body: ✅ ch03_m_base_d1_p1.png
+     face: ✅ ch03_m_face_a1_p1_080.png
+  addon01: ⛔ Not Expected
+  addon02: ⛔ Not Expected
+    semen: ⛔ Not Expected
+
+
+timestamp: 2025-04-30 05:30:33
+macro: [std_mei m maw p1 f02 ri magan]
+hash: 1245796695
+output: C:\Games\Chaos-R\01 - Prepped\arcana_rouge_en\tools\output\preview_1245796695.png
+duration: 0.70s
+layers: C:\Games\Chaos-R\01 - Prepped\arcana_rouge_en\source\g_std\ch04
+     body: ✅ ch04_m_base_h0_p1.png
+     face: ✅ ch04_m_face_j0_p1_020.png
+  addon01: ⛔ Not Expected
+  addon02: ⛔ Not Expected
+    semen: ⛔ Not Expected
+
+
+timestamp: 2025-04-30 06:20:07
+macro: [std_mia l ha p2 f01 rc x=-100 index=1]
+hash: 2015079879
+output: C:\Games\Chaos-R\01 - Prepped\arcana_rouge_en\tools\output\preview_2015079879.png
+duration: 0.86s
+layers: C:\Games\Chaos-R\01 - Prepped\arcana_rouge_en\source\g_std\ch03
+     body: ✅ ch03_l_base_a0_p2.png
+     face: ✅ ch03_l_face_a0_p1_010.png
+  addon01: ⛔ Not Expected
+  addon02: ⛔ Not Expected
+    semen: ⛔ Not Expected
+
+
+timestamp: 2025-04-30 06:20:34
+macro: [std_mia l ha p1 f01 rc x=-100 index=1]
+hash: 1059232770
+output: C:\Games\Chaos-R\01 - Prepped\arcana_rouge_en\tools\output\preview_1059232770.png
+duration: 0.75s
+layers: C:\Games\Chaos-R\01 - Prepped\arcana_rouge_en\source\g_std\ch03
+     body: ✅ ch03_l_base_a0_p1.png
+     face: ✅ ch03_l_face_a0_p1_010.png
+  addon01: ⛔ Not Expected
+  addon02: ⛔ Not Expected
+    semen: ⛔ Not Expected
+
+
+timestamp: 2025-04-30 06:21:06
+macro: [std_mia l ha p2 f01 rc x=-200 index=1]
+hash: 843624002
+output: C:\Games\Chaos-R\01 - Prepped\arcana_rouge_en\tools\output\preview_843624002.png
+duration: 0.74s
+layers: C:\Games\Chaos-R\01 - Prepped\arcana_rouge_en\source\g_std\ch03
+     body: ✅ ch03_l_base_a0_p2.png
+     face: ✅ ch03_l_face_a0_p1_010.png
+  addon01: ⛔ Not Expected
+  addon02: ⛔ Not Expected
+    semen: ⛔ Not Expected
+
+
+timestamp: 2025-05-01 02:36:28
+macro: [std_mia m se p1 f10 ce off]
+hash: 1344656879
+output: C:\Games\Chaos-R\01 - Prepped\arcana_rouge_en\tools\output\preview_1344656879.png
+duration: 0.75s
+layers: C:\Games\Chaos-R\01 - Prepped\arcana_rouge_en\source\g_std\ch03
+     body: ✅ ch03_m_base_b0_p1.png
+     face: ✅ ch03_m_face_a0_p1_100.png
+  addon01: ⛔ Not Expected
+  addon02: ⛔ Not Expected
+    semen: ⛔ Not Expected
+
+
+timestamp: 2025-05-01 03:28:35
+macro: [std_mia m mad p2 f12 eki ri off]
+hash: 1781281970
+output: C:\Games\Chaos-R\01 - Prepped\arcana_rouge_en\tools\output\preview_1781281970.png
+duration: 0.71s
+layers: C:\Games\Chaos-R\01 - Prepped\arcana_rouge_en\source\g_std\ch03
+     body: ✅ ch03_m_base_d1_p2.png
+     face: ✅ ch03_m_face_a1_p1_120.png
+  addon01: ⛔ Not Expected
+  addon02: ⛔ Not Expected
+    semen: ⛔ Not Expected
+
+
+timestamp: 2025-05-05 03:23:46
+macro: [std_mia m mad p2 f12 eki ri off]
+hash: 1781281970
+output: C:\Games\Chaos-R\01 - Prepped\arcana_rouge_en\tools\std_sprite\output\preview_1781281970.png
+duration: 1.02s
+layers: C:\Games\Chaos-R\01 - Prepped\arcana_rouge_en\source\g_std\ch03
+     body: ✅ ch03_m_base_d1_p2.png
+     face: ✅ ch03_m_face_a1_p1_120.png
+  addon01: ⛔ Not Expected
+  addon02: ⛔ Not Expected
+    semen: ⛔ Not Expected
+
+

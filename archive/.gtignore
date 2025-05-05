@@ -1,0 +1,91 @@
+# Ignore editor/IDE settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore compiled/intermediate files
+*.bak
+*.tmp
+*.log
+*.pyc
+__pycache__/
+
+# Ignore image, movie, sound, and exe files
+/tools/whisper-env/
+/tools/tts/Akane_NurseDiary_converted.wav
+/source/アルカナルージュ限定版さいとうつかさ先生描き下ろしコミック.pdf
+/source/startup.exe
+/source/神聖昂燐アルカナルージュ.exe
+/source/茜ちゃんの先生看病にっき（音声のみ版）.ogg
+/source/茜ちゃんの先生看病にっき（音声のみ版）.wav
+/source/茜ちゃんの先生看病にっき.ogg
+/source/茜ちゃんの先生看病にっき.wav
+/source/g_bg/
+/source/g_cg/
+/source/g_image/
+/source/g_rule/
+/source/g_std/
+/source/g_thm/
+/source/movie/
+/source/s_bgm/
+/source/s_se/
+/source/s_sysse/
+/source/s_voice/
+/source/data/layereximage.dll
+/source/data/perspective.dll
+/source/k_bonus/se_sys011.ogg
+/source/plugin/krflash.dll
+/source/plugin/krmovie.dll
+/source/plugin/windowex.dll
+/source/system/check.png
+/source/system/linebreak.png
+/source/system/linebreak_a.png
+/source/system/linebreak_a_m.png
+/translation/Akane_NurseDiary (Voice Only).ogg
+/translation/Akane_NurseDiary (Voice Only).wav
+/translation/Akane_NurseDiary.ogg
+/translation/Akane_NurseDiary.wav
+/translation/Arcana Rouge Limited Edition – Exclusive Comic Drawn by Saito Tsukasa.pdf
+/translation/data.xp3
+/translation/debugger.sdp
+/translation/k2compat.xp3
+/translation/krkrdebg.exe
+/translation/Sacred Angel - Arcana Rouge[EN].exe
+/translation/tvpwin32_dbg.exe
+/translation/fonts/
+/translation/g_bg/
+/translation/g_cg/
+/translation/g_image/
+/translation/g_rule/
+/translation/g_std/
+/translation/g_thm/
+/translation/movie/
+/translation/s_bgm/
+/translation/s_se/
+/translation/s_sysse/
+/translation/s_voice/
+/translation/data/layereximage.dll
+/translation/data/perspective.dll
+/translation/k_bonus/se_sys011.ogg
+/translation/plugin/krflash.dll
+/translation/plugin/krmovie.dll
+/translation/plugin/windowex.dll
+/translation/system/check.png
+/translation/system/linebreak.png
+/translation/system/linebreak_a.png
+/translation/system/linebreak_a_m.png
+
+# Ignore build artifacts and archive folders
+/archive/
+*.zip
+*.7z
+
+# Ignore chatgpt folder
+/chatgpt/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Ignore files found in /translation that match /source

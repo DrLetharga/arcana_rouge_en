@@ -1,0 +1,560 @@
+// AfterInit.tjs
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+KAGLoadScript("LoadThumbnail.tjs");
+KAGLoadScript("SliderFuntion.tjs");
+KAGLoadScript("Config_SliderControl.tjs");
+KAGLoadScript("SliderLayer.tjs");
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+//クリッカブルマップ用
+// 関数名：
+//   marker_on(lay, x, y)
+// 機能概要：
+//   指定した前景レイヤを指定したＸ、Ｙ座標に表示する
+// 引数：
+//   lay … 前景レイヤ番号（0, 1, 2…）
+//   x   … Ｘ座標（ピクセル）
+//   y   … Ｙ座標（ピクセル）
+// 戻り値：
+//   なし
+function marker_on(lay, x, y)
+{
+	kag.fore.layers[lay].setPos(x, y);
+	kag.fore.layers[lay].visible = true;
+}
+
+// 関数名：
+//   marker_off(lay)
+// 機能概要：
+//   指定した前景レイヤを非表示にする
+// 引数：
+//   lay … 前景レイヤ番号（0, 1, 2…）
+// 戻り値：
+//   なし
+function marker_off(lay)
+{
+	kag.fore.layers[lay].visible = false;
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+// 関数名：
+//   get_bookmark_data(num)
+// 機能概要：
+//   栞の日付とブックマーク名を連結した文字列を返す
+// 引数：
+//   num … 栞の番号（0, 1, 2…）
+// 戻り値：
+//   栞がある場合…"[num] YYYY/MM/DD hh:mm ブックマーク名"形式の文字列で返す
+//   栞がない場合…"[num] ----/--/-- --:-- (未設定)"という文字列を返す
+function get_bookmark_data(num)
+{
+	var date = kag.getBookMarkDate(num);
+//	if (date == "")
+//		return "[" + (num+1) + "] ----/--/-- --:-- " + kag.getBookMarkPageName(num);
+//	else
+//		return "[" + (num+1) + "] " + date + " " + kag.getBookMarkPageName(num);
+
+//mm ここでnum-100したら表示上だけはスロット1になるか？
+//mm tf.subにすでに引くべき値が入ってるはずだからそれを足してみる
+//mm num自体は実際のデータナンバーなので変更してはいけない
+
+		//System.inform("[" + (num+1+tf.sub)  + "]");
+	if (date == "")
+		return "[" + (num+1+tf.sub)  + "] ----/--/-- --:-- " + kag.getBookMarkPageName(num);
+
+		
+	else
+		return "[" + (num+1+tf.sub)  + "] " + date + " " + kag.getBookMarkPageName(num);
+
+}
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+// 未読もスキップするか否かのフラグ（システム変数）
+if (sf.allskip === void)
+  sf.allskip = false;  // 初回起動時にはfalseを代入しておく
+
+// ［システム‐未読もスキップ］メニューハンドラの定義
+//kag.onAllSkipClick = function(sender)
+//{
+//  sf.allskip = !sf.allskip;
+//  allSkipMenuItem.checked = sf.allskip;
+//  if (sf.allskip)
+//    skipToNextStopMenuItem.caption = "次の選択肢まで進む(&F)";
+//  else
+//    skipToNextStopMenuItem.caption = autoRecordPageShowing ? "次の選択肢/未読まで進む(&F)" : "次の選択肢まで進む(&F)";
+//} incontextof kag;
+
+// ［未読もスキップ］メニューアイテムを作成
+//kag.allSkipMenuItem = new KAGMenuItem(kag, "未読もスキップ(&L)", 0, kag.onAllSkipClick, false);
+//kag.allSkipMenuItem.checked = sf.allskip;
+
+// ［システム］メニューに［未読もスキップ］メニューアイテムを登録
+//kag.systemMenu.insert(kag.allSkipMenuItem, 3);
+
+// kag.getCurrentRead()メソッドを差し換える
+kag.getCurrentRead_org = kag.getCurrentRead;
+kag.getCurrentRead = function()
+{
+  if (sf.allskip)                 // 未読もスキップするなら全て既読
+    return true;
+  else
+    return getCurrentRead_org();  // そうでなければ旧kag.getCurrentRead()メソッドの戻り値を使う
+} incontextof kag;
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+// セーブデータにテキスト表示するの
+//return tagHandlers.cm_org(elm); だとなぜかエラーが出るので 
+//return tagHandlers.org_cm(elm); に名前を変更
+//コメントをつけまくって、逆に見づらい
+
+with(kag) 
+{
+	.currentMessage = ""; //見出しへの追加文字（メッセージレイヤの一番上に表示されている文字） 
+//	.storeCurrentMessages = 40; //見出しに追加する文字数 
+	//なんで40文字で合わないんだ？右マージンも0だしフォントサイズも同じなはずなんだが
+	.storeCurrentMessages = 44; //見出しに追加する文字数 
+
+	//mm 同じ文字列なら実行しなければいいんじゃないか？
+//	.currentMessage_tmp = ""; //見出しへの追加文字（メッセージレイヤの一番上に表示されている文字） 
+
+
+
+	//kag.tagHandlersにタグの実装が入っている（[macro][if]等の例外有）
+	.tagHandlers.org_ch = .tagHandlers.ch; 
+	.tagHandlers.ch = function( elm ) 
+	{ 
+		// 文字表示 actualChSpeed = chSpeed 実際の文字表示スピード
+		var acs = actualChSpeed; 
+		//updateBeforeCh 文字を描画する前にいったん画面描画に入るかどうかのカウント
+		if(updateBeforeCh) 
+		{ 
+			if(acs) { updateBeforeCh--; return -5; } else { updateBeforeCh--; } 
+		} 
+		//上の処理は良く分からないけれど、本来のchタグの先頭部分
+		var len = currentMessage.length; 
+		//追加文字数がstoreCurrentMessages（ここでは20）以下
+		//でかつf.noStoreCurrentMessageがfalseなら文字追加
+		if((len < storeCurrentMessages) && (!f.noStoreCurrentMessage)) 
+			//substring(<開始文字位置>,<文字数>) 
+			//例：var ss="abcdefghijkl".substring(3,3); ss には "def" が代入される
+			currentMessage += elm.text.substring(0, storeCurrentMessages - len);
+//mm だめだな
+//			//mm 
+//			if(currentMessage == currentMessage_tmp)
+//			{
+//			return tagHandlers.org_ch(elm); //本来のchタグの処理に戻る
+//			}
+//			//mm あとで同じ文字列が判定するために別フラグにも保存
+//			currentMessage_tmp = currentMessage;
+
+		//追加文字数がstoreCurrentMessagesの時
+		//でかつf.noStoreCurrentMessageがfalseなら"……"追加
+		if((len == storeCurrentMessages) && (!f.noStoreCurrentMessage))
+			currentMessage += "……";
+
+//mm だめだな
+//			//mm 
+//			if(currentMessage == currentMessage_tmp)
+//			{
+//			return tagHandlers.org_ch(elm); //本来のchタグの処理に戻る
+//			}
+//			//mm あとで同じ文字列が判定するために別フラグにも保存
+//			currentMessage_tmp = currentMessage;
+
+		return tagHandlers.org_ch(elm); //本来のchタグの処理に戻る
+
+	} incontextof kag; 
+
+
+
+	.tagHandlers.org_cm = .tagHandlers.cm; 
+	.tagHandlers.cm = function( elm ) 
+	{ 
+		currentMessage = ""; // 見出しへの追加文字をリセット 
+		return tagHandlers.org_cm(elm); //本来のcmタグの処理に戻る
+	} incontextof kag; 
+
+	.saveBookMarkToFile_org = .saveBookMarkToFile; 
+	.saveBookMarkToFile = function(fn, savehist = true) 
+	{ 
+		//readOnlyMode 読み込み専用モードなら、リターン
+		if(readOnlyMode) return false; 
+		//pcflags「保存可能なラベル」を通過した時点でのフラグ(コア)
+		pcflags.currentMessage = currentMessage; // 見出しへの追加文字を栞に保存 
+		return saveBookMarkToFile_org(fn, savehist); 
+	} incontextof kag; 
+
+	.saveBookMarkWithAsk = function(num) 
+	{ 
+		// 栞番号 num に栞を設定する 
+		// そのとき、設定するかどうかをたずねる 
+		if(readOnlyMode) return false; 
+		//bookMarkProtectedStates 栞が保護されているかの情報
+		if(bookMarkProtectedStates[num]) return false; 
+		var prompt = "スロット "; 
+		if(num < numBookMarks) prompt += (num + 1); 
+		if(bookMarkDates[num] != "") // bookMarkDates が空文字の場合は栞は存在しない 
+			prompt += "「" + bookMarkNames[num] + "」"; 
+		if(f.noStoreCurrentMessage)
+			prompt += "に「"+ pcflags.currentPageName + "」をセーブしますか?"; 
+		else
+			prompt += "に「"+ currentMessage + "」をセーブしますか?"; 
+		//セーブタイトルを（見出し＋メッセージレイヤの一番上に表示されている文字）にしたいなら
+		//上のif(f.noStoreCurrentMessage)からコメントアウトして下のコメントアウトを外してください。
+//		prompt += "に「"+ pcflags.currentPageName + " " + currentMessage + "」をはさみますか?"; 
+		var result = askYesNo(prompt); 
+		//「はい」なら保存
+		if(result) return saveBookMark(num); //本来の処理には戻らない
+		//「いいえ」ならfalseを返す
+		return false; 
+	} incontextof kag; 
+
+	.getBookMarkInfoFromData = function(dic, num) 
+	{ 
+		// 辞書配列 dic から栞のページ名と日付を読み出し、 
+		// bookMarkDates[num] や bookMarkNames[num] に設定する 
+		// numBookMarks メニューに用意する栞のサブメニュー項目の数
+		if(num < numBookMarks) 
+		{ 
+			if(f.noStoreCurrentMessage)
+				bookMarkNames[num] = dic.currentPageName;
+			else
+				bookMarkNames[num] = currentMessage; 
+			//セーブタイトルを（見出し＋メッセージレイヤの一番上に表示されている文字）にしたいなら
+			//上のif(f.noStoreCurrentMessage)からコメントアウトして下のコメントアウトを外してください。
+//			bookMarkNames[num] = dic.currentPageName + " " + currentMessage; 
+			var date = new Date(); 
+			date.setTime(dic.storeTime); 
+			date = "%04d/%02d/%02d %02d:%02d".sprintf( 
+			date.getYear(), date.getMonth() + 1, date.getDate(), 
+			date.getHours(), date.getMinutes() ); 
+			bookMarkDates[num] = date; 
+			setBookMarkMenuCaptions(); 
+			saveSystemVariables(); 
+		} 
+	} incontextof kag; 
+}
+// 最後に通過した[cm]タグから、kag.storeCurrentMessages文字分だけを見出しへの追加文字とする 
+// ただし、f.noStoreCurrentMessageが真の間に表示した分は除外 
+// （見出しにしたくない文字を表示するときは、上のフラグをONにする
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+
+//デバッグ時にだけ前に戻る有効　ダイアログを出さないためのフラグ定義
+var goBackHistory_org = kag.goBackHistory;
+kag.goBackHistory = function()
+{
+	if (sf.returnAsk)
+		goBackHistory_org(true);
+	else
+		goBackHistory_org(false);
+} incontextof kag;
+
+//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==
+//---------------------------------------------------------
+//★和人　開発中使えないと不便なので、クイックロード・セーブだけ復活　
+//---------------------------------------------------------
+//---------------------------------------------------------
+
+
+//ショートカットオミット　使ってもいいけどダイアログとオマケモード系のフラグは見直さないと危ないかもよ？
+//	//ショートカット追加
+	function KeyHook(key, shift)
+	{
+	if(kag.debugMenu.visible){	//★和人　デバッグ中用に無理矢理囲う
+	
+	
+//	//ゲーム中にシステム間移動するとback押した時に正常に戻れない
+//		//タイトル
+//		if(key == #'T')
+//		{
+//			//システム画面中でないなら有効
+//			if(tf.title == 0 && kag.inStable == true && tf.dialog_now == 0 && f.selbt == 0 && tf.cg_mode == 0 && tf.scene_mode == 0 && tf.bgm_mode == 0)
+//			{
+//	
+//				// ダイアログオンならダイアログサブルーチンに飛ばす条件追加　オフなら直でsystembutton_subへ
+//				if(sf.dialog_on == 1)
+//				{
+//	
+//					if(tf.conf == 1)
+//					{
+//					tf.dialog_conf_title = 1;
+//					}
+//					else if(tf.save == 1)
+//					{
+//					tf.dialog_savetitle = 1;
+//					}
+//					else if(tf.load == 1)
+//					{
+//					tf.dialog_loadtitle = 1;
+//					}
+//					else
+//					{
+//					tf.dialog_game_title = 1;
+//					}
+//	
+//				kag.callExtraConductor("dialog.ks");
+//				}
+//				else
+//				{
+//				kag.callExtraConductor("systembutton_sub.ks", "*sys_title");
+//				}
+//			}
+//		return true;
+//		}
+//	
+//		//セーブ
+//		if(key == #'S')
+//		{
+//			//システム画面中 タイトル画面中でない、かつゲーム中なら有効
+//			if( tf.dialog_now == 0 && tf.save == 0 && tf.title == 0 && f.shortcut_save == 1 && tf.cg_mode == 0 && tf.scene_mode == 0 && tf.bgm_mode == 0  &&  kag.inStable == true)
+//			{
+//				//システム画面中ならsystembutton_sub.ks経由しない
+//				if(tf.load == 1 || tf.conf == 1)
+//				{
+//				tf.save = 1;
+//				tf.load = 0;
+//				tf.conf = 0;
+//				kag.callExtraConductor("system_save.ks", "*save_menu");
+//				}
+//				else
+//				{
+//				kag.callExtraConductor("systembutton_sub.ks", "*sys_save");
+//				}
+//			}
+//		return true;
+//		}
+//	
+//		//ロード
+//		if(key == #'L')
+//		{
+//			//システム画面中でないなら有効
+//			if(tf.dialog_now == 0 && tf.load == 0 && tf.cg_mode == 0 && tf.scene_mode == 0 && tf.bgm_mode == 0 && kag.inStable == true)
+//			{
+//				//タイトル画面中ならtitle.ksのjump処理へ
+//				if(tf.title == 1)
+//				{
+//				kag.callExtraConductor("title.ks", "*title_menu_load");
+//				}
+//				//システム画面中ならsystembutton_sub.ks経由しない
+//				else if(tf.save == 1 || tf.conf == 1)
+//				{
+//				tf.save = 0;
+//				tf.load = 1;
+//				tf.conf = 0;
+//				kag.callExtraConductor("system_load.ks", "*load_menu");
+//				}
+//				else
+//				{
+//				kag.callExtraConductor("systembutton_sub.ks", "*sys_load");
+//				}
+//			}
+//		return true;
+//		}
+//	
+//		//コンフィグ
+//		if(key == #'C')
+//		{
+//			//システム画面中でないなら有効
+//			if(tf.dialog_now == 0 && tf.conf == 0 && tf.cg_mode == 0 && tf.bgm_mode == 0 && kag.inStable == true)
+//				{
+//					//回想メニュー中かつ回想スタートしてないなら無効
+//					if( tf.scene_mode == 1 && tf.scenestart == 0)
+//					{
+//					//処理無し
+//					}
+//					else
+//					{
+//						//タイトル画面中ならtitle.ksのjump処理へ
+//						if(tf.title == 1)
+//						{
+//						kag.callExtraConductor("title.ks", "*title_menu_config");
+//						}
+//						//システム画面中ならsystembutton_sub.ks経由しない
+//						else if(tf.save == 1 || tf.load == 1)
+//						{
+//						tf.save = 0;
+//						tf.load = 0;
+//						tf.conf = 1;
+//						kag.callExtraConductor("system_config_mes.ks", "*config_menu");
+//						}
+//						else
+//						{
+//						kag.callExtraConductor("systembutton_sub.ks", "*sys_config");
+//						}
+//					}
+//				}
+//		return true;
+//		}
+//	
+//		//QUIT
+//		if(key == #'Q')
+//		{
+//			if(tf.dialog_now == 0 && f.selbt == 0  && tf.cg_mode == 0 && tf.scene_mode == 0 && tf.bgm_mode == 0)
+//			{
+//			kag.callExtraConductor("systembutton_sub.ks", "*sys_exit");
+//			}
+//		return true;
+//		}
+//	
+//		//back
+//		if(key == #'B')
+//		{
+//			if(tf.dialog_now == 0 && tf.title == 0 && kag.inStable == true)
+//			{
+//				//セーブから
+//				if(tf.save == 1 && tf.load == 0 && tf.conf == 0)
+//				{
+//				kag.callExtraConductor("system_save.ks", "*save_return");
+//				}
+//				//ロードから
+//				else if(tf.save == 0 && tf.load == 1 && tf.conf == 0)
+//				{
+//				kag.callExtraConductor("system_load.ks", "*load_return");
+//				}
+//				//コンフィグから
+//				else if(tf.save == 0 && tf.load == 0 && tf.conf == 1)
+//				{
+//				kag.callExtraConductor("system_config_mes.ks", "*config_return");
+//				}
+//				//CGモードから
+//				else if(tf.cg_mode == 1 && tf.cgmodestart == 0)
+//				{
+//				kag.callExtraConductor("b_cgmode.ks", "*CGMODE_return");
+//				}
+//				//CGモード閲覧中から
+//				else if(tf.cg_mode == 1 && tf.cgmodestart == 1)
+//				{
+//				kag.callExtraConductor("b_cgmode.ks", "*back_from_cg");
+//				}
+//				//sceneモードから
+//				else if(tf.scene_mode == 1 && tf.scenestart == 0)
+//				{
+//				kag.callExtraConductor("b_scene.ks", "*scene_return");
+//				}
+//				//BGMモードから
+//				else if(tf.bgm_mode == 1)
+//				{
+//				kag.callExtraConductor("b_bgmmode.ks", "*sound_return");
+//				}
+//	
+//			}
+//		return true;
+//		}
+//	
+//		//ダイアログYES
+//		if(key == #'Y')
+//		{
+//	
+//			//初期設定に戻すだけ上手くいかないから殺すか
+//			//if(tf.dialog_now == 1 && tf.dialog_conf_def == 0 && kag.inStable == true)
+//			if(tf.dialog_now == 1 && kag.inStable == true)
+//			{
+//			kag.callExtraConductor("dialog.ks", "*ショートカットYES");
+//			}
+//		return true;
+//		}
+//	
+//		//ダイアログNO
+//		if(key == #'N')
+//		{
+//			//初期設定に戻すだけ上手くいかないから殺すか
+//			//if(tf.dialog_now == 1 && tf.dialog_conf_def == 0  && kag.inStable == true)
+//			if(tf.dialog_now == 1 && kag.inStable == true)
+//			{
+//			kag.callExtraConductor("dialog.ks", "*ショートカットNO");
+//			}
+//		return true;
+//		}
+//	
+//	
+//	
+//	
+		//Qセーブ[F2]
+		//★和人　VKを書き替え
+		if(key == VK_F11)
+		{
+			//タイトル・システム画面中でないなら有効
+			if(tf.dialog_now == 0 && tf.title == 0 && tf.save == 0 && tf.load == 0 && tf.conf == 0 && kag.inStable == true && tf.cg_mode == 0 && tf.scene_mode == 0 && tf.bgm_mode == 0 && f.selbt == 0)
+			{
+				if(sf.dialog_on)
+				{
+				kag.storeBookMark(kag.numBookMarks-1,false);  // クイックセーブ
+				}
+				else
+				{
+				kag.storeBookMark(kag.numBookMarks-1,false);  // クイックセーブ
+				}
+				//クイックセーブ演出をしにいく
+				kag.callExtraConductor("systembutton_sub.ks", "*sys_Qsave");
+			}
+		return true;
+		}
+	
+	
+		//Qロード[F3]
+		//★和人　VKを書き替え
+		if(key ==VK_F12)
+		{
+			//システム画面中でないなら有効
+			if(tf.dialog_now == 0 && tf.title == 0 && tf.save == 0 && tf.load == 0 && tf.conf == 0 && kag.inStable == true && tf.cg_mode == 0 && tf.scene_mode == 0 && tf.bgm_mode == 0 && f.selbt == 0)
+			{
+				tf.QuickLoad = 1;
+				//ログ多重出力よけの判定の為のフラグ保存 ロードしたら消えちゃうからsfか
+				sf.ksStorageSys_tmp = (kag.conductor.curStorage);
+				//kag.conductor.currentLabelだとうまくいかない
+				sf.ksLabelSys_tmp = (kag.currentLabel);
+				
+				// 確認ダイヤログ有りにするならfalseを消す
+				if(sf.dialog_on)
+				{
+				//このフラグ立てておかないと右クリックが正しく設定されないわ2015/04/28
+				sf.ロード後右クリック未設定 = 1;
+				kag.restoreBookMark(kag.numBookMarks-1,false);  // クイックロード
+				}
+				else
+				{
+				//このフラグ立てておかないと右クリックが正しく設定されないわ2015/04/28
+				sf.ロード後右クリック未設定 = 1;
+				 kag.restoreBookMark(kag.numBookMarks-1,false);  // クイックロード
+				}
+			}
+		return true;
+		}
+	
+	}//★和人　デバッグ中用に無理矢理囲う
+	
+	}
+	kag.keyDownHook.add(KeyHook);
+
+//---------------------------------------------------------
+//---------------------------------------------------------
+//★和人　追記
+//---------------------------------------------------------
+//デバッグモード時、Shift+Eでmiwを起動させるプラグイン
+	if(kag.debugMenu.visible){
+	Scripts.execStorage("openCurrentScnario.tjs");
+	}
+
+//---------------------------------------------------------
+//---------------------------------------------------------
+//---------------------------------------------------------
+//---------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+

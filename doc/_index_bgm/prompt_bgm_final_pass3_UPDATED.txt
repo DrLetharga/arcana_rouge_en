@@ -1,0 +1,72 @@
+
+🎼 Finalized Pass 3 BGM Indexing Prompt
+
+You are indexing all background music (BGM) used in a Japanese visual novel built with the KiriKiri Z engine. The goal is to produce a complete and context-rich `index_bgm.csv` that is optimized for translation guidance, emotion tagging, and scene synthesis. This is the final pass and must meet strict quality standards.
+
+📂 Files and Structure
+- `.ks` scripts are UTF-8 without BOM.
+- BGM macro calls follow `[bgm###]` and resolve via `macro04_sound.ks`.
+- BGM filenames follow `BGM01.ogg`, `BGM02.ogg`, etc.
+- Track `[ANTEN]`, `[fadeoutbgm]`, `[bgmstop]`, and scene control flow (`[jump]`, `[sel##]`) for start/stop logic.
+- Event CG and sprite macro information (e.g., `[evcg storage="ev46b"]`, `[std_aka m mad p1 f12 eki ho ce]`) may assist tone inference.
+
+🔍 Indexing Objectives
+
+Each entry must include:
+- KS File — Filename where `[bgm###]` appears
+- BGM File — The `.ogg` file triggered
+- Start Line — Line number macro appears
+- End Line — Line number where playback ends
+- Looping — True/False
+- Duration — Track length in seconds
+- Tone Tags — `{tone:*}` tags based on scene
+- Notes — Emotional/narrative context
+- Stop Trigger — The literal line that ends BGM
+
+🧠 Evaluation Process
+
+For Every `[bgm###]`:
+1. Locate macro line (Start Line)
+2. Track forward for stop conditions:
+   - `[fadeoutbgm]`, `[bgmstop]`, `[ANTEN]` (unless `bgmon`)
+   - Another `[bgm###]` with different file
+3. If jump or selection macro is encountered:
+   - Follow the label
+   - Continue BGM trace from target script
+   - Create additional rows if necessary
+
+❗ `[bgm### cond="tf.scene_mode == 1"]` must be ignored if the file is already being traced due to a `[jump]`, `[sel##]`, or a `storage=` macro. In this case, log it as **not counted**, but **noted**.
+
+🎼 Tone & Context
+
+For every entry, read the full block of script from `Start Line` to `End Line` and:
+- Use `tagging_guide.md` tone rules
+- Consider sprite expressions, CG scene, SE, BGVs, and developer comments
+- Examples:
+  - `{tone:ritual}{tone:tense}`
+  - `{tone:broken}{tone:pleasure}`
+
+✅ Stop Condition Checklist
+
+- [ ] Scanned line-by-line after `[bgm###]`
+- [ ] Stopped at `[fadeoutbgm]`, `[bgmstop]`, `[ANTEN]`, or new `[bgm###]`
+- [ ] Noted literal stop macro line in `Stop Trigger`
+- [ ] Resolved `[jump]` and `[sel##]` label chains
+- [ ] If `[bgm cond="tf.scene_mode == 1"]` appears during an active trace → Ignore, but note
+- [ ] If EOF reached with no stop, scan last 20 lines for uncommented `[jump]` or branch macros
+- [ ] For every such jump, trace destination label/script and continue indexing
+- [ ] Do not assume stop unless explicitly found — all valid paths must be followed
+
+🧩 Special Cases
+
+- `bgmon` inside `[ANTEN]` → BGM continues
+- `[ANTEN]` without `bgmon` → BGM ends
+- Replay scenes (`tf.scene_mode == 1`) → only counted if not already traced
+
+📦 Output
+
+Write to `index_bgm_final.csv`, modeled after `index_bgm21.csv`, with `Stop Trigger` added if missing.
+
+Optional:
+- Generate `bgm_carry.yaml` for traced label paths
+- Create `bgm_tone_summary.md` for tag auditing

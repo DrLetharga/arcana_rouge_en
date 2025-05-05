@@ -1,0 +1,8 @@
+Filename,Scene Type,Time of Day,Mood,Suggested Tags,Notes,Script File,Index
+bg017b.png,Playground (Residential),Sunset,"Cheerful, Light","{emote:happy}, {emote:calm}, {emote:casual}","Mei appears in a friendly setting; warm, slice-of-life opening.",arcana079.ks,12
+bg017b.png,Playground (Residential),Sunset,"Quiet, Reflective","{emote:neutral}, {emote:calm}, {effect:blur}",Blurred background effect; subdued tone leading to more serious developments.,arcana079.ks,82
+bg017b.png,Playground (Residential),Sunset,"Alert, Cautious","{emote:alert}, {emote:serious}",Character surveys surroundings; tone becomes wary.,arcana079.ks,98
+bg017b.png,Playground (Residential),Sunset,"Tense, Aftermath","{emote:serious}, {emote:tense}",Scene resumes after intense conflict; characters regroup.,arcana079.ks,310
+bg017b.png,Playground (Residential),Sunset,"Determined, Focused","{emote:serious}, {emote:driven}",Aoi arrives at the park in pursuit of someone; strong forward motion.,arcana085.ks,11
+bg017b.png,Playground (Residential),Sunset,"Surreal, Disoriented","{effect:hamon}, {emote:confused}, {emote:fear}",Ripple effect used; character experiences distortion and momentary disorientation.,arcana085.ks,83
+bg017b.png,Playground (Residential),Sunset,"Ominous, Tense","{emote:serious}, {emote:tense}",Mizuchi appears; third-person narration in a quiet but loaded scene.,arcana087.ks,9

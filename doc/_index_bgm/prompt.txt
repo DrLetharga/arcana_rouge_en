@@ -1,0 +1,111 @@
+I am currently indexing all background music (BGM) used in a Japanese visual novel for my KiriKiri Z conversion and TTS/emotion tagging pipeline. This is part of a multi-phase asset indexing project (following completed background image tagging in `index_bg.csv`).
+
+In this project, BGM is triggered via macro calls like `[bgm005]`, which resolve to:
+
+```ks
+[macro name="bgm005"][bgm * storage="BGM05"][endmacro]
+```
+The `[bgm]` macro itself expands to:
+
+```ks
+[fadeinbgm storage="BGM05" loop=true time=100]
+```
+These macros are defined in `k_others\macro04_sound.ks`. All BGM file names follow the pattern `BGM01`, `BGM02`, etc., and all are assumed to loop unless otherwise noted.
+
+Note: The `[ANTEN]` macro is often used before a `[jump]` to a new `.ks` script. It stops all SE and BGM by default using `[fadeoutbgm]`, unless the macro is invoked with `bgmon`, e.g., `[ANTEN blk bgmon]`.  
+This must be evaluated to determine whether BGM carries forward across scripts.
+
+Additionally, `[fadeoutbgm]` may appear on its own in scripts to stop music.  
+It must be treated as a BGM stop event, just like `[bgmstop]` or `[ANTEN]` without `bgmon`.
+
+If a `[bgm###]` call is followed by a branching selection (e.g., `[sel01]`, `[sel02]`, `[sel04]`) or `[jump storage="xxx.ks" target=*TOP]`, and **no `[fadeoutbgm]`, `[bgmstop]`, or `[ANTEN]` without `bgmon`** occurs before the jump:
+
+- Assume the BGM carries over into the new `.ks` file at the label specified (`*TOP`).
+    
+- Continue tracking the BGM in the new file until:
+    
+    - A new `[bgm###]` call appears (replaces current BGM)
+        
+    - `[fadeoutbgm]` or `[bgmstop]` is called
+        
+    - `[ANTEN]` without `bgmon` is encountered
+        
+
+Always add a new `index_bgm.csv` row in the destination `.ks` file reflecting the continued play of the original BGM.
+
+If a `[jump]` statement is nested inside an `[if]`, `[elsif]`, or `[endif]` conditional structure, and the preceding `[bgm###]` was not explicitly stopped (via `[fadeoutbgm]`, `[bgmstop]`, or `[ANTEN]` without `bgmon`), then:
+
+- **Each conditional jump destination must be traced individually** as a possible BGM continuation path.
+    
+- Assume the BGM carries over into the new `.ks` file at the label specified (`*TOP`).
+    
+- Continue tracking the BGM in the new file until:
+    
+    - A new `[bgm###]` call appears (replaces current BGM)
+        
+    - `[fadeoutbgm]` or `[bgmstop]` is called
+        
+    - `[ANTEN]` without `bgmon` is encountered
+
+## 🎼 **Target Output**: `index_bgm.csv`
+Each entry in the CSV should contain:
+
+- **KS File**: e.g., arcana003.ks
+
+- **BGM File**: e.g., BGM05.ogg
+
+- **Start Line**: First .ks script line where the macro appears
+
+- **End Line**: Line where the BGM stops (if `[bgmstop]`, `[fadeoutbgm]`, `[ANTEN]` is invoked without `bgmon`, or new `[bgm###]` appears) 
+When identifying the end of a BGM macro like `[bgm001]`, always check the total number of lines in the file.
+If no stop condition (`[fadeoutbgm]`, `[bgmstop]`, new `[bgm###]`, or `[ANTEN]` without `bgmon`) appears before the final line of the script, assume the BGM continues to the end of the file.
+Never assign an End Line greater than the file's actual length.
+
+- **Looping**: True/False
+
+- **Duration (s)**: Optional — filled if known or measured
+
+- **Tone Tags**: e.g., {tone:tense}{tone:ritual}, based on scene mood
+
+- **Notes**: Emotional context, what kind of scene it scores, any dev comments or narration describing the atmosphere
+
+In some cases, `[bgm###]` is called with a `cond="tf.scene_mode == 1"` parameter.
+This ensures the BGM plays when the scene is replayed (`tf.scene_mode == 1`) rather than only during the original playthrough (`0`).
+For indexing purposes, this counts as **active BGM** and should be logged the same as unconditional calls.
+
+If needed, I will provide `.ogg` files, macro definitions, or script files for parsing.
+
+If provided BGM `.ogg` files, analyze them to determine duration, tone, looping behavior, and emotional fit.
+
+If provided `k_scenario.zip`, all scene `.ks` files will be in a folder, `k_scenario`, inside the archive.  So, if you extract it, the path will be `..\k_scenario\k_scenario\*.ks`.  These files will be encoded in UTF-8 without BOM unless otherwise noted.
+
+## 🔁 **Standard BGM Entry Requirements (Always perform for each [bgm###] occurrence)**:
+1. Determine Start and Stop:
+
+- Locate the exact line where `[bgm###]` begins.
+
+- Search forward until the next `[fadeoutbgm]`, `[bgmstop]`, `[ANTEN]` without bgmon, or another `[bgm###]` appears — this is the stop line.
+
+- Include the line number in output as `End Line`.
+
+2. Extract Context Block:
+
+- Pull all `.ks` script lines from `Start Line` through `End Line`.
+
+- Use this excerpt for tone and mood inference.
+
+3. Tone Tag Inference:
+
+- Analyze the full excerpt.
+
+- Tag scene mood using `{tone:*}` tags, including emotional escalation (e.g., `{tone:ritual}`, `{tone:despair}`, `{tone:triumph}`).
+
+4. Notes Summary:
+
+- Summarize key narrative and emotional events during the music span.
+
+- Reference character appearances, SEs, background changes, fights, or emotional beats.
+
+- Include relevant developer comments (`;` lines) that describe mood or implementation context.
+
+> ⚠️ For each `[bgm###]` macro, always determine the end of its playback and analyze the full section from start to stop for tone and narrative context. Use the “Standard BGM Entry Requirements” listed above to populate the `index_bgm.csv` fields.

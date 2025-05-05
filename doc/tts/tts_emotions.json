@@ -1,0 +1,50 @@
+{
+  "emote": {
+    "neutral": "Emotionally flat or blank delivery (optional)",
+    "happy": "Cheerful or lighthearted",
+    "fear": "Terror, dread, or helplessness",
+    "cry": "Sobbing or emotional breakdown",
+    "broken": "Mind-broken, passive, or emotionless",
+    "pleasure": "Lustful and aroused but not climaxing",
+    "climax": "Orgasmic tone or reaching sexual high",
+    "mocking": "Teasing or dominant tone, often by corrupted characters",
+    "shame": "Embarrassed or flustered delivery",
+    "beg": "Desperate pleading or submissive requests",
+    "apologetic": "Whimpering apologies or guilt",
+    "forced_moan": "Moaning under duress or control",
+    "anger": "Furious or aggressive",
+    "sad": "Sorrowful or despondent",
+    "surprise": "Shocked or startled",
+    "confused": "Hesitant or unsure",
+    "anxious": "Nervous or panicked",
+    "laugh": "Laughing or amused",
+    "serious": "Cold, steady, or resolved "
+	"agony": "Pained or suffering, but not crying"
+  },
+  "intent": {
+	"spoken": "",
+    "inner_monologue": "",
+    "narration": ""
+  },
+  "lang": {
+    "ja": "",
+    "en": ""
+  },
+  "tts": {
+    "skip": {
+      "description": "Tag used to exclude low-quality, empty, or irrelevant lines from training.",
+      "use": "Apply to silence, heavily distorted segments, or lines not useful for voice modeling."
+    }
+  },
+  "fx": {
+    "fx": {
+      "description": "Non-verbal expressive segments such as moans, gasps, and breathing sounds.",
+      "use": "Useful for training separate FX or moan-dedicated voice models."
+    }
+  },
+  "emotion_confidence": {
+    "description": "Estimated certainty of the assigned emotion based on keyword strength, pitch, and pacing alignment.",
+    "range": "0.0 to 1.0",
+    "use": "Can be used to filter training samples or down-weight uncertain ones."
+  }
+}

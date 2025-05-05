@@ -1,0 +1,27 @@
+{
+  "sequence": "evXX",
+  "frames": [
+    "evXXa",
+    "evXXb",
+    "evXXc"
+  ],
+  "climax_at": "evXXf",
+  "focus_regions": {
+    "akane": "y=0",
+    "aoi": "y=-300",
+    "mia": "y=-700"
+  },
+  "mask": "evXX_msk",
+  "flow": "dynamic",
+  "audio": {
+    "bgv": [
+      "bgv_aka to01",
+      "bgv_aoi to01"
+    ],
+    "sfx": [
+      "se触手ループ",
+      "se_sex潮吹き"
+    ]
+  },
+  "notes": "This is a scene where all three girls experience overlapping reactions, with camera panning between them."
+}

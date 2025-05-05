@@ -1,0 +1,40 @@
+//
+// 確認ダイアログボックスの各種パラメータを設定する
+//
+function YesNoDialogWindow_config()
+{
+
+// ☆ここから…
+
+;dialogImage = sf.dialog_def_dialogImage;			// ダイアログボックス本体の画像ファイル
+
+;dialogYesButtonImage = "dialog_bt_yes.png";// ［はい］ボタンの画像ファイル
+;dialogYesButtonLeft = sf.dialog_def_YES_x;					// 同、Ｘ座標（ピクセル）
+;dialogYesButtonTop = sf.dialog_def_YES_y;					// 同、Ｙ座標（ピクセル）
+
+;dialogNoButtonImage = "dialog_bt_no.png";	// ［いいえ］ボタンの画像ファイル
+;dialogNoButtonLeft =sf.dialog_def_NO_x;					// 同、Ｘ座標（ピクセル）
+;dialogNoButtonTop = sf.dialog_def_NO_y;					// 同、Ｙ座標（ピクセル）
+
+;dialogFontHeight    = sf.dialog_def_FontHeight;						// メッセージのフォント高さ（ピクセル）
+;dialogFontFace      = sf.dialog_def_FontFace;		// メッセージのフォント
+;dialogFontBold      = sf.dialog_def_FontBold;					// メッセージを太字にする場合はtrue
+;dialogFontColor     = sf.dialog_def_FontColor;				// メッセージの色（0xRRGGBB形式/色定数）
+;dialogShadowLevel   = sf.dialog_def_ShadowLevel;						// 影の不透明度（0:影なし）
+;dialogShadowColor   = sf.dialog_def_ShadowColor;				// 影の色（0xRRGGBB形式/色定数）
+;dialogShadowWidth   = sf.dialog_def_ShadowWidth;						// 影の幅（0:シャープ～ぼける）
+;dialogShadowOffsetX = sf.dialog_def_ShadowOffsetX;					// 影の位置のＸ座標（0:真下）
+;dialogShadowOffsetY = sf.dialog_defShadowOffsetY;					// 同、Ｙ座標（0:真下）
+
+;dialogMessageLeft   = sf.dialog_def_MessageLeft;					// メッセージ描画領域の左上隅Ｘ座標（ピクセル）
+;dialogMessageTop    = sf.dialog_def_MessageTop;						// 同、Ｙ座標（ピクセル）
+;dialogMessageWidth  = sf.dialog_def_MessageWidth;			// メッセージ描画領域の最大横幅（ピクセル）
+;dialogMessageHeight = sf.dialog_def_MessageHeight;		// 同、高さ（ピクセル）
+
+;dialogCaptionFontHeight = sf.dialog_def_CaptionFontHeight;				// タイトルバーキャプションのフォント高さ（ピクセル）
+;dialogCaptionTop        = sf.dialog_def_CaptionTop;						// 同、Ｙ座標（ピクセル）
+
+// ☆ここまでの間のパラメータを修正してください
+
+}
+
