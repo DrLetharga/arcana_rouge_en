@@ -21,6 +21,7 @@ source/茜ちゃんの先生看病にっき（音声のみ版）.ogg
 source/茜ちゃんの先生看病にっき（音声のみ版）.wav
 source/茜ちゃんの先生看病にっき.ogg
 source/茜ちゃんの先生看病にっき.wav
+source/savedata/
 source/g_bg/
 source/g_cg/
 source/g_image/
@@ -53,6 +54,7 @@ translation/k2compat.xp3
 translation/krkrdebg.exe
 translation/Sacred Angel - Arcana Rouge[EN].exe
 translation/tvpwin32_dbg.exe
+translation/savedata/
 translation/fonts/
 translation/g_bg/
 translation/g_cg/
