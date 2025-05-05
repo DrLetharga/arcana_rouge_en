@@ -1,5 +1,0 @@
-Filename,Scene Type,Time of Day,Mood,Suggested Tags,Notes,Script File,Index
-END_bad.png,Game Over / Bad Ending Screen,N/A,"Finality, Failure, Dread",{emote:bad_end}{effect:flash}{emote:shock},Used in 9999.ks for bad endings tied to specific failure routes. Accompanied by [trans_c cross] and followed by black screen. Stylized GAME OVER text with glowing burn effect and magic seal backdrop.,9999.ks,50
-END_bad.png,Game Over / Bad Ending Screen,N/A,"Finality, Failure, Dread",{emote:bad_end}{effect:flash}{emote:shock},Used for ending case when f.l_end == 7.,9999.ks,51
-END_bad.png,Game Over / Bad Ending Screen,N/A,"Finality, Failure, Dread",{emote:bad_end}{effect:flash}{emote:shock},Used for ending case when f.l_end == 8.,9999.ks,52
-xig03_cut001_03.png,Magic Attack Overlay (冥魔豪爆斧),N/A,"Intense, Explosive, Supernatural",{effect:magic}{emote:impact}{emote:shock},"Used exclusively with the [Magic_冥魔豪爆斧] macro. Appears with violent bang transitions, accompanied by sound effect SE1509 and background quakes. Represents a demonic explosive axe spell.",arcana003.ks,"887, 1906, 2045"
