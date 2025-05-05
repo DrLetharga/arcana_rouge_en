@@ -77,7 +77,7 @@ translation/system/linebreak_a.png
 translation/system/linebreak_a_m.png
 
 # Ignore build artifacts and archive folders
-100000archive/
+archive/
 *.zip
 *.7z
 
